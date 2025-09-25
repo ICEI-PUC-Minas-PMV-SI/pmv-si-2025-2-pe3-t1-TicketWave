@@ -37,21 +37,23 @@ Proporcionar uma experiência de compra de ingressos e snacks de cinema ágil, t
 
 ### 3.3.1 Requisitos Funcionais
 
-| Código | Requisito Funcional           | Descrição                                                                                                |
-| ------ | ----------------------------- | -------------------------------------------------------------------------------------------------------- |
-| RF1    | Compra de ingressos           | Permitir ao cliente selecionar filme, horário e assento e receber o ingresso digital após o pagamento.   |
-| RF2    | Comprar na Lanchonete         | Permitir ao cliente selecionar e adquirir pipoca, refrigerante, combos e outros itens junto ao ingresso. |
-| RF3    | Gerenciar Meios de Pagamento  | Permitir ao estabelecimento cadastrar, visualizar, alterar e remover formas de pagamento aceitas.        |
-| RF4    | Selecionar Forma de Pagamento | Permitir que o cliente armazene seus meios de pagamento e escolha qual utilizar na compra.               |
-| RF5    | Acessar Conta                 | Permitir que o cliente crie, edite e acesse sua conta por meio de autenticação e logout seguro.          |
-| RF6    | Precificar Dinamicamente      | Permitir definir regras automáticas de variação no preço dos ingressos conforme a ocupação da sala.      |
-| RF7    | Avaliar Filmes                | Permitir que os clientes atribuam notas e publiquem comentários sobre os filmes assistidos.              |
-| RF8    | Gerenciar Promoções           | Permitir à gerência cadastrar, visualizar, alterar e remover promoções de ingressos e lanches.           |
-| RF9    | Gerenciar Filmes              | Permitir ao gestor de conteúdo cadastrar, visualizar, alterar e remover filmes em cartaz.                |
-| RF10   | Fórum de Reviews              | Permitir que clientes publiquem comentários em texto e vídeo sobre os filmes em um espaço de interação.  |
-| RF11   | Gerenciar Contas de Usuários  | Permitir ao administrador criar, editar e remover contas de usuários e definir permissões de acesso.     |
-| RF12   | Recomendar Filmes por Preferências  | Permitir que, no momento do cadastro, o cliente selecione seus gêneros de filmes favoritos. Após o login, o sistema recomendará filmes em cartaz e futuros lançamentos com base nessas preferências.     |
-| RF13   | Comentar no Cartaz do Filme  | Permitir que o cliente publique comentários diretamente na página/cartaz do filme em exibição, possibilitando interação e troca de opiniões entre os usuários.     |
+| Código | Requisito Funcional                | Descrição                                                                                                |
+| ------ | -----------------------------      | -------------------------------------------------------------------------------------------------------- |
+| RF1    | Comprar ingressos                  | Permitir ao cliente selecionar filme, horário e assento e receber o ingresso digital após o pagamento.   |
+| RF2    | Comprar na Lanchonete              | Permitir ao cliente selecionar e adquirir pipoca, refrigerante, combos e outros itens junto ao ingresso. |
+| RF3    | Gerenciar Meios de Pagamento       | Permitir ao estabelecimento cadastrar, visualizar, alterar e remover formas de pagamento aceitas.        |
+| RF4    | Gerenciar conteúdos informacionais |                                                                                                          |
+| RF5    | Criar conta                        | Permitir que o cliente crie e edite sua conta para um acesso mais personalizado à plataforma.            |
+| RF6    | Fazer login e logout               | Permitir que o usuário faça login e logout da conta.                                                     |
+| RF7    | Precificar Dinamicamente           | Permitir definir regras automáticas de variação no preço dos ingressos conforme a ocupação da sala.      |
+| RF8    | Avaliar Filmes                     | Permitir que os clientes atribuam notas e publiquem comentários sobre os filmes assistidos.              |
+| RF9    | Gerenciar Promoções                | Permitir à gerência cadastrar, visualizar, alterar e remover promoções de ingressos e lanches.           |
+| RF10   | Gerenciar Sessões                  | Permitir ao gestor de conteúdo cadastrar, visualizar, alterar e remover filmes em cartaz.                |
+| RF11   | Gerenciar Fórum                    | Permitir que clientes publiquem comentários em texto e vídeo sobre os filmes em um espaço de interação.  |
+| RF12   | Gerenciar Contas Internas          | Permitir ao administrador criar, editar e remover contas de usuários e definir permissões de acesso.     |
+| RF13   | Recomendar filmes                  | Permitir que sejam recomendados filmes para os usuários logados na plataforma.                           |
+| RF14   | Recomendar Filmes por Preferências | Permitir que, no momento do cadastro, o cliente selecione seus gêneros de filmes favoritos. Após o login, o sistema recomendará filmes em cartaz e futuros lançamentos com base nessas preferências.     |
+| RF15   | Comentar no Cartaz do Filme        | Permitir que o cliente publique comentários diretamente na página/cartaz do filme em exibição, possibilitando interação e troca de opiniões entre os usuários.     |
 
 
 ### 3.3.2 Requisitos Não Funcionais
