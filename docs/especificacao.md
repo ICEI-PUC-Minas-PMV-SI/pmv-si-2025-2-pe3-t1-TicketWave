@@ -249,13 +249,13 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 | # | Nome | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| 1	|	Cliente |É o usuário do sistema que navega pelos filmes em cartaz, seleciona sessões, escolhe poltronas e compra ingressos. É o ator principal dos casos de uso de navegação, reserva e compra. |
+| 1	|	Cliente |É o usuário do sistema que navega pelos filmes em cartaz, seleciona sessões e compra ingressos. É o ator principal dos casos de uso de navegação, reserva e compra. |
 | 2	| Filme |	Representa os filmes que estão em cartaz no cinema. É responsável por armazenar e disponibilizar as informações básicas, como título, gênero, sinopse e classificação. Um filme pode ter várias sessões associadas |
-| 3 |	Pagamento |	Responsável por processar a transação financeira do ingresso. Ele valida os dados do cliente, verifica com o provedor de pagamento se a compra foi aceita ou recusada, e informa o sistema sobre o resultado. Caso o pagamento seja concluído, a reserva vira um ingresso; caso contrário, o cliente pode tentar novamente com outro método. |
-| 4 |	Sessão |Representa uma exibição específica de um filme, em uma data e horário definidos. Está ligada a uma sala de cinema e permite que os clientes escolham poltronas para assistir ao filme|
-| 5	|	Sala |	É o ambiente físico onde os filmes são exibidos. Cada sala tem um conjunto de poltronas e pode receber diferentes sessões ao longo do tempo |
-| 6 |	Poltrona  |	Representa um assento dentro de uma sala. Pode estar disponível ou ocupada, dependendo das reservas feitas para a sessão |
-| 7	|	Ingresso |	É o comprovante final da compra feita pelo cliente. Está vinculado a uma reserva confirmada e garante o direito de entrada na sessão escolhida |
-| 8	|	Administrador do cinema |	É o responsável por gerenciar o catálogo de filmes e as sessões. Ele pode cadastrar novos filmes, editar informações, remover filmes do sistema e definir os horários em que os filmes serão exibidos, além de gerenciar as salas. Atua como ator secundário nos casos de uso, pois garante que o sistema esteja sempre atualizado para o cliente |
-| 9	|	Reserva temporária |	Controla a relação entre cliente, sessão e poltrona. Pode ser temporária até a conclusão do pagamento, garantindo que a poltrona escolhida não seja ocupada por outro cliente nesse intervalo. |
+| 3 |	Pagamento |	É o meio de pagamento utilizado pelo usuário para realizar um pedido e adquirir os seus ingressos e snacks. |
+| 4 |	Sessao | Representa uma exibição específica de um filme, em uma data, horário e sala definidos. Uma sessão contém zero ou mais ingressos. |
+| 5	|	Ingresso |	É o bilhete utlizado de fato pelo cliente para entrar em uma sessão. Está vinculado a um pedido também, já que um ingresso é adquirido. |
+| 6 | NotaFiscal | É o comprovante de pagamento enviado ao cliente e ao governo, de acordo com a legislação brasileira. Cada pedido contém exatamente uma nota fiscal. |
+| 7 | Snack | Representa cada um dos itens que estão disponíveis para serem adquiridos na lanchonete do cinema. |
+| 8 | Pedido | Representa cada compra feita por um cliente, que pode ter 1 ou mais itens (ingressos ou snacks). |
+| 9 | ItemPedido | É cada um dos produtos que foram adquiridos em um pedido. Podem ser ingressos ou snacks. |
 
