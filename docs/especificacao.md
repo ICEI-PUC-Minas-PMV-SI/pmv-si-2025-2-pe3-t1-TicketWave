@@ -42,18 +42,18 @@ Proporcionar uma experiência de compra de ingressos e snacks de cinema ágil, t
 | RF1    | Comprar ingressos                  | Permitir ao cliente selecionar filme, horário e assento e receber o ingresso digital após o pagamento.   |
 | RF2    | Comprar na Lanchonete              | Permitir ao cliente selecionar e adquirir pipoca, refrigerante, combos e outros itens junto ao ingresso. |
 | RF3    | Gerenciar Meios de Pagamento       | Permitir ao estabelecimento cadastrar, visualizar, alterar e remover formas de pagamento aceitas.        |
-| RF4    | Gerenciar conteúdos informacionais |                                                                                                          |
-| RF5    | Criar conta                        | Permitir que o cliente crie e edite sua conta para um acesso mais personalizado à plataforma.            |
-| RF6    | Fazer login e logout               | Permitir que o usuário faça login e logout da conta.                                                     |
-| RF7    | Precificar Dinamicamente           | Permitir definir regras automáticas de variação no preço dos ingressos conforme a ocupação da sala.      |
-| RF8    | Avaliar Filmes                     | Permitir que os clientes atribuam notas e publiquem comentários sobre os filmes assistidos.              |
-| RF9    | Gerenciar Promoções                | Permitir à gerência cadastrar, visualizar, alterar e remover promoções de ingressos e lanches.           |
-| RF10   | Gerenciar Sessões                  | Permitir ao gestor de conteúdo cadastrar, visualizar, alterar e remover filmes em cartaz.                |
-| RF11   | Gerenciar Fórum                    | Permitir que clientes publiquem comentários em texto e vídeo sobre os filmes em um espaço de interação.  |
-| RF12   | Gerenciar Contas Internas          | Permitir ao administrador criar, editar e remover contas de usuários e definir permissões de acesso.     |
-| RF13   | Recomendar filmes                  | Permitir que sejam recomendados filmes para os usuários logados na plataforma.                           |
-| RF14   | Recomendar Filmes por Preferências | Permitir que, no momento do cadastro, o cliente selecione seus gêneros de filmes favoritos. Após o login, o sistema recomendará filmes em cartaz e futuros lançamentos com base nessas preferências.     |
-| RF15   | Comentar no Cartaz do Filme        | Permitir que o cliente publique comentários diretamente na página/cartaz do filme em exibição, possibilitando interação e troca de opiniões entre os usuários.     |
+| RF4    | Gerenciar conteúdos informacionais | O sistema deve permitir que críticos e especialistas publiquem e gerenciem conteúdos informacionais, como resenhas, análises, dicas, podcasts e resumos de filmes, de forma distinta do perfil de cliente que realiza a compra de ingressos.                                                      |
+| RF5    | Gerenciar conta de cliente         | Permitir que o cliente crie, visualize, edite e exclua sua conta para um acesso mais personalizado à plataforma. |
+| RF6    | Fazer login                        | Permitir que o usuário faça login na conta.                                                              |
+| RF7    | Fazer logout                       | Permitir que o usuário faça logout da conta (encerre a sessão).                                          |
+| RF8    | Precificar Dinamicamente           | Permitir definir regras automáticas de variação no preço dos ingressos conforme a ocupação da sala.      |
+| RF9    | Avaliar Filmes                     | Permitir que os clientes atribuam notas e publiquem comentários sobre os filmes assistidos.              |
+| RF10   | Gerenciar Promoções                | Permitir à gerência cadastrar, visualizar, alterar e remover promoções de ingressos e lanches.           |
+| RF11   | Gerenciar Sessões                  | Permitir ao gestor de conteúdo cadastrar, visualizar, alterar e remover filmes em cartaz.                |
+| RF12   | Gerenciar Fórum                    | Permitir ao cliente criar, visualizar, alterat e remover comentários em texto e vídeo sobre os filmes em um espaço de interação.  |
+| RF13   | Gerenciar Contas Internas          | Permitir ao administrador criar, editar e remover contas de usuários internos e definir permissões de acesso.     |
+| RF14   | Recomendar filmes por preferência  | Permitir que sejam recomendados filmes para os usuários logados na plataforma de acordo com as preferências que serão cadastradas quando o cliente criar sua conta. |
+| RF15   | Comentar no Cartaz do Filme        | Permitir ao cliente publicar comentários diretamente na página/cartaz do filme em exibição, possibilitando interação e troca de opiniões entre os usuários.     |
 
 
 ### 3.3.2 Requisitos Não Funcionais
@@ -70,9 +70,12 @@ Proporcionar uma experiência de compra de ingressos e snacks de cinema ágil, t
 
 | Ator | Descrição |
 |--------------------|------------------------------------|
-| Gestor de Conteúdo |	Usuário gerente do sistema responsável pelo cadastro, edição e remoção dos filmes exibidos pelo cinema. |
-| Administrador de sistema |	Usuário responsável por criar contas de gestores eoperadores, definir papéis e acessos e gerenciar integrações |
+| Gestor de Conteúdo |	Usuário gerente do sistema responsável pelo cadastro, edição e remoção dos filmes exibidos pelo cinema. Além disso, será responsável por gerenciar os conteúdos informacionais da plataforma. |
+| Administrador de sistema |	Usuário responsável por criar contas de gestores e operadores, definir papéis e acessos e gerenciar integrações |
 | Cliente |	Usuário responsável por escolher filme, sessão, poltrona, fazer o pagamento, receber e apresentar ingresso digital, consultar histórico de compras e promoções. |
+| Crítico/Especialista | Usuário responsável por gerenciar conteúdos informacionais na plataforma |
+| Administrador de Cinema | Usuário responsável por gerenciar sessões e promoções. |
+
 
 ## 3.4 Modelagem do Sistema
 
@@ -235,6 +238,102 @@ Pré-condições: Acesso autorizado ao painel administrativo.
 1) O Administrador acessa o painel de usuários.
 2) O Sistema exibe a lista de contas.
 3) O Administrador cria, edita ou remove contas e define permissões.
+
+#### Gerenciar Conteúdos Informacionais (CSU07)
+
+Sumário: O Crítico/Especialista publica, edita ou remove conteúdos informacionais sobre os filmes.
+
+Ator Primário: Crítico/Especialista.
+
+Pré-condições: O Crítico/Especialista deve estar autenticado no sistema.
+
+- Fluxo Principal:
+
+1) O Crítico acessa o painel de conteúdos.
+2) O Sistema exibe opções para criação, edição e exclusão de conteúdos.
+3) O Crítico insere ou modifica informações (resenha, análise, dica, podcast ou resumo).
+4) O Sistema valida os dados e salva o conteúdo.
+
+Fluxo Alternativo (3): Publicação Inválida
+a) O Crítico insere informações incompletas ou em formato incorreto.
+b) O Sistema reporta o erro e solicita correção antes de salvar.
+
+#### Gerenciar Promoções (CSU08)
+
+Sumário: O Administrador de Cinema cadastra, edita ou remove promoções de ingressos e lanches.
+
+Ator Primário: Administrador de Cinema.
+
+Pré-condições: O Administrador deve estar autenticado no sistema.
+
+- Fluxo Principal:
+
+1) O Administrador acessa o módulo de promoções.
+2) O Sistema exibe a lista de promoções ativas.
+3) O Administrador cadastra, altera ou remove uma promoção.
+4) O Sistema valida as informações e atualiza o catálogo de promoções.
+
+Fluxo Alternativo (3): Promoção Inválida
+a) O Administrador insere dados incompletos ou inconsistentes.
+b) O Sistema reporta o erro e solicita a correção antes de salvar.
+
+#### Gerenciar Fórum (CSU09)
+
+Sumário: O Cliente cria, edita ou remove comentários em texto ou vídeo no fórum da plataforma.
+
+Ator Primário: Cliente.
+
+Pré-condições: O Cliente deve estar autenticado no sistema.
+
+- Fluxo Principal:
+
+1) O Cliente acessa o espaço de fórum.
+2) O Sistema exibe os tópicos e comentários existentes.
+3) O Cliente publica, edita ou remove um comentário.
+4) O Sistema salva e atualiza o fórum.
+
+Fluxo Alternativo (3): Conteúdo Inadequado
+a) O Cliente insere um comentário que viola regras da plataforma.
+b) O Sistema bloqueia a publicação e exibe mensagem de aviso.
+
+#### Recomendar Filmes por Preferência (CSU10)
+
+Sumário: O Sistema recomenda filmes ao Cliente com base em suas preferências cadastradas.
+
+Ator Primário: Cliente.
+
+Ator Secundário: Sistema.
+
+Pré-condições: O Cliente deve estar autenticado e ter informado preferências em sua conta.
+
+- Fluxo Principal:
+
+1) O Cliente acessa sua conta ou navega pelos filmes.
+2) O Sistema identifica as preferências cadastradas.
+3) O Sistema apresenta recomendações personalizadas de filmes.
+
+Fluxo Alternativo (2): Preferências Não Definidas
+a) O Cliente ainda não informou preferências.
+b) O Sistema exibe recomendações gerais ou solicita o preenchimento das preferências.
+
+#### Comentar no Cartaz do Filme (CSU11)
+
+Sumário: O Cliente publica comentários diretamente na página/cartaz de um filme em exibição.
+
+Ator Primário: Cliente.
+
+Pré-condições: O Cliente deve estar autenticado no sistema.
+
+- Fluxo Principal:
+
+1) O Cliente acessa a página do filme.
+2) O Sistema exibe a área de comentários.
+3) O Cliente insere um comentário e confirma a publicação.
+4) O Sistema salva e exibe o comentário junto aos demais.
+
+Fluxo Alternativo (3): Comentário Inválido
+a) O Cliente insere um comentário em branco ou com conteúdo inadequado.
+b) O Sistema bloqueia a publicação e solicita correção.
 
 ### 3.4.3 Diagrama de Classes 
 
