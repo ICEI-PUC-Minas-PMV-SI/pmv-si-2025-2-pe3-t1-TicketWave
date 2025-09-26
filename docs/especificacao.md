@@ -242,7 +242,8 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 #### Figura 2: Diagrama de Classes do Sistema.
  
-<img width="700" alt="Diag  Classes Ticketwave (2)" src="https://github.com/user-attachments/assets/0e7f8e9f-2275-43d6-8403-3eaae51107b0" />
+<img width="700" alt="Diag  Classes Ticketwave (3)" src="https://github.com/user-attachments/assets/15963e5c-05b0-4ec5-892f-c7f65272678e" />
+
 
 
 ### 3.4.4 Descrições das Classes 
