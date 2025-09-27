@@ -84,7 +84,7 @@ Como mostrado no diagrama da Figura 1, o Cliente poderá navegar pelos filmes, s
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-<img width="790" height="807" alt="image" src="https://github.com/user-attachments/assets/edc42d4b-8ec0-48e8-831f-08d9f434ee51" />
+<img width="799" height="1251" alt="caso_de_uso" src="https://github.com/user-attachments/assets/bfa143d0-27e1-4f45-9afc-20ed76bc42c8" />
 
 ### 3.4.2 Descrições de Casos de Uso
 
