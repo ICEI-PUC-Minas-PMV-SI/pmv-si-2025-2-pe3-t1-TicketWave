@@ -4,6 +4,7 @@
 Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar uma persona por integrante do projeto. Para mais informações sobre personas consulte: https://www.rdstation.com/blog/marketing/persona-o-que-e/. Sugere-se a utilização do gerador de personas disponibilizado em https://persona-pillar.lovable.app/?utm_campaign=br-inb-rdsm-blog-novos_leads-persona-pillar-cta_pls_portal_cta_persona
 
 **Persona do negócio**
+
 1- Jorge, 48 anos, é empresário e dono da rede de cinemas CineSuper, presente em diferentes regiões de Minas Gerais.
 
 Formado em Administração de Empresas, sempre atuou no setor de entretenimento e acredita que oferecer experiências memoráveis ao público é o que garante a longevidade de seu negócio. Até hoje, sua rede opera com um sistema tradicional de vendas na bilheteria, mas Jorge sente que esse modelo já não atende às exigências do mercado atual. Ele percebe que o público está cada vez mais digital, e que não oferecer meios de compra online pode afastar potenciais clientes.
