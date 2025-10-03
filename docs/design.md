@@ -17,6 +17,7 @@ Sua principal dor hoje é a falta de previsibilidade: como não consegue antecip
 
 O grande objetivo de Jorge é consolidar a CineSuper como referência em inovação no setor de cinemas regionais, oferecendo não apenas filmes, mas uma experiência completa, diferenciada e moderna.
 
+2- Pedro tem 18 anos, mora em Belo Horizonte e está começando a faculdade de Cinema. Apaixonado pela sétima arte, frequenta diferentes salas da cidade, gosta de acompanhar críticas e assiste a todo tipo de filme, seja sozinho ou com amigos. Como estudante, tem um orçamento limitado e busca sempre promoções e ingressos mais acessíveis. O cinema é, para ele, tanto lazer quanto inspiração acadêmica, mas enfrenta uma grande frustração: perde muito tempo procurando sessões com preços mais baratos e reunindo informações dispersas sobre horários e disponibilidade.
 
 ## 4.2 Mapa de Empatia
 Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A partir do mapa da empatia é possível detalhar a personalidade do cliente e compreendê-la melhor. O objetivo é obter um nível mais profundo de compreensão de uma persona. A seguir um exemplo de template que pode ser usado para o mapa de empatia. Para cada persona deverá ser apresentado o seu respectivo mapa de empatia. Sugere-se a utilização do template apresentado em https://www.rdstation.com/blog/marketing/mapa-da-empatia/.
