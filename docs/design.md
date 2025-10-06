@@ -22,7 +22,8 @@ O grande objetivo de Jorge é consolidar a CineSuper como referência em inovaç
 ## 4.2 Mapa de Empatia
 Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A partir do mapa da empatia é possível detalhar a personalidade do cliente e compreendê-la melhor. O objetivo é obter um nível mais profundo de compreensão de uma persona. A seguir um exemplo de template que pode ser usado para o mapa de empatia. Para cada persona deverá ser apresentado o seu respectivo mapa de empatia. Sugere-se a utilização do template apresentado em https://www.rdstation.com/blog/marketing/mapa-da-empatia/.
 
-<img width="1235" height="860" alt="image" src="https://github.com/user-attachments/assets/021b53fc-5c86-4661-8aab-02db283cb87c" />
+![Mapa Empatia Jorge - Ticket Wave 2 0](https://github.com/user-attachments/assets/7beba984-99f0-4864-b715-e346b2990801)
+
 
 
 ## 4.3 Protótipos das Interfaces
