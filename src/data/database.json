@@ -1,0 +1,44 @@
+{
+    "filmes": [
+        {
+            "id": "filme1",
+            "titulo": "Sr. Ninguém",
+            "genero": "Animação",
+            "duracao": 138,
+            "rating": "12",
+            "poster": "caminho/para/poster.jpg"
+        },
+        {
+            "id": "filme2",
+            "titulo": "Jogos Mortais",
+            "genero": "Terror",
+            "duracao": 121,
+            "rating": "18",
+            "poster": "caminho/para/poster.jpg"
+        },
+        {
+            "id": "filme3",
+            "titulo": "La La Land",
+            "genero": "Drama",
+            "duracao": 128,
+            "rating": "L",
+            "poster": "caminho/para/poster.jpg"
+        },
+        {
+            "id": "filme4",
+            "titulo": "Pobres Criaturas",
+            "genero": "Drama",
+            "duracao": 141,
+            "rating": "18",
+            "poster": "caminho/para/poster.jpg"
+        },
+        {
+            "id": "filme5",
+            "titulo": "Clifford - Gigante Cão Vermelho",
+            "genero": "Animação",
+            "duracao": 90,
+            "rating": "L",
+            "poster": "caminho/para/poster.jpg"
+        }
+    ]
+}
