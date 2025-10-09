@@ -24,6 +24,7 @@ O grande objetivo de Jorge é consolidar a CineSuper como referência em inovaç
 
 <img width="1011" height="639" src="https://github.com/user-attachments/assets/e681d6a7-a809-4e08-9778-6ab6d8b9cd76" />
 
+
 3- Adimir é segurança e supervisor em um condomínio comercial em Belo Horizonte, com mais de 30 anos de experiência na área.
 
 Trabalha em turnos alternados e valoriza cada momento livre com a família. Sempre levou a esposa e os dois filhos ao cinema, mas com o orçamento apertado, precisa planejar bem os gastos. Apesar de não ser expert em tecnologia, aprendeu a usar o básico da internet pelo celular para facilitar o dia a dia.
