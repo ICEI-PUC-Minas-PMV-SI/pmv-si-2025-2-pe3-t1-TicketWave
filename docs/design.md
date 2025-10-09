@@ -24,6 +24,23 @@ O grande objetivo de Jorge é consolidar a CineSuper como referência em inovaç
 
 <img width="1011" height="639" src="https://github.com/user-attachments/assets/e681d6a7-a809-4e08-9778-6ab6d8b9cd76" />
 
+3- Adimir é segurança e supervisor em um condomínio comercial em Belo Horizonte, com mais de 30 anos de experiência na área.
+
+Trabalha em turnos alternados e valoriza cada momento livre com a família. Sempre levou a esposa e os dois filhos ao cinema, mas com o orçamento apertado, precisa planejar bem os gastos. Apesar de não ser expert em tecnologia, aprendeu a usar o básico da internet pelo celular para facilitar o dia a dia.
+
+Nos últimos tempos, Adimir vem sentindo que comprar ingressos na bilheteria está ficando mais caro e menos prático. As filas estão maiores e os preços, mais altos. Ele já ouviu falar que comprando online é possível encontrar descontos, mas ainda se sente um pouco perdido com tantos sites e aplicativos diferentes.
+
+É um homem de hábitos simples, que valoriza o custo-benefício e a praticidade. Quer continuar mantendo o programa de cinema em família, mas de forma mais inteligente e econômica. Para ele, o cinema é uma tradição familiar que não pode acabar por causa dos preços altos.
+
+Na vida pessoal, é casado há 25 anos e tem dois filhos jovens adultos que ajudam com a tecnologia quando necessário. Gosta de filmes de ação e comédia, e sempre busca programas que unam toda a família. Apesar de ter certa resistência com novidades tecnológicas, está disposto a aprender se isso significar economizar e ganhar praticidade.
+
+Sua principal necessidade hoje é encontrar uma forma fácil e confiável de comprar ingressos com desconto. Ele quer evitar filas, pagar mais barato e ter a certeza de que o processo é simples e seguro. Também precisa de flexibilidade para escolher horários e assentos que se encaixem no orçamento familiar.
+
+O grande objetivo de Adimir é manter o tradicional programa de cinema familiar, mas de forma mais moderna e econômica, aproveitando as vantagens do mundo digital sem complicações.
+
+<img width="1011" height="639" alt="Crachá de identificação profissional vermelho e branco " src="https://github.com/user-attachments/assets/96205c50-a662-446d-9cb0-72af5091586f" />
+
+
 ## 4.2 Mapa de Empatia
 Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A partir do mapa da empatia é possível detalhar a personalidade do cliente e compreendê-la melhor. O objetivo é obter um nível mais profundo de compreensão de uma persona. A seguir um exemplo de template que pode ser usado para o mapa de empatia. Para cada persona deverá ser apresentado o seu respectivo mapa de empatia. Sugere-se a utilização do template apresentado em https://www.rdstation.com/blog/marketing/mapa-da-empatia/.
 
