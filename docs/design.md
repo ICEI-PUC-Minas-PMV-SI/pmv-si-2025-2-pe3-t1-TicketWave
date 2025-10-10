@@ -17,7 +17,7 @@ Sua principal dor hoje é a falta de previsibilidade: como não consegue antecip
 
 O grande objetivo de Jorge é consolidar a CineSuper como referência em inovação no setor de cinemas regionais, oferecendo não apenas filmes, mas uma experiência completa, diferenciada e moderna.
 
-<img width="1202" height="733" alt="image" src="https://github.com/user-attachments/assets/259a6770-23c5-47dc-b058-ae7695b14b29" />
+<img width="1203" height="732" alt="image" src="https://github.com/user-attachments/assets/f69cb1d6-6fd1-41fc-849d-9f3e2510b256" />
 
 2- Pedro tem 18 anos, mora em Belo Horizonte e está começando a faculdade de Cinema. Apaixonado pela sétima arte, frequenta diferentes salas da cidade, gosta de acompanhar críticas e assiste a todo tipo de filme, seja sozinho ou com amigos. Como estudante, tem um orçamento limitado e busca sempre promoções e ingressos mais acessíveis. O cinema é, para ele, tanto lazer quanto inspiração acadêmica, mas enfrenta uma grande frustração: perde muito tempo procurando sessões com preços mais baratos e reunindo informações dispersas sobre horários e disponibilidade.
 
