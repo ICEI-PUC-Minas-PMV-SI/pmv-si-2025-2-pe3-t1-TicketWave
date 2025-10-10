@@ -1,12 +1,12 @@
 {
-    "filmes": [
+    "movies": [
         {
             "id": "filme1",
             "titulo": "Sr. Ninguém",
             "genero": "Animação",
             "duracao": 138,
             "rating": "12",
-            "poster": "caminho/para/poster.jpg"
+            "poster": "resources/images/sr_ninguem.jpg"
         },
         {
             "id": "filme2",
@@ -14,7 +14,7 @@
             "genero": "Terror",
             "duracao": 121,
             "rating": "18",
-            "poster": "caminho/para/poster.jpg"
+            "poster": "resources/images/jogos_mortais.jpg"
         },
         {
             "id": "filme3",
@@ -22,7 +22,7 @@
             "genero": "Drama",
             "duracao": 128,
             "rating": "L",
-            "poster": "caminho/para/poster.jpg"
+            "poster": "resources/images/la_la_land.jpg"
         },
         {
             "id": "filme4",
@@ -30,7 +30,7 @@
             "genero": "Drama",
             "duracao": 141,
             "rating": "18",
-            "poster": "caminho/para/poster.jpg"
+            "poster": "resources/images/pobres_criaturas.jpg"
         },
         {
             "id": "filme5",
@@ -38,7 +38,7 @@
             "genero": "Animação",
             "duracao": 90,
             "rating": "L",
-            "poster": "caminho/para/poster.jpg"
+            "poster": "resources/images/clifford.jpg"
         }
     ]
 }
