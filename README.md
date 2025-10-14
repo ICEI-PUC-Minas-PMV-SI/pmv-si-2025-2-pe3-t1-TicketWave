@@ -38,6 +38,14 @@ Além de facilitar a aquisição antecipada de ingressos e produtos, a proposta 
 
 # Código
 
+## Como testar esta aplicação? 
+
+Requisito: [python3](https://www.python.org/downloads/)
+
+1. Dentro do diretório `src`, rode no terminal `python3 -m http.server 8080`
+2. Abra o seu navegador e carregue a seguinte URL: `http://localhost:8080`
+3. Pronto, você já deve conseguir testar a aplicação.
+
 <li><a href="src/codigo.md"> Código Fonte</a></li>
 
 # Apresentação

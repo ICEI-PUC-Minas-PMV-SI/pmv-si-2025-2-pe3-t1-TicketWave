@@ -3,7 +3,7 @@
         {
             "id": "filme1",
             "titulo": "Sr. Ninguém",
-            "genero": "Animação",
+            "genero": "Suspense",
             "duracao": 138,
             "rating": "12",
             "poster": "resources/images/sr_ninguem.jpg"
@@ -39,6 +39,92 @@
             "duracao": 90,
             "rating": "L",
             "poster": "resources/images/clifford.jpg"
+        }
+    ],
+    "sessions": [
+        {
+            "id": "session1",
+            "movieId": "filme1",
+            "date": "2025-10-14",
+            "time": "18:20",
+            "price": 25.00
+        },
+        {
+            "id": "session2",
+            "movieId": "filme1",
+            "date": "2025-10-14",
+            "time": "20:30",
+            "price": 30.00
+        },
+        {
+            "id": "session3",
+            "movieId": "filme1",
+            "date": "2025-10-15",
+            "time": "22:30",
+            "price": 25.00
+        },
+        {
+            "id": "session4",
+            "movieId": "filme2",
+            "date": "2025-10-14",
+            "time": "15:00",
+            "price": 25.00
+        },
+        {
+            "id": "session5",
+            "movieId": "filme2",
+            "date": "2025-10-14",
+            "time": "15:30",
+            "price": 25.00
+        },
+        {
+            "id": "session6",
+            "movieId": "filme3",
+            "date": "2025-10-15",
+            "time": "9:30",
+            "price": 10.00
+        },
+        {
+            "id": "session7",
+            "movieId": "filme3",
+            "date": "2025-10-16",
+            "time": "17:00",
+            "price": 20.00
+        },
+        {
+            "id": "session8",
+            "movieId": "filme3",
+            "date": "2025-10-16",
+            "time": "17:00",
+            "price": 20.00
+        },
+        {
+            "id": "session9",
+            "movieId": "filme4",
+            "date": "2025-10-15",
+            "time": "17:00",
+            "price": 20.00
+        },
+        {
+            "id": "session10",
+            "movieId": "filme4",
+            "date": "2025-10-16",
+            "time": "17:00",
+            "price": 23.00
+        },
+        {
+            "id": "session11",
+            "movieId": "filme5",
+            "date": "2025-10-14",
+            "time": "17:00",
+            "price": 21.00
+        },
+        {
+            "id": "session12",
+            "movieId": "filme5",
+            "date": "2025-10-16",
+            "time": "20:00",
+            "price": 25.00
         }
     ]
 }
