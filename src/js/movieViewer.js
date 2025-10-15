@@ -1,6 +1,6 @@
 
 function renderMoviesView(container) {
-    const movies = getMovies();
+    const movies = DataLoader.getMovies();
 
     const movieGrid = document.createElement('div');
     movieGrid.className = 'row g-4';
@@ -17,6 +17,8 @@ function renderMoviesView(container) {
         </div>
     `;
     container.appendChild(movieGrid);
+
+    addButtonEventListeners();
 }
 
 function createMovieCard(movie) {
@@ -46,11 +48,22 @@ function createMovieCard(movie) {
             <p class="card-text text-muted mb-2">
                 <small>${movie.genero} • ${durationText}</small>
             </p>
-            <button class="btn btn-primary mt-auto" data-movie-id="${movie.id}">
+            <button class="btn btn-primary mt-auto view-sessions-btn" data-movie-id="${movie.id}">
                 Ver Sessões
             </button>
         </div>
     `
     col.appendChild(card);
     return col;
+}
+
+function addButtonEventListeners() {
+    const viewSessionButtons = document.querySelectorAll('.view-sessions-btn');
+    viewSessionButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const movieId = button.getAttribute('data-movie-id');
+        window.navigate('sessions', { movieId });
+      });
+    });
 }

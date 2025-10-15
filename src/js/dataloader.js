@@ -1,22 +1,36 @@
 
-DATA_STORAGE_KEY = 'ticketwave_data'
+const DataLoader = (function () {
 
-async function loadDataIntoLocalStorage() {
-    const response = await fetch('data/database.json');
-    const data = await response.json();
-    const dataString = JSON.stringify(data);
+    DATA_STORAGE_KEY = 'ticketwave_data'
 
-    localStorage.setItem(DATA_STORAGE_KEY, dataString);
-    return true;
-}
+    async function loadDataIntoLocalStorage() {
+        const response = await fetch('data/database.json');
+        const data = await response.json();
+        const dataString = JSON.stringify(data);
 
-function getMovies() {
-    const data = retrieveData();
-    console.log("Retrieved data:", data);
-    return data.movies;
-}
+        localStorage.setItem(DATA_STORAGE_KEY, dataString);
+        return true;
+    }
 
-function retrieveData() {
-    const data = localStorage.getItem(DATA_STORAGE_KEY);
-    return JSON.parse(data);
-}
+    function getMovies() {
+        const data = retrieveData();
+        return data.movies;
+    }
+
+    function getSessions(movieId) {
+        const data = retrieveData();
+        return data.sessions.filter(session => session.movieId === movieId);
+    }
+
+    function retrieveData() {
+        const data = localStorage.getItem(DATA_STORAGE_KEY);
+        return JSON.parse(data);
+    }
+
+    return {
+        loadDataIntoLocalStorage: loadDataIntoLocalStorage,
+        getMovies: getMovies,
+        getSessions: getSessions,
+    };
+
+})();
