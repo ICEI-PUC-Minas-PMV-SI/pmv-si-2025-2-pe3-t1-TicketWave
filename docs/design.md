@@ -37,7 +37,7 @@ Sua principal necessidade hoje é encontrar uma forma fácil e confiável de com
 
 O grande objetivo de Adimir é manter o tradicional programa de cinema familiar, mas de forma mais moderna e econômica, aproveitando as vantagens do mundo digital sem complicações.
 
-<img width="1011" height="639" alt="Crachá de identificação profissional vermelho e branco " src="https://github.com/user-attachments/assets/96205c50-a662-446d-9cb0-72af5091586f" />
+<img width="1860" height="1046" alt="image" src="https://github.com/user-attachments/assets/330d5791-f54e-4f6c-b2d7-18595bf94990" />
 
 
 ## 4.2 Mapa de Empatia
