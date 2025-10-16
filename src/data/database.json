@@ -1,0 +1,68 @@
+{
+    "movies": [
+        {
+            "id": "filme1",
+            "titulo": "Sr. Ninguém",
+            "genero": "Animação",
+            "duracao": 138,
+            "rating": "12",
+            "poster": "resources/images/sr_ninguem.jpg"
+        },
+        {
+            "id": "filme2",
+            "titulo": "Jogos Mortais",
+            "genero": "Terror",
+            "duracao": 121,
+            "rating": "18",
+            "poster": "resources/images/jogos_mortais.jpg"
+        },
+        {
+            "id": "filme3",
+            "titulo": "La La Land",
+            "genero": "Drama",
+            "duracao": 128,
+            "rating": "L",
+            "poster": "resources/images/la_la_land.jpg"
+        },
+        {
+            "id": "filme4",
+            "titulo": "Pobres Criaturas",
+            "genero": "Drama",
+            "duracao": 141,
+            "rating": "18",
+            "poster": "resources/images/pobres_criaturas.jpg"
+        },
+        {
+            "id": "filme5",
+            "titulo": "Clifford - Gigante Cão Vermelho",
+            "genero": "Animação",
+            "duracao": 90,
+            "rating": "L",
+            "poster": "resources/images/clifford.jpg"
+        },
+        {
+            "id": "filme6",
+            "titulo": "Tron - Ares",
+            "genero": "Ficção Científica",
+            "duracao": 119,
+            "rating": "12",
+            "poster": "resources/images/tron_ares.jpg"
+        },
+        {
+            "id": "filme7",
+            "titulo": "Doutor Estranho no Multiverso da Loucura ",
+            "genero": "Fantasia",
+            "duracao": 126,
+            "rating": "14",
+            "poster": "resources/images/dr_estranho.jpg"
+        },
+        {
+            "id": "filme8",
+            "titulo": "Os Estranhos - Capítulo 2",
+            "genero": "Terror",
+            "duracao": 96,
+            "rating": "16",
+            "poster": "resources/images/os_estranhos.jpeg"
+        }
+    ]
+}
