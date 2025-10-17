@@ -84,16 +84,9 @@ Como mostrado no diagrama da Figura 1, o Cliente poderá navegar pelos filmes, s
 
 #### Figura 1: Diagrama de Casos de Uso do Sistema.
 
-<img width="799" height="1251" alt="caso_de_uso" src="https://github.com/user-attachments/assets/bfa143d0-27e1-4f45-9afc-20ed76bc42c8" />
+<img width="664" height="840" alt="image" src="https://github.com/user-attachments/assets/a7fb6ea9-1c02-4d66-8515-a2ac309025a5" />
 
 ### 3.4.2 Descrições de Casos de Uso
-
-
-
-
-
-
-
 
 #### Navegar Filmes (CSU01)
 
@@ -171,6 +164,16 @@ Pré-condições: Administrador autenticado.
 1) O Administrador acessa o painel de controle.
 2) O Sistema exibe opções de gerenciamento.
 3) O Administrador cadastra, edita ou remove filmes.
+
+Fluxo Alternativo (4): Remoção de Filme 
+a) O Administrador seleciona um filme e solicita sua remoção. 
+b) Se não houver sessões futuras vinculadas, o Sistema remove o filme.
+
+Fluxo Alternativo (5): Alteração de Filme 
+a) O Administrador altera um ou mais dados do filme e confirma a alteração. 
+b) O Sistema verifica a validade dos dados. 
+
+Pós-condições: Um filme foi adicionado, removido ou atualizado.
 
 Fluxos de Exceção:
 
