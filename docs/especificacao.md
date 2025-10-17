@@ -73,7 +73,7 @@ Proporcionar uma experiência de compra de ingressos e snacks de cinema ágil, t
 | Gestor de Conteúdo |	Usuário gerente do sistema responsável pelo cadastro, edição e remoção dos filmes exibidos pelo cinema. Além disso, será responsável por gerenciar os conteúdos informacionais da plataforma. |
 | Administrador de sistema |	Usuário responsável por criar contas de gestores e operadores, definir papéis e acessos e gerenciar integrações |
 | Cliente |	Usuário responsável por escolher filme, sessão, poltrona, fazer o pagamento, receber e apresentar ingresso digital, consultar histórico de compras e promoções. |
-| Crítico/Especialista | Usuário responsável por gerenciar conteúdos informacionais na plataforma |
+| Tempo | Usuário responsável por processos automatizados no Sistema  |
 | Administrador de Cinema | Usuário responsável por gerenciar sessões e promoções. |
 
 
@@ -87,6 +87,13 @@ Como mostrado no diagrama da Figura 1, o Cliente poderá navegar pelos filmes, s
 <img width="799" height="1251" alt="caso_de_uso" src="https://github.com/user-attachments/assets/bfa143d0-27e1-4f45-9afc-20ed76bc42c8" />
 
 ### 3.4.2 Descrições de Casos de Uso
+
+
+
+
+
+
+
 
 #### Navegar Filmes (CSU01)
 
@@ -104,6 +111,10 @@ Pré-condições: O sistema deve estar acessível.
 2) O Sistema exibe a lista de filmes. <br>
 3) O Cliente pode visualizar detalhes de um filme específico. <br>
 
+Fluxos de Exceção:
+
+E1: Sistema indisponível → Exibe mensagem de erro e solicita tentar novamente.
+
 #### Escolher Sessão e Poltrona (CSU02)
 
 Sumário: O Cliente seleciona a sessão e poltrona desejadas para o filme escolhido.
@@ -118,23 +129,10 @@ Pré-condições: O Cliente já navegou pelos filmes.
 2) O Sistema apresenta as sessões disponíveis.
 3) O Cliente seleciona horário e poltrona.
 
-Fluxo Alternativo (3): Seleção de Poltrona Ocupada
+Fluxos de Exceção:
 
-a) O Cliente seleciona uma poltrona que já foi reservada.
-b) O Sistema reporta o fato e destaca a poltrona como indisponível.
-c) O Sistema solicita que o Cliente escolha outra poltrona.
-d) O Cliente seleciona uma nova poltrona disponível.
-e) O Sistema confirma a reserva temporária.
-
-Fluxo Alternativo (4): Sessão Esgotada
-
-a) O Cliente seleciona uma sessão que atingiu a capacidade máxima.
-b) O Sistema reporta o fato.
-c) O Sistema apresenta uma lista de sessões alternativas para o mesmo filme.
-
-Pós-condições
-
-Uma poltrona válida foi selecionada ou outra sessão foi escolhida.
+E1: Poltrona ocupada → O sistema informa e solicita escolha de outra poltrona.
+E2: Sessão esgotada → O sistema apresenta lista de sessões alternativas.
 
 #### Comprar Ingresso (CSU03)
 
@@ -153,23 +151,10 @@ Pré-condições: O Cliente selecionou sessão e poltrona.
 3) O Cliente insere os dados e confirma.
 4) O Sistema valida o pagamento e envia o ingresso digital.
 
-Fluxo Alternativo (3): Pagamento Recusado
+Fluxos de Exceção:
 
-a) O Cliente escolhe a forma de pagamento e insere os dados.
-b) O Sistema envia a solicitação ao provedor de pagamento.
-c) O Provedor retorna recusa da transação.
-d) O Sistema reporta o fato e oferece opções para tentar outro método de pagamento ou corrigir os dados.
-
-Fluxo Alternativo (4): Conexão Perdida Durante Pagamento
-
-a) O Cliente confirma a compra.
-b) A conexão é perdida antes de finalizar o pagamento.
-c) O Sistema salva temporariamente a reserva.
-d) Quando o Cliente retornar, o Sistema solicita retomada do processo de pagamento.
-
-Pós-condições
-
-O pagamento foi concluído ou o Cliente foi instruído a tentar novamente.
+E1: Pagamento recusado → O sistema cancela a compra e oferece outras formas de pagamento.
+E2: Conexão perdida → O sistema salva temporariamente a reserva e solicita retomada ao cliente.
 
 #### Gerenciar Filmes (CSU04)
 
@@ -187,29 +172,11 @@ Pré-condições: Administrador autenticado.
 2) O Sistema exibe opções de gerenciamento.
 3) O Administrador cadastra, edita ou remove filmes.
 
-Fluxo Alternativo (3): Inclusão de Filme
+Fluxos de Exceção:
 
-a) O Administrador de Cinema requisita a inclusão de um novo filme.
-b) O Sistema solicita informações obrigatórias (Título, Gênero, Classificação, Duração, Sinopse, Data de Início e Fim).
-c) O Administrador fornece os dados.
-d) O Sistema verifica a validade das informações.
-e) Se válidas, o filme é incluído e a lista de filmes é atualizada; caso contrário, o Sistema reporta o fato e solicita correção.
-
-Fluxo Alternativo (4): Remoção de Filme
-
-a) O Administrador seleciona um filme e solicita sua remoção.
-b) Se não houver sessões futuras vinculadas, o Sistema remove o filme.
-c) Caso contrário, o Sistema reporta o fato e bloqueia a remoção.
-
-Fluxo Alternativo (5): Alteração de Filme
-
-a) O Administrador altera um ou mais dados do filme e confirma a alteração.
-b) O Sistema verifica a validade dos dados.
-c) Se válidos, atualiza o registro; caso contrário, reporta o erro.
-
-Pós-condições
-
-Um filme foi adicionado, removido ou atualizado.
+E1: Inclusão de filme com dados incompletos ou inválidos → O sistema solicita correção antes de salvar.
+E2: Tentativa de remoção de filme com sessões futuras → O sistema bloqueia a remoção e informa o motivo.
+E3: Alteração com dados inválidos → O sistema reporta erro e solicita correção.
 
 #### Gerenciar Sessões e Salas (CSU05)
 
@@ -243,9 +210,10 @@ Pré-condições: Acesso autorizado ao painel administrativo.
 
 Sumário: O Crítico/Especialista publica, edita ou remove conteúdos informacionais sobre os filmes.
 
-Ator Primário: Crítico/Especialista.
+Ator Primário: Gestor de Conteúdo
+Ator Secundário: Crítico/Especialista
 
-Pré-condições: O Crítico/Especialista deve estar autenticado no sistema.
+Pré-condições: O Gestor de Conteúdo deve estar autenticado no sistema.
 
 - Fluxo Principal:
 
@@ -254,9 +222,10 @@ Pré-condições: O Crítico/Especialista deve estar autenticado no sistema.
 3) O Crítico insere ou modifica informações (resenha, análise, dica, podcast ou resumo).
 4) O Sistema valida os dados e salva o conteúdo.
 
-Fluxo Alternativo (3): Publicação Inválida
-a) O Crítico insere informações incompletas ou em formato incorreto.
-b) O Sistema reporta o erro e solicita correção antes de salvar.
+Fluxos de Exceção:
+
+E1: Conteúdo incompleto ou formato incorreto → O sistema solicita correção antes de salvar.
+E2: Falha no salvamento → O sistema não atualiza e exibe mensagem de erro.
 
 #### Gerenciar Promoções (CSU08)
 
@@ -273,9 +242,10 @@ Pré-condições: O Administrador deve estar autenticado no sistema.
 3) O Administrador cadastra, altera ou remove uma promoção.
 4) O Sistema valida as informações e atualiza o catálogo de promoções.
 
-Fluxo Alternativo (3): Promoção Inválida
-a) O Administrador insere dados incompletos ou inconsistentes.
-b) O Sistema reporta o erro e solicita a correção antes de salvar.
+Fluxos de Exceção:
+
+E1: Dados incompletos ou inconsistentes → O sistema solicita correção antes de salvar.
+E2: Falha no salvamento → O sistema não atualiza e exibe mensagem de erro.
 
 #### Gerenciar Fórum (CSU09)
 
@@ -292,17 +262,17 @@ Pré-condições: O Cliente deve estar autenticado no sistema.
 3) O Cliente publica, edita ou remove um comentário.
 4) O Sistema salva e atualiza o fórum.
 
-Fluxo Alternativo (3): Conteúdo Inadequado
-a) O Cliente insere um comentário que viola regras da plataforma.
-b) O Sistema bloqueia a publicação e exibe mensagem de aviso.
+Fluxos de Exceção:
+
+E1: Comentário inadequado → O sistema bloqueia a publicação e exibe aviso.
+E2: Falha no salvamento → O sistema não atualiza e exibe mensagem de erro.
 
 #### Recomendar Filmes por Preferência (CSU10)
 
 Sumário: O Sistema recomenda filmes ao Cliente com base em suas preferências cadastradas.
 
 Ator Primário: Cliente.
-
-Ator Secundário: Sistema.
+Ator Secundário: Sistema (Tempo).
 
 Pré-condições: O Cliente deve estar autenticado e ter informado preferências em sua conta.
 
@@ -312,9 +282,9 @@ Pré-condições: O Cliente deve estar autenticado e ter informado preferências
 2) O Sistema identifica as preferências cadastradas.
 3) O Sistema apresenta recomendações personalizadas de filmes.
 
-Fluxo Alternativo (2): Preferências Não Definidas
-a) O Cliente ainda não informou preferências.
-b) O Sistema exibe recomendações gerais ou solicita o preenchimento das preferências.
+Fluxos de Exceção:
+
+E1: Preferências não definidas → O sistema exibe recomendações gerais ou solicita preenchimento.
 
 #### Comentar no Cartaz do Filme (CSU11)
 
@@ -331,9 +301,9 @@ Pré-condições: O Cliente deve estar autenticado no sistema.
 3) O Cliente insere um comentário e confirma a publicação.
 4) O Sistema salva e exibe o comentário junto aos demais.
 
-Fluxo Alternativo (3): Comentário Inválido
-a) O Cliente insere um comentário em branco ou com conteúdo inadequado.
-b) O Sistema bloqueia a publicação e solicita correção.
+Fluxos de Exceção:
+
+E1: Comentário em branco ou inadequado → O sistema bloqueia a publicação e solicita correção.
 
 ### 3.4.3 Diagrama de Classes 
 
