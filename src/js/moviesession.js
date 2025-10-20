@@ -1,4 +1,3 @@
-// Função que renderiza a view de sessões de um filme específico
 function renderSessionsView(container, movieId) {
     const movies = DataLoader.getMovies();
     const movie = movies.find(m => m.id === movieId);

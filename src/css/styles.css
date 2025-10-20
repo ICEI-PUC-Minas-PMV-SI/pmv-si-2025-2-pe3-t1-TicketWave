@@ -5,37 +5,97 @@ html, body {
     flex-direction: column; 
 }
 
+.navbar {
+  height: 100px;
+  display: flex;
+  align-items: center; 
+  padding: 0 2rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.logo-navbar {
+  height: 100px; 
+  width: auto;
+  object-fit: contain;
+  display: block;
+  transition: .5s;
+}
+
+.logo-navbar:hover {
+  opacity: .6;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  font-family: inherit;
+}
+
+.select-selected {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.select-selected:hover {
+  border-color: #999;
+}
+
+.select-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.select-items div {
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.select-items div:hover {
+  background: #f1f1f1; 
+}
+
+.hidden {
+  display: none;
+}
+
+.select-items {
+  animation: fadeIn 0.15s ease;
+}
+/* @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+} */
+
 .main-container {
     flex: 1;
     margin-bottom: 50px;
 }
-
-.nav-link {
-  font-size: 1.3rem;
-}
-
-.navbar-brand {
-  font-size: 1.7rem;
-}
-
-.navbar-dark {
-  background-color: #1e1e1e;
-}
-
-.nav-link.active {
-  background-color: #333333;
-  color: #ffffff;
-}
-
-.search-nav-bar {
-  font-size: 1.3em;
-}
-
-.container-fluid {
-  height: 10vh;
-}
-
-/* Apagar */
 
 .movie-conteiner {
     display:flex;
@@ -132,14 +192,6 @@ p {
   align-items: stretch;
 }
 
-/* .movie-grid1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-} */
-
 .movie-card {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -232,12 +284,6 @@ p {
   padding: 20px;
 }
 
-.icon-chair {
-  color: #0d6efd;
-  font-size: 15px;
-  cursor: pointer;
-}
-
 .horario {
   background-color: #fff;
   color: #343a40;
@@ -250,6 +296,8 @@ p {
   flex-direction: column;
   align-items: center;
 }
+
+/* footer */
 
 .footer {
     margin-top: 80px;
