@@ -39,6 +39,10 @@ O grande objetivo de Adimir é manter o tradicional programa de cinema familiar,
 
 <img width="1860" height="1046" alt="image" src="https://github.com/user-attachments/assets/330d5791-f54e-4f6c-b2d7-18595bf94990" />
 
+4-Marta, 40 anos 
+<img width="1860" height="1046" alt="image" src="https://github.com/user-attachments/assets/d9e94d21-8a47-4271-8222-5ffb59af0ad0" />
+
+
 
 ## 4.2 Mapa de Empatia
 Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A partir do mapa da empatia é possível detalhar a personalidade do cliente e compreendê-la melhor. O objetivo é obter um nível mais profundo de compreensão de uma persona. A seguir um exemplo de template que pode ser usado para o mapa de empatia. Para cada persona deverá ser apresentado o seu respectivo mapa de empatia. Sugere-se a utilização do template apresentado em https://www.rdstation.com/blog/marketing/mapa-da-empatia/.
