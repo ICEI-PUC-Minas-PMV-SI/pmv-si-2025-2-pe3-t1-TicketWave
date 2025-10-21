@@ -15,7 +15,7 @@ function renderSeatMap(container, sessionId) {
     const goBackButton = document.createElement('div');
     goBackButton.className = 'mb-3';
     goBackButton.innerHTML = `
-            <button class="btn btn-secondary onclick="window.navigate('movies')">
+            <button class="btn btn-secondary">
                 ← Voltar aos Filmes
             </button>
     `;
@@ -28,6 +28,7 @@ function renderSeatMap(container, sessionId) {
 
     const seatGrid = createSeatGrid();
     container.appendChild(seatGrid);
+    addEventListeners();
 }
 
 function createSeatGrid() {
@@ -81,4 +82,14 @@ function createSeatGrid() {
     gridContainer.appendChild(cardBody);
 
     return gridContainer;
+}
+
+function addEventListeners() {
+    const seatButtons = document.querySelectorAll('.seat-btn:not([disabled])');
+    seatButtons.forEach(seatButton => {
+      seatButton.addEventListener('click', (e) => {
+        seatButton.classList.remove('seat-available');
+        seatButton.classList.add('seat-selected');
+      });
+    });
 }
