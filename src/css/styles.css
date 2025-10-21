@@ -6,68 +6,68 @@ html, body {
 }
 
 .navbar {
-  height: 100px;
-  display: flex;
-  align-items: center; 
-  padding: 0 2rem;
-}
-
-.navbar-brand {
+  height: 80px;
   display: flex;
   align-items: center;
-  padding: 0;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .logo-navbar {
-  height: 100px; 
+  height: 80px;
   width: auto;
   object-fit: contain;
-  display: block;
-  transition: .5s;
+  transition: opacity 0.3s;
 }
 
 .logo-navbar:hover {
-  opacity: .6;
+  opacity: 0.7;
 }
 
 .custom-select {
   position: relative;
-  display: inline-block;
-  width: 180px;
-  font-family: inherit;
-}
-
-.select-selected {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 8px;
   background: #fff;
-  border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 10px 14px;
+  padding: 6px 14px;
   cursor: pointer;
   font-size: 15px;
-  color: #333;
-  transition: all 0.2s ease;
-}
-
-.select-selected:hover {
-  border-color: #999;
+  width: 150px;
+  justify-content: flex-start;
+  gap: 8px;
 }
 
 .select-items {
   position: absolute;
-  top: 100%;
+  top: 105%;
   left: 0;
-  right: 0;
+  width: 100%;
   background: #fff;
-  border: 1px solid #ccc;
   border-radius: 8px;
-  margin-top: 4px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  z-index: 10;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
+  z-index: 999;
 }
 
 .select-items div {
@@ -77,16 +77,55 @@ html, body {
 }
 
 .select-items div:hover {
-  background: #f1f1f1; 
+  background: #f4f4f4;
 }
 
 .hidden {
   display: none;
 }
 
-.select-items {
-  animation: fadeIn 0.15s ease;
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 0;
+  padding: 0;
 }
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  color: #0d6efd;
+}
+
+.bi-geo-alt-fill {
+  color: #888;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.navbar-icons i {
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-icons i:hover {
+  color: #0d6efd;
+}
+
 /* @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
@@ -446,5 +485,3 @@ p {
   font-size: 0.75rem;
   user-select: none;
 }
-
-
