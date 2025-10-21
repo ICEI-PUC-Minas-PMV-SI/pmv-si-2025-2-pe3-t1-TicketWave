@@ -6,8 +6,8 @@ const appState = {
 async function init() {
     try {
         await DataLoader.loadDataIntoLocalStorage();
-        renderView(appState.currentView);
         window.addEventListener('hashchange', handleHashChange);
+        handleHashChange();
     } catch (error) {
         console.log('Falha ao carregar a aplicação', error);
     }
@@ -25,6 +25,11 @@ function renderView(view, params) {
         case 'sessions':
             renderSessionsView(container, params?.movieId);
             break;
+        case 'seatmap':
+            renderSeatMap(container, "placeholderSessionId"); //TODO: Add sessionId
+            break;
+        default:
+            // renderMoviesView(container);
     }
 }
 

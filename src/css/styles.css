@@ -247,7 +247,6 @@ p {
   flex-direction: row; 
   justify-content: start;
   gap: 1rem; 
-  border-bottom: 2px solid #ddd; 
   padding-bottom: 0.5rem;
 }
 
@@ -324,3 +323,128 @@ p {
   color: #7a7878;
   font-size: 0.9rem;
 }
+
+/* Seatmap */
+
+.seat-grid-container {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: white;
+  padding: 2rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.screen-indicator {
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 4px solid #0d6efd;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.screen-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.seat-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.seat-row-seats {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.seat-row-label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #495057;
+  min-width: 30px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.seat-btn {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  min-height: 45px;
+  border-radius: 8px 8px 0 0;
+  border: 2px solid;
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #495057;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.seat-btn:hover:not(:disabled) {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.seat-btn:focus {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+  z-index: 10;
+}
+
+.seat-btn.seat-available {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.seat-btn.seat-selected {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+  box-shadow: 0 2px 6px rgba(13, 110, 253, 0.4);
+}
+
+.seat-btn.seat-occupied {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.seat-btn:disabled {
+  cursor: not-allowed;
+}
+
+.seat-number {
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+
