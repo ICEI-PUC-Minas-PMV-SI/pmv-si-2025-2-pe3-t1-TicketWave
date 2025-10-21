@@ -88,8 +88,17 @@ function addEventListeners() {
     const seatButtons = document.querySelectorAll('.seat-btn:not([disabled])');
     seatButtons.forEach(seatButton => {
       seatButton.addEventListener('click', (e) => {
-        seatButton.classList.remove('seat-available');
-        seatButton.classList.add('seat-selected');
+        toggleSeatAvailable(seatButton);
       });
     });
+}
+
+function toggleSeatAvailable(seatButton) {
+    if (seatButton.classList.contains('seat-available')) {
+        seatButton.classList.remove('seat-available');
+        seatButton.classList.add('seat-selected');
+    } else if (seatButton.classList.contains('seat-selected')) {
+        seatButton.classList.remove('seat-selected');
+        seatButton.classList.add('seat-available');
+    }
 }
