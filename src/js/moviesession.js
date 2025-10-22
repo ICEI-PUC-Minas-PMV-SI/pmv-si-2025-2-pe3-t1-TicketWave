@@ -7,7 +7,6 @@ function renderSessionsView(container, movieId) {
   const minutes = movie.duracao % 60;
   const durationText = hours > 0 ? `${hours}h ${minutes}m` : `${minutes}m`;
 
-  // Mapeamento de cores por classificação
   const ratingColors = {
   'L': '#009a44',
   '10': '#0091d8',
@@ -17,8 +16,7 @@ function renderSessionsView(container, movieId) {
   '18': '#231f20'
 };
 
-// Pega a cor do rating do filme
-const ratingColor = ratingColors[movie.rating] || '#777'; // cinza padrão se não tiver
+const ratingColor = ratingColors[movie.rating] || '#777'; 
 
 
   container.innerHTML = '';
@@ -40,9 +38,11 @@ const ratingColor = ratingColors[movie.rating] || '#777'; // cinza padrão se n�
 
       <!-- Seção do filme -->
       <div class="movie-session-header d-flex flex-column flex-md-row align-items-start gap-4 mb-5">
-        <div class="movie-poster-col">
+      <div class="movie-poster-col">
+        <a href="${movie.trailer}" target="_blank">
           <img src="${movie.poster}" alt="${movie.titulo}" class="movie-poster-big rounded shadow">
-        </div>
+        </a>
+      </div>
 
         <div class="movie-info-col">
           <h2 class="fw-bold mb-2">${movie.titulo}</h2>
