@@ -1,107 +1,112 @@
 function renderSessionsView(container, movieId) {
-    const movies = DataLoader.getMovies();
-    const movie = movies.find(m => m.id === movieId);
-    if (!movie) return console.error("Filme não encontrado:", movieId);
+  const movies = DataLoader.getMovies();
+  const movie = movies.find(m => m.id === movieId);
+  if (!movie) return console.error("Filme não encontrado:", movieId);
 
-    const goBackButton = document.createElement('div');
-    goBackButton.className = 'mb-3';
-    goBackButton.innerHTML = `
-            <button class="btn btn-secondary">
-                ← Voltar aos Filmes
-            </button>
-    `;
-    goBackButton.addEventListener('click', () => { window.navigate('movies') });
+  const hours = Math.floor(movie.duracao / 60);
+  const minutes = movie.duracao % 60;
+  const durationText = hours > 0 ? `${hours}h ${minutes}m` : `${minutes}m`;
 
-    const sessionContainer = document.createElement('div');
-    sessionContainer.className = 'session-container';
-    sessionContainer.innerHTML = `
-      <div class="row d-flex align-items-start justify-content-center movie-session-layout">
-        <!-- Poster -->
-        <div class="col-md-4 d-flex justify-content-center">
-          <div class="movie-card1">
-            <div class="movie-poster1">
-              <img src="${movie.poster}" alt="Poster do filme ${movie.titulo}">
-            </div>
-          </div>
+  // Mapeamento de cores por classificação
+  const ratingColors = {
+  'L': '#009a44',
+  '10': '#0091d8',
+  '12': '#e1c400',
+  '14': '#f26522',
+  '16': '#e4002b',
+  '18': '#231f20'
+};
+
+// Pega a cor do rating do filme
+const ratingColor = ratingColors[movie.rating] || '#777'; // cinza padrão se não tiver
+
+
+  container.innerHTML = '';
+
+  const goBackButton = document.createElement('div');
+  goBackButton.className = 'mb-4';
+  goBackButton.innerHTML = `
+    <button class="btn btn-outline-secondary">
+      <i class="bi bi-arrow-left"></i> Voltar
+    </button>
+  `;
+  goBackButton.addEventListener('click', () => window.navigate('movies'));
+
+  const sessionContainer = document.createElement('div');
+  sessionContainer.className = 'session-container container';
+
+  sessionContainer.innerHTML = `
+    <div class="movie-session-wrapper">
+
+      <!-- Seção do filme -->
+      <div class="movie-session-header d-flex flex-column flex-md-row align-items-start gap-4 mb-5">
+        <div class="movie-poster-col">
+          <img src="${movie.poster}" alt="${movie.titulo}" class="movie-poster-big rounded shadow">
         </div>
 
-        <!-- Datas e horários -->
-        <div class="col-md-6 text-start">
-          <div class="dias-disponiveis">
-            <ul class="nav nav-pills mb-3 d-flex" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="data1-tab" data-bs-toggle="pill" data-bs-target="#data1" type="button">QUA 14/11</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="data2-tab" data-bs-toggle="pill" data-bs-target="#data2" type="button">QUI 15/11</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="data3-tab" data-bs-toggle="pill" data-bs-target="#data3" type="button">SEX 16/11</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="data4-tab" data-bs-toggle="pill" data-bs-target="#data4" type="button">SÁB 17/11</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="data5-tab" data-bs-toggle="pill" data-bs-target="#data5" type="button">DOM 18/11</button>
-              </li>
-            </ul>
+        <div class="movie-info-col">
+          <h2 class="fw-bold mb-2">${movie.titulo}</h2>
+          <p class="text-muted mb-2"><i class="bi bi-clock"></i> ${durationText}</p>
+          <p class="text-muted mb-3"><i class="bi bi-film"></i> ${movie.genero}</p>
+          <p class="mb-3 rating" style="background-color: ${ratingColor}; color: white; padding: 2px 6px; border-radius: 4px;"">${movie.rating}</p>
+          <p class="movie-synopsis">${movie.sinopse}</p>
+        </div>
+      </div>
+
+      <!-- Seção de datas -->
+      <div class="movie-session-dates mb-4">
+        <h5 class="fw-bold mb-3">Escolha a data</h5>
+        <ul class="nav nav-pills gap-2 flex-wrap" id="pills-tab" role="tablist">
+          <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#data1">QUI 23/10</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#data2">SEX 24/10</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#data3">SÁB 25/10</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#data4">DOM 26/10</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#data5">SEG 27/10</button></li>
+        </ul>
+      </div>
+
+      <!-- Seção de horários -->
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="data1">
+          <div class="session-times">
+            <button class="horario">10:25</button>
+            <button class="horario">17:30</button>
           </div>
-
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="data1" role="tabpanel" aria-labelledby="data1-tab">
-              <div class="row d-flex justify-content-start">
-                <button class="horario">10:25</button>
-                <button class="horario">17:30</button>
-              </div>
-            </div>
-
-            <div class="tab-pane fade" id="data2" role="tabpanel" aria-labelledby="data2-tab">
-              <div class="row d-flex justify-content-start">
-                <button class="horario">14:15</button>
-                <button class="horario">14:30</button>
-                <button class="horario">19:25</button>
-              </div>
-            </div>
-
-            <div class="tab-pane fade" id="data3" role="tabpanel" aria-labelledby="data3-tab">
-              <div class="row d-flex justify-content-start">
-                <button class="horario">14:15</button>
-                <button class="horario">14:30</button>
-                <button class="horario">19:25</button>
-              </div>
-            </div>
-
-            <div class="tab-pane fade" id="data4" role="tabpanel" aria-labelledby="data4-tab">
-              <div class="row d-flex justify-content-start">
-                <button class="horario">10:00</button>
-                <button class="horario">11:30</button>
-                <button class="horario">19:25</button>
-              </div>
-            </div>
-
-            <div class="tab-pane fade" id="data5" role="tabpanel" aria-labelledby="data5-tab">
-              <div class="row d-flex justify-content-start">
-                <button class="horario">11:00</button>
-                <button class="horario">14:00</button>
-                <button class="horario">16:00</button>
-                <button class="horario">18:00</button>
-              </div>
-            </div>
+        </div>
+        <div class="tab-pane fade" id="data2">
+          <div class="session-times">
+            <button class="horario">14:15</button>
+            <button class="horario">19:25</button>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="data3">
+          <div class="session-times">
+            <button class="horario">10:00</button>
+            <button class="horario">18:45</button>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="data4">
+          <div class="session-times">
+            <button class="horario">11:30</button>
+            <button class="horario">20:00</button>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="data5">
+          <div class="session-times">
+            <button class="horario">14:00</button>
+            <button class="horario">16:00</button>
+            <button class="horario">18:00</button>
           </div>
         </div>
       </div>
-    `;
 
-    container.appendChild(goBackButton);
-    container.appendChild(sessionContainer);
+    </div>
+  `;
 
-    if (typeof initializeButtons === "function") {
-        initializeButtons();
-    }
+  container.appendChild(goBackButton);
+  container.appendChild(sessionContainer);
 
-    const horarioButtons = sessionContainer.querySelectorAll('.horario');
-    horarioButtons.forEach(button => {
-        button.addEventListener('click', () => window.navigate('seatmap'));
-    });
-
+  sessionContainer.querySelectorAll('.horario').forEach(btn => {
+    btn.addEventListener('click', () => window.navigate('seatmap'));
+  });
 }

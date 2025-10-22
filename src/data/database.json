@@ -6,7 +6,8 @@
             "genero": "Suspense",
             "duracao": 138,
             "rating": "12",
-            "poster": "resources/images/sr_ninguem.jpg"
+            "poster": "resources/images/sr_ninguem.jpg",
+            "sinopse": "Marido de Elise (Sarah Polley) e pai de três filhos, Nemo Nobody (Jared Leto) leva uma vida comum ao lado de sua família. Ele acorda no ano de 2092 e agora, com 118 anos, é o último mortal em um planeta de seres humanos imortais. As suas preocupações, contudo, envolvem outras questões, como o que aconteceu durante a passagem de tempo e se viveu sua vida como gostaria."
         },
         {
             "id": "filme2",
@@ -14,7 +15,8 @@
             "genero": "Terror",
             "duracao": 121,
             "rating": "18",
-            "poster": "resources/images/jogos_mortais.jpg"
+            "poster": "resources/images/jogos_mortais.jpg",
+            "sinopse": "Jigsaw é um assassino que possui uma marca registrada: ele deixa em suas vítimas uma cicatriz em forma de quebra-cabeças, que faz com que elas cometam atos igonizantes para se salvar. O detetive David Tapp (Danny Glover) é designado para investigar os assassinatos, bem como a capturar seu autor. Porém o caminho evasivo seguido por Jigsaw leva o detetive a desenvolver uma obsessão por capturá-lo."
         },
         {
             "id": "filme3",
@@ -22,7 +24,8 @@
             "genero": "Drama",
             "duracao": 128,
             "rating": "L",
-            "poster": "resources/images/la_la_land.jpg"
+            "poster": "resources/images/la_la_land.jpg",
+            "sinopse": "Ao chegar em Los Angeles o pianista de jazz Sebastian (Ryan Gosling) conhece a atriz iniciante Mia (Emma Stone) e os dois se apaixonam perdidamente. Em busca de oportunidades para suas carreiras na competitiva cidade, os jovens tentam fazer o relacionamento amoroso dar certo enquanto perseguem fama e sucesso."
         },
         {
             "id": "filme4",
@@ -30,7 +33,8 @@
             "genero": "Drama",
             "duracao": 141,
             "rating": "18",
-            "poster": "resources/images/pobres_criaturas.jpg"
+            "poster": "resources/images/pobres_criaturas.jpg",
+            "sinopse": "Pobres Criaturas é um filme de romance e ficção científica dirigido por Yorgos Lanthimos e produzido por Emma Stone, que também atua no longa. Baseada no livro homônimo de Alasdair Grey e referenciando o clássico Frankenstein, a história se passa na Era Vitoriana e acompanha Bella Baxter (interpretada por Stone), trazida de volta à vida após seu cérebro ser substituído pelo do filho que ainda não nasceu. Querendo conhecer mais do mundo, a jovem foge com um advogado e viaja pelos continentes, exigindo igualdade e libertação."
         },
         {
             "id": "filme5",
@@ -38,7 +42,8 @@
             "genero": "Animação",
             "duracao": 90,
             "rating": "L",
-            "poster": "resources/images/clifford.jpg"
+            "poster": "resources/images/clifford.jpg",
+            "sinopse": "O Gigante Cão Vermelho Clifford, ao lado de seus amigos, parte numa divertida viagem pelo país e acabam entrando em um concurso eletrizante: o cãozinho precisará mostrar talentos para ganhar um estoque vitalício de Tummy Yummies! Juntamente com novos amigos, eles vão dar duro para realizar uma boa apresentação."
         },
         {
             "id": "filme6",
@@ -46,7 +51,8 @@
             "genero": "Ficção Científica",
             "duracao": 119,
             "rating": "12",
-            "poster": "resources/images/tron_ares.jpg"
+            "poster": "resources/images/tron_ares.jpg",
+            "sinopse": "Ares, um sofisticado programa, é enviado do mundo digital para o mundo real em uma perigosa missão, marcando o primeiro encontro da humanidade com seres de Inteligência Artificial."
         },
         {
             "id": "filme7",
@@ -54,7 +60,8 @@
             "genero": "Fantasia",
             "duracao": 126,
             "rating": "14",
-            "poster": "resources/images/dr_estranho.jpg"
+            "poster": "resources/images/dr_estranho.jpg",
+            "sinopse": "Em Doutor Estranho no Multiverso da Loucura, após os eventos de Vingadores: Ultimato, Stephen Strange e Wong continuam estudando a Joia do Tempo, mas a traição de um antigo amigo faz com que Strange libere um mal poderoso. Para enfrentar a nova ameaça e evitar o colapso da realidade, ele busca a ajuda de Wanda Maximoff, que vive isolada desde WandaVision. O filme se conecta às séries WandaVision e Loki e integra a Fase 4 do MCU."
         },
         {
             "id": "filme8",
@@ -62,7 +69,8 @@
             "genero": "Terror",
             "duracao": 96,
             "rating": "16",
-            "poster": "resources/images/os_estranhos.jpeg"
+            "poster": "resources/images/os_estranhos.jpeg",
+            "sinopse": "Em Os Estranhos 2, logo após o primeiro filme, Maya escapa da morte e se recupera no hospital, mas os Mascarados retornam para eliminá-la de vez. Sem poder confiar em ninguém, ela precisa lutar para sobreviver enquanto é perseguida implacavelmente, em uma intensa e brutal disputa de vida ou morte."
         }
     ],
     "sessions": [
