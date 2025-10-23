@@ -42,6 +42,9 @@ O grande objetivo de Adimir é manter o tradicional programa de cinema familiar,
 4-Marta, 40 anos 
 <img width="1860" height="1046" alt="image" src="https://github.com/user-attachments/assets/d9e94d21-8a47-4271-8222-5ffb59af0ad0" />
 
+5- Bia Lopes, 26 anos.
+<img width="1395" height="785" alt="Captura de tela 2025-10-23 002406" src="https://github.com/user-attachments/assets/5e88da96-2121-4bf3-b48c-2e1f9278e86a" />
+
 
 
 ## 4.2 Mapa de Empatia
