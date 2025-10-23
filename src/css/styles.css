@@ -185,6 +185,34 @@ html, body {
     color: #fff;
 }
 
+.poster-link {
+  position: relative;
+  display: inline-block;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: rgba(255,255,255,0.8);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.poster-link:hover .play-overlay {
+  opacity: 1;
+}
+
+.movie-poster-col:hover {
+  transform: translateY(-8px);
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .category {
     display: flex;
     justify-content: space-between;
@@ -346,8 +374,8 @@ p {
   background-color: rgba(85, 87, 87, 0.2);
   border-radius: .5rem;
   padding: 20px;
+  width: 30rem;
 }
-
 
 /* footer */
 
