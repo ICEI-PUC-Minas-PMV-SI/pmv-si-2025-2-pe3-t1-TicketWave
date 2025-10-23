@@ -66,6 +66,9 @@ Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A p
 
 <img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/1f619c09-b273-485a-a2ec-9c3406e0c0ef" />
 
+5- Bia Lopes, 26 anos. Youtuber.
+<img width="2238" height="1254" alt="image" src="https://github.com/user-attachments/assets/8302a6c4-81a1-4472-a248-41a9ba53dc9a" />
+
 
 ## 4.3 Protótipos das Interfaces
 Apresente nesta seção os protótipos de alta fidelidade do sistema proposto. A fidelidade do protótipo refere-se ao nível de detalhes e funcionalidades incorporadas a ele. Assim, um protótipo de alta fidelidade é uma representação interativa do produto, baseada no computador ou em dispositivos móveis. Esse protótipo já apresenta maior semelhança com o design final em termos de detalhes e funcionalidades. No desenvolvimento dos protótipos, devem ser considerados os princípios gestálticos, as recomendações ergonômicas e as regras de design (como as 8 regras de ouro). É importante descrever no texto do relatório como os princípios gestálticos e as regras de ouro foram seguidas no projeto das interfaces. Nesta etapa deve-se dar uma ênfase na implementação do software de modo que possam ser realizados os testes com usuários na etapa seguinte.
