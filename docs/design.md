@@ -39,7 +39,8 @@ O grande objetivo de Adimir é manter o tradicional programa de cinema familiar,
 
 <img width="1860" height="1046" alt="image" src="https://github.com/user-attachments/assets/330d5791-f54e-4f6c-b2d7-18595bf94990" />
 
-4-Marta, 40 anos 
+4-Marta, 40 anos e trabalha há mais de dez anos em uma rede de cinemas, atuando na venda de ingressos e na administração do caixa. É dedicada, atenciosa com o público e muito responsável. Mãe de dois filhos, de 4 e 8 anos, busca equilibrar o trabalho com os estudos e a vida familiar. Sonha em conquistar uma promoção e se formar em Administração. Valorizando a praticidade, costuma fazer compras pela internet e usa redes sociais para pesquisar produtos.
+
 <img width="1860" height="1046" alt="image" src="https://github.com/user-attachments/assets/d9e94d21-8a47-4271-8222-5ffb59af0ad0" />
 
 5- Bia Lopes, 26 anos.
