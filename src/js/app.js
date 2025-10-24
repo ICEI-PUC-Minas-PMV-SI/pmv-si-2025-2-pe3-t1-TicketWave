@@ -26,10 +26,10 @@ function renderView(view, params) {
             renderSessionsView(container, params?.movieId);
             break;
         case 'seatmap':
-            renderSeatMap(container, "placeholderSessionId"); //TODO: Add sessionId
+            renderSeatMap(container, params?.sessionId);
             break;
         default:
-            // renderMoviesView(container);
+            renderMoviesView(container);
     }
 }
 

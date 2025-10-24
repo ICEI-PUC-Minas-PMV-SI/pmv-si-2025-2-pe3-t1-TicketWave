@@ -22,6 +22,15 @@ const DataLoader = (function () {
         return data.sessions.filter(session => session.movieId === movieId);
     }
 
+    function getSession(sessionId) {
+        const data = retrieveData();
+        const sessions = data.sessions.filter(session => session.id == sessionId);
+        if (!sessions || sessions.length === 0) {
+            console.error(`No session fouind for ${sessionId}`);
+        }
+        return sessions[0];
+    }
+
     function retrieveData() {
         const data = localStorage.getItem(DATA_STORAGE_KEY);
         return JSON.parse(data);
@@ -31,6 +40,7 @@ const DataLoader = (function () {
         loadDataIntoLocalStorage: loadDataIntoLocalStorage,
         getMovies: getMovies,
         getSessions: getSessions,
+        getSession: getSession,
     };
 
 })();

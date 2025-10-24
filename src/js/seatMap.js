@@ -1,10 +1,15 @@
 state = {
     currentSession: null,
+    currentMovie: null,
     selectedSeats: [],
 }
 
 function renderSeatMap(container, sessionId) {
     state.currentSession = sessionId;
+    const session = DataLoader.getSession(sessionId);
+    console.log(session);
+    console.log(session.movieId);
+    state.currentMovie = session.movieId;
 
     
     if (!state.currentSession) {
@@ -15,15 +20,15 @@ function renderSeatMap(container, sessionId) {
     const goBackButton = document.createElement('div');
     goBackButton.className = 'mb-3';
     goBackButton.innerHTML = `
-            <button class="btn btn-secondary">
-                ← Voltar aos Filmes
-            </button>
+        <button class="btn btn-outline-secondary">
+        <i class="bi bi-arrow-left"></i> Voltar
+        </button>
     `;
-    goBackButton.addEventListener('click', () => { window.navigate('movies') });
+    goBackButton.addEventListener('click', () => { window.navigate('sessions', {'movieId': state.currentMovie}) });
 
     container.appendChild(goBackButton);
 
-    // TODO: Implement Session Header with movie card
+    // TODO: Implement Session Header with movie card   
     // container.appendChild
 
     const seatGrid = createSeatGrid();
