@@ -148,8 +148,19 @@ const tabContentsHTML = sortedDates.map((date, index) => {
       <div class="tab-content" id="pills-tabContent">
         ${tabContentsHTML || '<div class="text-muted">Sem horários disponíveis</div>'}
       </div>
-
     </div>
+
+      <!-- Comentários -->
+      <div class="comments-container">
+      <h6 class="fw-bold mb-3">35 comentários</h6>
+      <div class="comment-box">
+      <label for="comment" class="form-label">Adicione um comentário...</label>
+      <textarea id="comment" class="form-control" rows="3"></textarea>
+      </div>
+      <div class="comment-list">
+      <p>User123</p>
+      </div>
+      </div>
   `;
 
   container.appendChild(goBackButton);

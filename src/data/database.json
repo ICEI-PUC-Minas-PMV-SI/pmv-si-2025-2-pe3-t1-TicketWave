@@ -165,6 +165,83 @@
             "date": "2025-10-16",
             "time": "20:00",
             "price": 25.00
+        },
+        {
+            "id": "session13",
+            "movieId": "filme6",
+            "date": "2025-10-15",
+            "time": "14:00",
+            "price": 19.00
+        },
+        {
+            "id": "session14",
+            "movieId": "filme6",
+            "date": "2025-10-15",
+            "time": "16:30",
+            "price": 22.00
+        },
+        {
+            "id": "session15",
+            "movieId": "filme6",
+            "date": "2025-10-16",
+            "time": "19:00",
+            "price": 25.00
+        },
+        {
+            "id": "session16",
+            "movieId": "filme7",
+            "date": "2025-10-14",
+            "time": "10:00",
+            "price": 12.00
+        },
+        {
+            "id": "session17",
+            "movieId": "filme7",
+            "date": "2025-10-14",
+            "time": "13:30",
+            "price": 15.00
+        },
+        {
+            "id": "session18",
+            "movieId": "filme7",
+            "date": "2025-10-15",
+            "time": "18:45",
+            "price": 18.00
+        },
+        {
+            "id": "session19",
+            "movieId": "filme7",
+            "date": "2025-10-16",
+            "time": "21:15",
+            "price": 20.00
+        },
+        {
+            "id": "session20",
+            "movieId": "filme8",
+            "date": "2025-10-15",
+            "time": "11:00",
+            "price": 14.00
+        },
+        {
+            "id": "session21",
+            "movieId": "filme8",
+            "date": "2025-10-15",
+            "time": "13:40",
+            "price": 17.00
+        },
+        {
+            "id": "session22",
+            "movieId": "filme8",
+            "date": "2025-10-17",
+            "time": "19:30",
+            "price": 23.00
+        },
+        {
+            "id": "session23",
+            "movieId": "filme8",
+            "date": "2025-10-17",
+            "time": "22:00",
+            "price": 26.00
         }
     ]
 }

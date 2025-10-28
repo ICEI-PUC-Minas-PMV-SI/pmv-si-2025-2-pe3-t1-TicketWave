@@ -377,6 +377,19 @@ p {
   width: 30rem;
 }
 
+.comments-container {
+  background-color: red;
+    margin-top: 80px;
+    background-color: #fff;
+    color: #7a7878;
+    border-top: 1px solid #d9d9d9;
+    padding: 1rem 0;
+}
+
+.comment-list p {
+  color: #495057;
+}
+
 /* footer */
 
 .footer {
