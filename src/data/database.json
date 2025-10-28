@@ -243,5 +243,10 @@
             "time": "22:00",
             "price": 26.00
         }
+    ],
+    "comments": [
+        { "movieId": "filme1", "author": "Usuário01", "text": "Filme com boa direção e ritmo consistente.", "date": "1 dia atrás" },
+        { "movieId": "filme1", "author": "Usuário02", "text": "Atuações sólidas, nada exagerado.", "date": "2 dias atrás" },
+        { "movieId": "filme2", "author": "Cinéfilo22", "text": "Trilha sonora muito bem encaixada.", "date": "1 dia atrás" }
     ]
 }
