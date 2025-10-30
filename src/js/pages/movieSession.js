@@ -143,9 +143,79 @@ const tabContentsHTML = sortedDates.map((date, index) => {
       <textarea id="comment" class="form-control" rows="3"></textarea>
       </div>
       <div class="comment-list">
-      <p>User123</p>
-      </div>
-      </div>
+
+  <div class="comment">
+    <p class="comment-text">
+      <strong>@CineLover98:</strong> Achei o filme muito melhor do que esperava! A trilha sonora ficou incrível. 🎶
+    </p>
+    <span class="comment-time">agora mesmo</span>
+  </div>
+
+  <div class="comment">
+    <p class="comment-text">
+      <strong>@LaraFilmes:</strong> O filme está impecável, mas o final me deixou com mais perguntas do que respostas 😅
+    </p>
+    <span class="comment-time">5 minutos atrás</span>
+  </div>
+
+  <div class="comment">
+    <p class="comment-text">
+      <strong>@Joao_Series:</strong> Os atores mandaram bem demais! Especialmente o protagonista, que deu um show. 👏
+    </p>
+    <span class="comment-time">6 horas atrás</span>
+  </div>
+
+  <div class="comment">
+    <p class="comment-text">
+      <strong>@MovieGeek22:</strong> História interessante, mas o ritmo podia ser um pouco mais acelerado.
+    </p>
+    <span class="comment-time">6 horas atrás</span>
+  </div>
+
+  <div class="comment">
+    <p class="comment-text">
+      <strong>@NinaReis:</strong> Amei! Já quero assistir de novo com meus amigos 😍
+    </p>
+    <span class="comment-time">1 dia atrás</span>
+  </div>
+
+  <div class="comment">
+    <p class="comment-text">
+      <strong>@CineCríticoBR:</strong> O roteiro é mediano, mas a direção compensa bastante. Tem potencial!
+    </p>
+    <span class="comment-time">1 dia atrás</span>
+  </div>
+
+  <div class="comment">
+    <p class="comment-text">
+      <strong>@PauloRibeiro:</strong> Alguns efeitos ficaram meio forçados, mas ainda assim curti o resultado final.
+    </p>
+    <span class="comment-time">3 dias atrás</span>
+  </div>
+
+  <div class="comment">
+    <p class="comment-text">
+      <strong>@AnaFilma:</strong> Que plot twist! Eu literalmente fiquei de boca aberta 😮
+    </p>
+    <span class="comment-time">2 semanas atrás</span>
+  </div>
+
+  <div class="comment">
+    <p class="comment-text">
+      <strong>@LucasTavares:</strong> Faltou um pouco de emoção no meio do filme, mas o final salvou.
+    </p>
+    <span class="comment-time">2 semanas atrás</span>
+  </div>
+
+  <div class="comment">
+    <p class="comment-text">
+      <strong>@SofiaMendes:</strong> Um dos melhores filmes que vi esse ano! História envolvente e atuações perfeitas. 🌟
+    </p>
+    <span class="comment-time">2 semanas atrás</span>
+  </div>
+
+</div>
+
   `;
 
   container.appendChild(goBackButton);
