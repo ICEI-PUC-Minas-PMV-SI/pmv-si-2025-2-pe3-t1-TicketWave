@@ -15,18 +15,8 @@ function renderSeatMap(container, sessionId) {
         alert("Erro: Sessão Não Encontrada");
     }
 
-    const goBackButton = document.createElement('div');
-    goBackButton.className = 'mb-3';
-    goBackButton.innerHTML = `
-        <button class="btn btn-outline-secondary">
-        <i class="bi bi-arrow-left"></i> Voltar
-        </button>
-    `;
-    goBackButton.addEventListener('click', () => { window.navigate('sessions', {'movieId': state.currentMovieId}) });
-
+    const goBackButton = getGoBackButton('sessions', {'movieId': state.currentMovieId});
     container.appendChild(goBackButton);
-
-    const submitButton = ``;
 
     const currentMovie = DataLoader.getMovie(state.currentMovieId);
     const movieHeader = document.createElement('div');
@@ -36,8 +26,15 @@ function renderSeatMap(container, sessionId) {
     const seatGrid = createSeatGrid();
     container.appendChild(seatGrid);
     addEventListeners();
-}
 
+    const submitButton = document.createElement('div');
+    submitButton.className = 'submit-button-container';
+    submitButton.innerHTML = `
+        <button class="btn btn-outline-primary">Confirmar Seleção</button>
+    `;
+    container.appendChild(submitButton);
+
+}
 function createSeatGrid() {
     const gridContainer = document.createElement('div');
     gridContainer.className = 'seat-grid-container card mb-4';

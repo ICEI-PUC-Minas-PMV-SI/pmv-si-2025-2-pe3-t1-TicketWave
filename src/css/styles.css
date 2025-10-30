@@ -566,6 +566,13 @@ p {
   user-select: none;
 }
 
+/* Common */
+
+.submit-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 
 

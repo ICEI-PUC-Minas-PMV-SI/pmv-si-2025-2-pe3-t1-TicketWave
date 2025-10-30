@@ -32,30 +32,10 @@ function renderSessionsView(container, movieId) {
     return;
   }
 
-  const hours = Math.floor(movie.duracao / 60);
-  const minutes = movie.duracao % 60;
-  const durationText = hours > 0 ? `${hours}h ${minutes}m` : `${minutes}m`;
-
-  const ratingColors = {
-    'L': '#009a44',
-    '10': '#0091d8',
-    '12': '#e1c400',
-    '14': '#f26522',
-    '16': '#e4002b',
-    '18': '#231f20'
-  };
-  const ratingColor = ratingColors[movie.rating] || '#777';
-
   container.innerHTML = '';
 
-  const goBackButton = document.createElement('div');
-  goBackButton.className = 'mb-4';
-  goBackButton.innerHTML = `
-    <button class="btn btn-outline-secondary">
-      <i class="bi bi-arrow-left"></i> Voltar
-    </button>
-  `;
-  goBackButton.addEventListener('click', () => window.navigate && window.navigate('movies'));
+  const goBackButton = getGoBackButton('movies');
+  container.appendChild(goBackButton);
 
   const sessionContainer = document.createElement('div');
   sessionContainer.className = 'session-container container';
@@ -218,7 +198,6 @@ const tabContentsHTML = sortedDates.map((date, index) => {
 
   `;
 
-  container.appendChild(goBackButton);
   container.appendChild(sessionContainer);
 
   sessionContainer.querySelectorAll('.horario').forEach(btn => {

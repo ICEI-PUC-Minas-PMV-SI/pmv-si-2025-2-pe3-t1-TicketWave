@@ -34,3 +34,15 @@ function getMovieHeader(movie) {
             </div>
     `
 }
+
+function getGoBackButton(pageToGoBack, params) {
+    const goBackButton = document.createElement('div');
+    goBackButton.className = 'mb-5';
+    goBackButton.innerHTML = `
+        <button class="btn btn-outline-secondary">
+        <i class="bi bi-arrow-left"></i> Voltar
+        </button>
+    `;
+    goBackButton.addEventListener('click', () => { window.navigate(pageToGoBack, params) });
+    return goBackButton;
+}
