@@ -7,8 +7,6 @@ state = {
 function renderSeatMap(container, sessionId) {
     state.currentSession = sessionId;
     const session = DataLoader.getSession(sessionId);
-    console.log(session);
-    console.log(session.movieId);
     state.currentMovie = session.movieId;
 
     
