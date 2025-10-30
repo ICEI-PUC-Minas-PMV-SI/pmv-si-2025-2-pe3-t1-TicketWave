@@ -196,7 +196,7 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.8); 
   opacity: 0;
   transition: opacity 0.3s;
   pointer-events: none;
@@ -573,6 +573,7 @@ p {
   justify-content: flex-end;
 }
 
-
-
+.seat-map-container {
+  
+}
 

@@ -8,8 +8,6 @@ const RATING_COLORS = {
 };
 
 function getMovieHeader(movie) {
-    console.log(movie);
-
     const hours = Math.floor(movie.duracao / 60);
     const minutes = movie.duracao % 60;
     const durationText = hours > 0 ? `${hours}h ${minutes}m` : `${minutes}m`;

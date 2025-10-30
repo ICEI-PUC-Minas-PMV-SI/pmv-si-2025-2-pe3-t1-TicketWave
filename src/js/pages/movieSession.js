@@ -34,11 +34,11 @@ function renderSessionsView(container, movieId) {
 
   container.innerHTML = '';
 
-  const goBackButton = getGoBackButton('movies');
-  container.appendChild(goBackButton);
-
   const sessionContainer = document.createElement('div');
   sessionContainer.className = 'session-container container';
+
+  const goBackButton = getGoBackButton('movies');
+  container.appendChild(goBackButton);
 
   const movieSessions = (sessions || []).filter(s => s.movieId === movieId);
   if (!movieSessions.length) {

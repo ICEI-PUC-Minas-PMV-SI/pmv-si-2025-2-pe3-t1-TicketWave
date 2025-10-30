@@ -15,26 +15,32 @@ function renderSeatMap(container, sessionId) {
         alert("Erro: Sessão Não Encontrada");
     }
 
+    const seatMapContainer = document.createElement('div');
+    seatMapContainer.className = 'seat-map-container';
+
     const goBackButton = getGoBackButton('sessions', {'movieId': state.currentMovieId});
-    container.appendChild(goBackButton);
+    seatMapContainer.appendChild(goBackButton);
 
     const currentMovie = DataLoader.getMovie(state.currentMovieId);
     const movieHeader = document.createElement('div');
     movieHeader.innerHTML = getMovieHeader(currentMovie);
-    container.appendChild(movieHeader);
+    seatMapContainer.appendChild(movieHeader);
 
     const seatGrid = createSeatGrid();
-    container.appendChild(seatGrid);
-    addEventListeners();
+    seatMapContainer.appendChild(seatGrid);
 
     const submitButton = document.createElement('div');
     submitButton.className = 'submit-button-container';
     submitButton.innerHTML = `
         <button class="btn btn-outline-primary">Confirmar Seleção</button>
     `;
-    container.appendChild(submitButton);
+    submitButton.addEventListener('click', () => window.navigate('checkout'));
 
+    seatMapContainer.appendChild(submitButton);
+    container.appendChild(seatMapContainer);
+    addEventListeners();
 }
+
 function createSeatGrid() {
     const gridContainer = document.createElement('div');
     gridContainer.className = 'seat-grid-container card mb-4';

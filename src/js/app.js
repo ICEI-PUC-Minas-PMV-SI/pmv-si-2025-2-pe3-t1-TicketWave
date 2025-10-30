@@ -14,6 +14,8 @@ async function init() {
 }
 
 function renderView(view, params) {
+    console.log('called renderView with', view);
+    console.log('and params', params);
     const container = document.getElementById('app-container');
 
     container.innerHTML = '';
@@ -27,6 +29,9 @@ function renderView(view, params) {
             break;
         case 'seatmap':
             renderSeatMap(container, params?.sessionId);
+            break;
+        case 'checkout':
+            renderCheckout(container);
             break;
         default:
             renderMoviesView(container);
