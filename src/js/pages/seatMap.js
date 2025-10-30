@@ -1,13 +1,13 @@
 state = {
     currentSession: null,
-    currentMovie: null,
+    currentMovieId: null,
     selectedSeats: [],
 }
 
 function renderSeatMap(container, sessionId) {
     state.currentSession = sessionId;
     const session = DataLoader.getSession(sessionId);
-    state.currentMovie = session.movieId;
+    state.currentMovieId = session.movieId;
 
     
     if (!state.currentSession) {
@@ -22,12 +22,16 @@ function renderSeatMap(container, sessionId) {
         <i class="bi bi-arrow-left"></i> Voltar
         </button>
     `;
-    goBackButton.addEventListener('click', () => { window.navigate('sessions', {'movieId': state.currentMovie}) });
+    goBackButton.addEventListener('click', () => { window.navigate('sessions', {'movieId': state.currentMovieId}) });
 
     container.appendChild(goBackButton);
 
-    // TODO: Implement Session Header with movie card   
-    // container.appendChild
+    const submitButton = ``;
+
+    const currentMovie = DataLoader.getMovie(state.currentMovieId);
+    const movieHeader = document.createElement('div');
+    movieHeader.innerHTML = getMovieHeader(currentMovie);
+    container.appendChild(movieHeader);
 
     const seatGrid = createSeatGrid();
     container.appendChild(seatGrid);

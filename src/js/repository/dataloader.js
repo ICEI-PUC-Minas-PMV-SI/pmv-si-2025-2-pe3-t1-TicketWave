@@ -19,6 +19,16 @@ const DataLoader = (function () {
         return data.movies || [];
     }
 
+    function getMovie(movieId) {
+        const movies = getMovies();
+        const foundMovies = movies.filter(movie => movie.id === movieId);
+        if (!foundMovies || foundMovies.length === 0) {
+            console.error(`No movie found for ${movieId}`);
+            return null;
+        }
+        return foundMovies[0];
+    }
+
     function getSessions(movieId) {
         const data = retrieveData();
         return (data.sessions || []).filter(session => session.movieId === movieId);
@@ -59,7 +69,8 @@ const DataLoader = (function () {
 
     return {
         loadDataIntoLocalStorage,
-              getMovies,
+        getMovies,
+        getMovie,
         getSessions,
         getSession,
         getComments,
