@@ -3,8 +3,6 @@ function renderCheckout(container, movieId, sessionId) {
     const checkoutContainer = document.createElement('div');
     checkoutContainer.className = 'checkout-wrapper';
     checkoutContainer.innerHTML = `
-        <h1 class="mb-4">Revise seu Pedido</h1>
-
         <div class="checkout-go-back-button">
             <!-- Button added here dynamically -->
         </div>
