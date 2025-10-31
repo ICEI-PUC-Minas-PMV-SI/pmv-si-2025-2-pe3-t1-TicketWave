@@ -39,6 +39,14 @@ O grande objetivo de Adimir é manter o tradicional programa de cinema familiar,
 
 <img width="1860" height="1046" alt="image" src="https://github.com/user-attachments/assets/330d5791-f54e-4f6c-b2d7-18595bf94990" />
 
+4-Marta, 40 anos e trabalha há mais de dez anos em uma rede de cinemas, atuando na venda de ingressos e na administração do caixa. É dedicada, atenciosa com o público e muito responsável. Mãe de dois filhos, de 4 e 8 anos, busca equilibrar o trabalho com os estudos e a vida familiar. Sonha em conquistar uma promoção e se formar em Administração. Valorizando a praticidade, costuma fazer compras pela internet e usa redes sociais para pesquisar produtos.
+
+<img width="1860" height="1046" alt="image" src="https://github.com/user-attachments/assets/d9e94d21-8a47-4271-8222-5ffb59af0ad0" />
+
+5- Bia Lopes, 26 anos.
+<img width="1395" height="785" alt="Captura de tela 2025-10-23 002406" src="https://github.com/user-attachments/assets/5e88da96-2121-4bf3-b48c-2e1f9278e86a" />
+
+
 
 ## 4.2 Mapa de Empatia
 Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A partir do mapa da empatia é possível detalhar a personalidade do cliente e compreendê-la melhor. O objetivo é obter um nível mais profundo de compreensão de uma persona. A seguir um exemplo de template que pode ser usado para o mapa de empatia. Para cada persona deverá ser apresentado o seu respectivo mapa de empatia. Sugere-se a utilização do template apresentado em https://www.rdstation.com/blog/marketing/mapa-da-empatia/.
@@ -54,6 +62,13 @@ Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A p
 3- Adimir, 55 anos. Segurança.
 
 <img width="1920" height="1080" alt="Blue Yellow Simple Empathy Map Brainstorm" src="https://github.com/user-attachments/assets/4680c8f9-55e6-48cc-9ece-f3b1288d227f" />
+
+4-Marta, 40 anos. Atendente/caixa do Cinema
+
+<img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/1f619c09-b273-485a-a2ec-9c3406e0c0ef" />
+
+5- Bia Lopes, 26 anos. Youtuber.
+<img width="2238" height="1254" alt="image" src="https://github.com/user-attachments/assets/8302a6c4-81a1-4472-a248-41a9ba53dc9a" />
 
 
 ## 4.3 Protótipos das Interfaces

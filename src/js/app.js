@@ -6,14 +6,16 @@ const appState = {
 async function init() {
     try {
         await DataLoader.loadDataIntoLocalStorage();
-        renderView(appState.currentView);
         window.addEventListener('hashchange', handleHashChange);
+        handleHashChange();
     } catch (error) {
         console.log('Falha ao carregar a aplicação', error);
     }
 }
 
 function renderView(view, params) {
+    console.log('called renderView with', view);
+    console.log('and params', params);
     const container = document.getElementById('app-container');
 
     container.innerHTML = '';
@@ -25,6 +27,14 @@ function renderView(view, params) {
         case 'sessions':
             renderSessionsView(container, params?.movieId);
             break;
+        case 'seatmap':
+            renderSeatMap(container, params?.sessionId);
+            break;
+        case 'checkout':
+            renderCheckout(container);
+            break;
+        default:
+            renderMoviesView(container);
     }
 }
 
