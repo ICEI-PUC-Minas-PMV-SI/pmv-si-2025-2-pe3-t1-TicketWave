@@ -31,7 +31,7 @@ function renderView(view, params) {
             renderSeatMap(container, params?.sessionId);
             break;
         case 'checkout':
-            renderCheckout(container);
+            renderCheckout(container, params?.movieId, params?.sessionId);
             break;
         default:
             renderMoviesView(container);

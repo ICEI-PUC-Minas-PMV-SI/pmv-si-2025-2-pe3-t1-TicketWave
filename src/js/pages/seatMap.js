@@ -34,7 +34,7 @@ function renderSeatMap(container, sessionId) {
     submitButton.innerHTML = `
         <button class="btn btn-outline-primary">Confirmar Seleção</button>
     `;
-    submitButton.addEventListener('click', () => window.navigate('checkout'));
+    submitButton.addEventListener('click', () => window.navigate('checkout', { 'movieId': state.currentMovieId, 'sessionId': state.currentSession }));
 
     seatMapContainer.appendChild(submitButton);
     container.appendChild(seatMapContainer);

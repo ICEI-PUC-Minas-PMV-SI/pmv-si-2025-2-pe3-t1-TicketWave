@@ -147,18 +147,6 @@ html, body {
     flex-wrap: wrap;
 }
 
-.card {
-    max-width: 90%;
-    min-width: 90%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    margin: 10px;
-    border-color: #fff;
-    background-color: #222121c4;
-}
-
 .movie-image {
     width: 100%;
     height: 75%; 
@@ -221,10 +209,6 @@ html, body {
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
-}
-
-p {
-    color: #fff;
 }
 
 .movie-session-wrapper {
@@ -323,6 +307,11 @@ p {
   flex-direction: column;
   min-height: 420px; 
   justify-content: space-between;
+  margin: 10px;
+  max-width: 90%;
+  min-width: 90%;
+  border-radius: 5px;
+  border-color: #fff;
 }
 
 .movie-poster {
@@ -577,3 +566,39 @@ p {
   
 }
 
+/* Chekout */
+
+.checkout-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 80%;
+}
+
+.selected-seats-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.checkout-details, .price-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-width: 400px;
+}
+
+.checkout-finish-btn {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkout-card {
+  flex: 1;
+}
+
+.checkout-go-back-button {
+  flex: 1 1 100%; 
+}
