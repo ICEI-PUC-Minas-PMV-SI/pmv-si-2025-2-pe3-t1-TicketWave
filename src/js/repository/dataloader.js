@@ -67,6 +67,37 @@ const DataLoader = (function () {
         localStorage.setItem(DATA_STORAGE_KEY, JSON.stringify(data));
     }
 
+    async function registerUser({ nome, email, senha }) {
+        const data = retrieveData(); 
+
+        if (data.users.find(u => u.email.toLowerCase() === email.toLowerCase())) {
+            throw new Error('Email já cadastrado');
+        }
+
+        const senhaHash = await Utils.hashPassword(senha); 
+        const user = {
+            id: Date.now().toString(),
+            nome,
+            email,
+            senhaHash
+        };
+
+        data.users.push(user); 
+        saveData(data); 
+
+        return user;
+    }
+
+    function getUsers() {
+        const data = retrieveData();
+        return data.users;
+    }
+
+    function findByEmail(email) {
+        const users = getUsers();
+        return users.find(u => u.email.toLowerCase() === email.toLowerCase());
+    }
+
     return {
         loadDataIntoLocalStorage,
         getMovies,
@@ -74,7 +105,10 @@ const DataLoader = (function () {
         getSessions,
         getSession,
         getComments,
-        addComment
+        addComment,
+        registerUser,
+        getUsers,
+        findByEmail,
     };
 
 })();

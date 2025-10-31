@@ -1,12 +1,4 @@
-﻿async function hashPassword(password) {
-    const enc = new TextEncoder();
-    const data = enc.encode(password);
-    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-}
-
-const UserStore = {
+﻿const UserStore = {
     key: 'ticketwave_users_demo',
     getAll() {
         const raw = localStorage.getItem(this.key);
@@ -20,7 +12,7 @@ const UserStore = {
         if (users.find(u => u.email.toLowerCase() === email.toLowerCase())) {
             throw new Error('Email já cadastrado');
         }
-        const senhaHash = await hashPassword(senha);
+        const senhaHash = await Utils.hashPassword(senha);
         const user = {
             id: Date.now().toString(),
             nome,
