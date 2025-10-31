@@ -74,6 +74,20 @@ Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A p
 ## 4.3 Protótipos das Interfaces
 Apresente nesta seção os protótipos de alta fidelidade do sistema proposto. A fidelidade do protótipo refere-se ao nível de detalhes e funcionalidades incorporadas a ele. Assim, um protótipo de alta fidelidade é uma representação interativa do produto, baseada no computador ou em dispositivos móveis. Esse protótipo já apresenta maior semelhança com o design final em termos de detalhes e funcionalidades. No desenvolvimento dos protótipos, devem ser considerados os princípios gestálticos, as recomendações ergonômicas e as regras de design (como as 8 regras de ouro). É importante descrever no texto do relatório como os princípios gestálticos e as regras de ouro foram seguidas no projeto das interfaces. Nesta etapa deve-se dar uma ênfase na implementação do software de modo que possam ser realizados os testes com usuários na etapa seguinte.
 
+4.3.1 - Tela de login
+
+4.3.2 - Home: Tela inicial padrão, visualizada pelo usuário ao acessar o site.
+
+<img width="1897" height="904" alt="image" src="https://github.com/user-attachments/assets/a150de5b-bac7-46fc-a408-9b0b6a02be48" />
+
+4.3.3 - Tela de sessões: Exibe as informações sobre o filme, escolhido pelo usuário, e as sessões disponíveis, além de mostrar os comentários feitos sobre o filme.
+
+<img width="1898" height="903" alt="image" src="https://github.com/user-attachments/assets/ea7e257d-f400-4785-bb62-4b85a8ace55e" />
+
+4.3.4 - Tela de poltronas - Exibe as poltronas disponíveis
+
+<img width="1899" height="903" alt="image" src="https://github.com/user-attachments/assets/88a6ee2e-f0a2-40b5-95b4-97e45ec68005" />
+
 ## 4.4 Testes com Protótipos
 Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
 
