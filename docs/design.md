@@ -74,19 +74,29 @@ Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A p
 ## 4.3 Protótipos das Interfaces
 Apresente nesta seção os protótipos de alta fidelidade do sistema proposto. A fidelidade do protótipo refere-se ao nível de detalhes e funcionalidades incorporadas a ele. Assim, um protótipo de alta fidelidade é uma representação interativa do produto, baseada no computador ou em dispositivos móveis. Esse protótipo já apresenta maior semelhança com o design final em termos de detalhes e funcionalidades. No desenvolvimento dos protótipos, devem ser considerados os princípios gestálticos, as recomendações ergonômicas e as regras de design (como as 8 regras de ouro). É importante descrever no texto do relatório como os princípios gestálticos e as regras de ouro foram seguidas no projeto das interfaces. Nesta etapa deve-se dar uma ênfase na implementação do software de modo que possam ser realizados os testes com usuários na etapa seguinte.
 
-4.3.1 - Tela de login
+4.3.1 - Home: Tela inicial padrão, visualizada pelo usuário ao acessar o site. Apresenta os filmes atualmente disponíveis nos cinemas, exibindo o pôster, o título, o gênero e a duração de cada um. Cada card de filme inclui um botão “Ver Sessões”, que direciona o usuário para a página de horários e detalhes da exibição selecionada.
 
-4.3.2 - Home: Tela inicial padrão, visualizada pelo usuário ao acessar o site.
+<img width="1899" height="906" alt="image" src="https://github.com/user-attachments/assets/6dc06f80-93dd-4aaa-9bd3-0b028ea9f387" />
 
-<img width="1897" height="904" alt="image" src="https://github.com/user-attachments/assets/a150de5b-bac7-46fc-a408-9b0b6a02be48" />
+4.3.2 - Tela de login: Permite que o usuário acesse sua conta informando o nome de usuário e a senha cadastrados. A interface conta com campos de entrada para os dados de login e um botão “Entrar” para autenticação. Caso o usuário ainda não possua uma conta, há um link que direciona para a tela de registro.
 
-4.3.3 - Tela de sessões: Exibe as informações sobre o filme, escolhido pelo usuário, e as sessões disponíveis, além de mostrar os comentários feitos sobre o filme.
+<img width="1913" height="906" alt="image" src="https://github.com/user-attachments/assets/6a62a913-8497-4834-b85e-9aa5b4eecb6b" />
+
+4.3.3 - Tela de cadastro de usuário: Responsável pelo cadastro de novos usuários. Nela, o usuário deve preencher os campos de nome, e-mail, senha e confirmação de senha. Após inserir as informações, basta clicar no botão “Registrar” para criar a conta e obter acesso ao sistema.
+
+<img width="1913" height="906" alt="image" src="https://github.com/user-attachments/assets/e6bd14fe-5191-4afe-9779-8b91c0fe60bf" />
+
+4.3.4 - Tela de sessões: Exibe as informações sobre o filme, escolhido pelo usuário, e as sessões disponíveis, além de mostrar os comentários feitos sobre o filme.
 
 <img width="1898" height="903" alt="image" src="https://github.com/user-attachments/assets/ea7e257d-f400-4785-bb62-4b85a8ace55e" />
 
-4.3.4 - Tela de poltronas - Exibe as poltronas disponíveis
+4.3.5 - Tela de poltronas - Exibe as poltronas disponíveis
 
 <img width="1899" height="903" alt="image" src="https://github.com/user-attachments/assets/88a6ee2e-f0a2-40b5-95b4-97e45ec68005" />
+
+4.3.6 - Tela de detalhes do pedido: Apresenta um resumo completo da reserva realizada pelo usuário, incluindo as informações do filme selecionado, o código da reserva, os assentos escolhidos, a quantidade de ingressos e os itens de snack adicionados. A tela também exibe o valor total a ser pago e oferece a opção de finalizar o pedido.
+
+<img width="1904" height="893" alt="image" src="https://github.com/user-attachments/assets/cad90ecb-2c26-4abe-b0c9-49fd1e6075ae" />
 
 ## 4.4 Testes com Protótipos
 Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
