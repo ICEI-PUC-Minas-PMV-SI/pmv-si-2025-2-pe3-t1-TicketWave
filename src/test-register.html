@@ -11,17 +11,28 @@
     <div id="app"></div>
   </div>
 
+  <script src="./js/utils/utils.js"></script>
+
+
+  <script src="./js/commons/commonElements.js"></script>
+
+
   <script src="./js/repository/dataloader.js"></script>
 
-  <script src="./js/registeruser.js"></script>
+  
+  
+  <script src="./js/pages/registerUser.js"></script>
 
   <script>
     const app = document.getElementById('app');
     if (window.renderRegisterUser) {
       window.renderRegisterUser(app);
     } else {
-      app.innerText = 'registeruser.js não carregado.';
+      app.innerText = 'registerUser.js não carregado.';
     }
   </script>
+
 </body>
 </html>
+
+

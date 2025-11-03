@@ -86,7 +86,7 @@ function renderRegisterUser(container) {
         }
 
         try {
-            await DataLoader.registerUser({ nome, email, senha });
+            await UserStore.register({ nome, email, senha });
             if (typeof window.navigate === 'function') {
                 window.navigate('login', { message: 'Conta criada com sucesso. Faça login.' });
             } else {
