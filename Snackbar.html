@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicketWave - SnackBar</title>
@@ -8,38 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: hwb(229 5% 61%);
+            --primary: #2a2d5a;
             --secondary: #2d3047;
             --accent: #f7c59f;
-            --light: #f8f9fa;
         }
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #d7d7d7;
-            color: #333;
         }
         
         .cinema-header {
-            background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), url('https://images.unsplash.com/photo-1489599809505-fb40ebc14d59?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1489599809505-fb40ebc14d59?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
             background-position: center;
-            color: white;
-            padding: 5px 0;
-            text-align: center;
             margin-bottom: 40px;
-        }
-        
-        .cinema-title {
-            font-size: 2.8rem;
-            font-weight: 800;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        .cinema-subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
         }
         
         .category-title {
@@ -60,110 +43,47 @@
             border-radius: 2px;
         }
         
-        .snack-category {
-            margin-bottom: 50px;
-        }
-        
         .snack-card {
             border: none;
             border-radius: 12px;
-            overflow: hidden;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
             margin-bottom: 25px;
             height: 100%;
-            background: white;
         }
         
         .snack-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgb(255, 255, 255);
         }
         
         .snack-image {
             height: 180px;
             object-fit: cover;
-            width: 100%;
         }
         
         .snack-name {
             font-weight: 700;
-            margin: 10px 0 5px;
             color: var(--secondary);
-            font-size: 1.1rem;
-        }
-        
-        .snack-description {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
         }
         
         .snack-price {
             font-weight: 700;
             color: var(--primary);
-            font-size: 1.2rem;
         }
         
         .add-to-cart {
-            background-color: var(--light);
-            border: none;
             border-radius: 20px;
-            padding: 8px 20px;
-            font-weight: 600;
             transition: all 0.3s;
         }
         
         .add-to-cart:hover {
-            background-color: rgb(255, 119, 56);
+            background-color: rgb(255, 119, 56) !important;
             transform: scale(1.05);
-            color: #f8f9fa;
         }
         
         .combo-banner {
-            background: linear-gradient(135deg, rgb(255, 119, 56));
-            color: rgb(255, 255, 255);
-            padding: 30px;
+            background: linear-gradient(135deg, rgb(255, 119, 56), rgb(255, 85, 0));
             border-radius: 12px;
             margin: 40px 0;
-            text-align: center;
-        }
-        
-        .combo-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        
-        .combo-price {
-            font-size: 2rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-        }
-        
-        .footer-snacks {
-            background-color: rgb(0, 0, 0);
-            color: white;
-            padding: 30px 0;
-            margin-top: 50px;
-            text-align: center;
-        }
-        
-        .social-icons a {
-            color: white;
-            font-size: 1.3rem;
-            margin: 0 10px;
-            transition: all 0.3s;
-        }
-        
-        .social-icons a:hover {
-            color: var(--primary);
-        }
-        
-        .copyright {
-            margin-top: 20px;
-            color: #ffffff;
-            font-size: 0.9rem;
         }
         
         .badge-popular {
@@ -171,11 +91,7 @@
             top: 15px;
             left: 15px;
             background-color: var(--primary);
-            color: white;
-            padding: 5px 10px;
             border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.8rem;
         }
         
         .cart-summary {
@@ -183,26 +99,49 @@
             bottom: 20px;
             right: 20px;
             background-color: var(--primary);
-            color: white;
             border-radius: 50px;
-            padding: 12px 25px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             z-index: 100;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
         }
         
-        .cart-summary i {
-            margin-right: 8px;
+        .footer {
+            background-color: rgb(0, 0, 0);
+            margin-top: 50px;
+        }
+        
+        .footer h5 {
+            color: #ffffff;
+        }
+        
+        .footer a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer a:hover {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
     <header class="cinema-header">
-        <div class="container">
-            <h1 class="cinema-title">TicketWave</h1>
-        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <i class=""></i>
+                    <span class="fw-bold">TicketWave</span>
+                </a>
+                
+                <div class="d-flex">
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item mx-2"><a class="nav-link" href="#">Em Cartaz</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#">Em Alta</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#">Snacks</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#">Cinemas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="container">
@@ -210,45 +149,45 @@
             <h2 class="category-title">Bebidas</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="snack-card">
+                    <div class="snack-card card shadow-sm h-100">
                         <div class="position-relative">
-                            <span class="badge-popular">Mais Vendido</span>
-                            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="snack-image" alt="Refrigerante">
+                            <span class="badge-popular badge">Mais Vendido</span>
+                            <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="snack-image card-img-top" alt="Refrigerante">
                         </div>
-                        <div class="p-3">
-                            <h5 class="snack-name">Refrigerante 310ml</h5>
-                            <p class="snack-description">Coca-Cola, Guaraná ou Fanta</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="snack-name card-title">Refrigerante 310ml</h5>
+                            <p class="card-text text-muted">Coca-Cola, Guaraná ou Fanta</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="snack-price">R$ 4,90</span>
-                                <button class="btn btn-sm add-to-cart">Adicionar</button>
+                                <button class="btn btn-sm btn-outline-secondary add-to-cart">Adicionar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-md-4">
-                    <div class="snack-card">
-                        <img src="https://marcasmais.com.br/wp-content/uploads/2020/10/natural-one.jpg" class="snack-image" alt="Suco Natural">
-                        <div class="p-3">
-                            <h5 class="snack-name">Suco Natural One 400ml</h5>
-                            <p class="snack-description">Laranja, Maracujá ou Limão</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                    <div class="snack-card card shadow-sm h-100">
+                        <img src="https://marcasmais.com.br/wp-content/uploads/2020/10/natural-one.jpg" class="snack-image card-img-top" alt="Suco Natural">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="snack-name card-title">Suco Natural One 400ml</h5>
+                            <p class="card-text text-muted">Laranja, Maracujá ou Limão</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="snack-price">R$ 6,30</span>
-                                <button class="btn btn-sm add-to-cart">Adicionar</button>
+                                <button class="btn btn-sm btn-outline-secondary add-to-cart">Adicionar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-md-4">
-                    <div class="snack-card">
-                        <img src="https://www.diskaguamineral.com.br/img/produtos/crystal-garrafa-500-ml-sem-gas@2x.jpg" class="snack-image" alt="Água">
-                        <div class="p-3">
-                            <h5 class="snack-name">Água Mineral 500ml</h5>
-                            <p class="snack-description">Com ou sem gás</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                    <div class="snack-card card shadow-sm h-100">
+                        <img src="https://www.diskaguamineral.com.br/img/produtos/crystal-garrafa-500-ml-sem-gas@2x.jpg" class="snack-image card-img-top" alt="Água">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="snack-name card-title">Água Mineral 500ml</h5>
+                            <p class="card-text text-muted">Com ou sem gás</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="snack-price">R$ 3,00</span>
-                                <button class="btn btn-sm add-to-cart">Adicionar</button>
+                                <button class="btn btn-sm btn-outline-secondary add-to-cart">Adicionar</button>
                             </div>
                         </div>
                     </div>
@@ -260,45 +199,45 @@
             <h2 class="category-title">Chocolates & Doces</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="snack-card">
+                    <div class="snack-card card shadow-sm h-100">
                         <div class="position-relative">
-                            <span class="badge-popular">Novidade</span>
-                            <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lqnotj6s8m5b4d" class="snack-image" alt="Chocolate">
+                            <span class="badge-popular badge">Novidade</span>
+                            <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lqnotj6s8m5b4d" class="snack-image card-img-top" alt="Chocolate">
                         </div>
-                        <div class="p-3">
-                            <h5 class="snack-name">Barra de Chocolate Neugebauer</h5>
-                            <p class="snack-description">Ao leite, meio amargo ou branco</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="snack-name card-title">Barra de Chocolate Neugebauer</h5>
+                            <p class="card-text text-muted">Ao leite, meio amargo ou branco</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="snack-price">R$ 9,90</span>
-                                <button class="btn btn-sm add-to-cart">Adicionar</button>
+                                <button class="btn btn-sm btn-outline-secondary add-to-cart">Adicionar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-md-4">
-                    <div class="snack-card">
-                        <img src="https://m.media-amazon.com/images/I/51hGm2py+FL._AC_UF894,1000_QL80_.jpg" class="snack-image" alt="MM's">
-                        <div class="p-3">
-                            <h5 class="snack-name">M&M's</h5>
-                            <p class="snack-description">Pacote 45g - amendoim</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                    <div class="snack-card card shadow-sm h-100">
+                        <img src="https://m.media-amazon.com/images/I/51hGm2py+FL._AC_UF894,1000_QL80_.jpg" class="snack-image card-img-top" alt="MM's">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="snack-name card-title">M&M's</h5>
+                            <p class="card-text text-muted">Pacote 45g - amendoim</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="snack-price">R$ 5,00</span>
-                                <button class="btn btn-sm add-to-cart">Adicionar</button>
+                                <button class="btn btn-sm btn-outline-secondary add-to-cart">Adicionar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-md-4">
-                    <div class="snack-card">
-                        <img src="https://marcaspelomundo.com.br/wp-content/uploads/2021/06/PACK-MOCKUPS.jpg" class="snack-image" alt="Jujubas">
-                        <div class="p-3">
-                            <h5 class="snack-name">Bala Fini</h5>
-                            <p class="snack-description">Pacote 80g - diversos sabores</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                    <div class="snack-card card shadow-sm h-100">
+                        <img src="https://marcaspelomundo.com.br/wp-content/uploads/2021/06/PACK-MOCKUPS.jpg" class="snack-image card-img-top" alt="Jujubas">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="snack-name card-title">Bala Fini</h5>
+                            <p class="card-text text-muted">Pacote 80g - diversos sabores</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="snack-price">R$ 7,90</span>
-                                <button class="btn btn-sm add-to-cart">Adicionar</button>
+                                <button class="btn btn-sm btn-outline-secondary add-to-cart">Adicionar</button>
                             </div>
                         </div>
                     </div>
@@ -307,48 +246,48 @@
         </section>
 
         <section class="snack-category">
-            <h2 class="category-title">Pipocas</h2>
+            <h2 class="category-title">Snacks</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="snack-card">
+                    <div class="snack-card card shadow-sm h-100">
                         <div class="position-relative">
-                            <span class="badge-popular">Clássico</span>
-                            <img src="https://http2.mlstatic.com/D_NQ_NP_937862-MLA80418468118_112024-O.webp" class="snack-image" alt="Pipoca Salgada">
+                            <span class="badge-popular badge">Clássico</span>
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_937862-MLA80418468118_112024-O.webp" class="snack-image card-img-top" alt="Balde de pipoca">
                         </div>
-                        <div class="p-3">
-                            <h5 class="snack-name">Balde de pipoca</h5>
-                            <p class="snack-description">Pequena, média ou grande</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="snack-name card-title">Balde de pipoca</h5>
+                            <p class="card-text text-muted">Pequena, média ou grande</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="snack-price">A partir de R$ 10,90</span>
-                                <button class="btn btn-sm add-to-cart">Adicionar</button>
+                                <button class="btn btn-sm btn-outline-secondary add-to-cart">Adicionar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-md-4">
-                    <div class="snack-card">
-                        <img src="https://mega.ibxk.com.br///2021/12/09/09121723079133.jpg" class="snack-image" alt="Pipoca Doce">
-                        <div class="p-3">
-                            <h5 class="snack-name">Cachorro quente</h5>
-                            <p class="snack-description">Pão, salsicha, mostarda e ketchup</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                    <div class="snack-card card shadow-sm h-100">
+                        <img src="https://mega.ibxk.com.br///2021/12/09/09121723079133.jpg" class="snack-image card-img-top" alt="Cachorro quente">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="snack-name card-title">Cachorro quente</h5>
+                            <p class="card-text text-muted">Pão, salsicha, mostarda e ketchup</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="snack-price">R$ 12,90</span>
-                                <button class="btn btn-sm add-to-cart">Adicionar</button>
+                                <button class="btn btn-sm btn-outline-secondary add-to-cart">Adicionar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="col-md-4">
-                    <div class="snack-card">
-                        <img src="https://embalagemmarca.com.br/wp-content/uploads/2019/09/salgadinhos.jpg" class="snack-image" alt="Pipoca Mista">
-                        <div class="p-3">
-                            <h5 class="snack-name">Salgadinhos</h5>
-                            <p class="snack-description">Pacotes 140g - Diversas marcas</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                    <div class="snack-card card shadow-sm h-100">
+                        <img src="https://embalagemmarca.com.br/wp-content/uploads/2019/09/salgadinhos.jpg" class="snack-image card-img-top" alt="Salgadinhos">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="snack-name card-title">Salgadinhos</h5>
+                            <p class="card-text text-muted">Pacotes 140g - Diversas marcas</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
                                 <span class="snack-price">A partir de R$ 11,30</span>
-                                <button class="btn btn-sm add-to-cart">Adicionar</button>
+                                <button class="btn btn-sm btn-outline-secondary add-to-cart">Adicionar</button>
                             </div>
                         </div>
                     </div>
@@ -356,66 +295,76 @@
             </div>
         </section>
 
-        <section class="combo-banner">
-            <h3 class="combo-title">Combo Cinema Experience</h3>
-            <p class="combo-price">R$ 29,90</p>
+        <section class="combo-banner text-white text-center p-4">
+            <h3 class="combo-title fw-bold">Combo Cinema Experience</h3>
+            <p class="combo-price fw-bolder fs-2">R$ 29,90</p>
             <p>Pipoca Grande + Refrigerante 310ml + Chocolate</p>
-            <button class="btn btn-light btn-lg mt-2">Comprar Combo</button>
+            <button class="btn btn-light btn-lg mt-2 add-to-cart">Comprar Combo</button>
         </section>
     </main>
 
     <!-- Carrinho Fixo -->
-    <div class="cart-summary">
-        <i class="fas fa-shopping-cart"></i>
+    <div class="cart-summary text-white p-3 shadow">
+        <i class="fas fa-shopping-cart me-2"></i>
         <span>R$ 0,00</span>
     </div>
     
-<footer class="footer py-4">
-  <div class="container">
-    <div class="row text-center text-md-start">
-      <div class="col-md-3 mb-3">
-        <h5>Menu</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Em cartaz</a></li>
-          <li><a href="#">Em alta</a></li>
-          <li><a href="#">Snacks</a></li>
-          <li><a href="#">Cinemas</a></li>
-        </ul>
-      </div>
+    <footer class="footer text-white py-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 mb-3">
+                    <h5>Mais informações</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Sobre o TicketWave</a></li>
+                        <li><a href="#">Acessibilidade</a></li>
+                        <li><a href="#">História do TicketWave</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
 
-      <div class="col-md-3 mb-3">
-        <h5>Mais informações</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Sobre o TicketWave</a></li>
-          <li><a href="#">Acessibilidade</a></li>
-          <li><a href="#">História do TicketWave</a></li>
-          <li><a href="#">Fale Conosco</a></li>
-          <li><a href="#">Trabalhe Conosco</a></li>
-        </ul>
-      </div>
+                <div class="col-md-3 mb-3">
+                    <h5>Nossas Redes</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"></i>TikTok</a></li>
+                        <li><a href="#"></i>Instagram</a></li>
+                        <li><a href="#"></i>Facebook</a></li>
+                        <li><a href="#"></i>Youtube</a></li>
+                    </ul>
+                </div>
 
-      <div class="col-md-3 mb-3">
-        <h5>Nossas Redes</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">TikTok</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Youtube</a></li>
-        </ul>
-      </div>
+                <div class="col-md-3 mb-3">
+                    <h5>Suporte</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Dúvidas frequentes</a></li>
+                        <li><a href="#">Cancelamento de pedidos</a></li>
+                    </ul>
+                </div>
+            </div>
 
-      <div class="col-md-3 mb-3">
-        <h5>Suporte</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Dúvidas frequentes</a></li>
-          <li><a href="#">Cancelamento de pedidos</a></li>
-        </ul>
-      </div>
-    </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2025 TicketWave. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-    <div class="text-center mt-4">
-      <p>&copy; 2025 TicketWave. Todos os direitos reservados.</p>
-    </div>
-  </div>
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const snackCard = this.closest('.snack-card');
+                const snackName = snackCard.querySelector('.snack-name').textContent;
+                const snackPrice = snackCard.querySelector('.snack-price').textContent;
+                
+                const cartSummary = document.querySelector('.cart-summary span');
+                const currentValue = cartSummary.textContent.replace('R$ ', '').replace(',', '.');
+                const priceValue = parseFloat(snackPrice.replace('R$ ', '').replace(',', '.').replace('A partir de ', ''));
+                
+                if (!isNaN(priceValue)) {
+                    const newValue = parseFloat(currentValue) + priceValue;
+                    cartSummary.textContent = `R$ ${newValue.toFixed(2).replace('.', ',')}`;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
