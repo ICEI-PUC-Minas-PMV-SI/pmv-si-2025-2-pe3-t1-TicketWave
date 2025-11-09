@@ -104,7 +104,7 @@ Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A p
 
 Introdução
 
-Este documento apresenta a análise dos testes de usabilidade realizados com o protótipo de um site para compra de ingressos de cinema. O objetivo do teste foi avaliar a clareza das informações, a facilidade de navegação, a eficácia dos elementos de interface e a percepção geral dos usuários durante o fluxo completo de compra — desde a escolha do filme até os passos finais de pagamento.
+Esta seção apresenta a análise dos testes de usabilidade realizados com o protótipo de um site para compra de ingressos de cinema. O objetivo do teste foi avaliar a clareza das informações, a facilidade de navegação, a eficácia dos elementos de interface e a percepção geral dos usuários durante o fluxo completo de compra — desde a escolha do filme até os passos finais de pagamento.
 
 Os testes foram conduzidos individualmente, utilizando uma abordagem de navegação livre e observação guiada, seguida por um questionário estruturado contendo dez perguntas abertas. Cada pergunta buscou compreender, de forma qualitativa, a experiência do usuário, identificando pontos positivos, eventuais dificuldades e oportunidades de melhoria.
 
