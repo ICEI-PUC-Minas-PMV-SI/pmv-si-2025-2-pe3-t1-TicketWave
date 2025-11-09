@@ -113,8 +113,8 @@ Cinco usuários com perfis distintos participaram da avaliação, contribuindo c
 – Jamilly, 23 anos: Usuária com familiaridade moderada com plataformas digitais.<br>
 – Geraldo, 56 anos: Usuário com experiência em navegação web e observações detalhadas sobre interação.<br>
 – Gustavo, 36 anos: Usuário com boa experiência tecnológica e sensibilidade para identificar inconsistências funcionais.<br>
-- Ana Victória, : <br>
-- Julia, 24 anos: Usuária com experiência tecnológica média. <br>
+ Ana Victória, : <br>
+ Julia, 24 anos: Usuária com experiência tecnológica média. <br>
 
 A diversidade de perfis permitiu observar diferentes comportamentos de navegação e coletar uma variedade de percepções, enriquecendo a análise final.
 
