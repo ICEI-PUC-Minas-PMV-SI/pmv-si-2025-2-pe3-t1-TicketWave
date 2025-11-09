@@ -105,8 +105,115 @@ Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A p
 ## 4.4 Testes com Protótipos
 Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
 
-Cada integrante do grupo deverá aplicar o teste com um usuário distinto, preferencialmente alinhado ao perfil das personas criadas. Devem ser definidas previamente as tarefas que o usuário deverá executar no protótipo (por exemplo: realizar um cadastro, buscar um produto, concluir uma compra).
+Questionário Aplicado:
 
-Durante a aplicação do teste, registre observações sobre comportamentos, dúvidas, erros e comentários feitos pelo usuário, bem como o tempo necessário para a execução de cada tarefa. Ao final, colete o feedback do participante, destacando pontos positivos e aspectos a serem melhorados.
+1. Propósito do site
+Ao acessar a página inicial, você conseguiu entender rapidamente qual é o objetivo principal do site?
 
-Os resultados obtidos por todos os integrantes devem ser consolidados, apresentando uma análise geral com os principais problemas encontrados, oportunidades de melhoria e as ações previstas para o projeto final. 
+2. Navegação e fluxo das etapas
+A navegação entre as telas (como escolha do filme, sessões, assentos e pagamento) foi intuitiva e seguiu uma sequência lógica?
+
+3. Localização de informações
+Você conseguiu encontrar facilmente as informações que procurava (como horários, sessões e opções de compra)?
+
+4. Interação com os elementos da interface
+Os botões, menus e cards estavam posicionados de forma intuitiva e responderam como você esperava ao interagir?
+
+5. Clareza dos textos e termos utilizados
+Os textos e rótulos das páginas estavam claros e ajudaram a entender as ações disponíveis?
+(Se houve algum termo confuso, qual?)
+
+6. Aspectos visuais
+As cores, ícones e contrastes facilitaram a navegação? Houve algo que atrapalhou a visualização ou desviou a atenção do conteúdo principal?
+
+7. Dificuldades ou barreiras de uso
+Houve algum momento em que você se sentiu confuso, inseguro ou precisou de ajuda para continuar a navegação?
+
+8. Pontos positivos
+O que você mais gostou na interface ou na experiência de uso?
+
+9. Melhorias sugeridas
+O que você mudaria ou adicionaria para deixar o site mais funcional ou agradável de usar?
+
+10. Comentários gerais (opcional)
+Há algo mais que gostaria de comentar sobre sua experiência com o protótipo?
+
+
+Jamilly,23 anos:
+
+
+1.Sim, ao acessar a página inicial, consegui entender rapidamente o objetivo principal do site. Ele deixa claro que é voltado para a compra de ingressos de cinema.
+
+2. A navegação está intuitiva e segue uma sequência lógica. Consegui passar pelas etapas de escolha do filme, sessão, assento e pagamento sem dificuldades.
+Está tudo bem posicionado e organizado. Além disso, os comentários ajudam a ter uma noção melhor sobre os filmes, funcionando como uma espécie de review.
+Gostei das cores e do fundo claro, pois criam um bom contraste e deixam a leitura agradável. A usabilidade é simples e autoexplicativa.
+
+3. Sim, consegui encontrar facilmente as informações que procurava, como horários, sessões e opções de compra.
+
+4. Sim, os botões, menus e cards estão posicionados de forma intuitiva e responderam conforme o esperado durante a navegação.
+
+5. Os textos estão claros e os termos utilizados facilitam o entendimento das ações. Não identifiquei nenhum termo confuso.
+
+6. As cores, ícones e contrastes estão bem equilibrados e facilitam a navegação. O fundo claro traz um bom contraste e deixa o site visualmente agradável. Nada atrapalhou a visualização ou desviou a atenção do conteúdo principal.
+
+7. Não encontrei nenhuma dificuldade durante a navegação. O site é simples, autoexplicativo e fácil de usar.
+
+8. 
+Gostei da simplicidade, da clareza das informações e do visual limpo. A interface é bonita, organizada e transmite uma boa experiência de uso.
+
+9. No momento, não tenho nada a acrescentar. O site já está funcional, intuitivo e agradável de usar.
+
+10. Gostei bastante do site. Ele é bonito, simples e cumpre bem o propósito. A experiência geral foi positiva.
+
+
+
+Otávio, 40 anos 
+1. Sim. Eu entendi rapidamente o propósito do site, pois logo na página inicial aparecem os cards dos filmes que estão em cartaz. Isso deixou claro que o objetivo é permitir que eu veja as opções disponíveis e escolha um filme para assistir.
+
+2. Sim, as nomenclaturas fizeram sentido. Achei a sequência dos botões de navegação bem organizada e fácil de entender, principalmente na parte de seleção de poltronas, com a numeração e a disposição em colunas e fileiras bem definidas
+
+4. De forma geral, sim. A única dificuldade foi descobrir como acessar os horários das sessões. Eu esperava que o card inteiro do filme fosse clicável, mas, depois que entendi onde estava o botão “Ver Sessões”, o restante da navegação ficou bem tranquilo.
+
+5. Sim. A partir da página de sessões, achei o fluxo das etapas bem lógico e fácil de acompanhar. O único ponto de confusão foi no início, quando tentei acessar as sessões clicando no pôster em vez de no botão.
+
+6. Sim. Os elementos clicáveis ficaram bem evidentes, principalmente porque o cursor muda para a “mãozinha” quando passo o mouse por cima. O único ponto que me incomodou foi o fundo branco — ele pode cansar a visão e fazer o usuário aumentar o brilho da tela, o que prejudica a navegação. Acredito que um fundo mais escuro deixaria o visual mais confortável.
+
+7.Sim. Tive dificuldade com o botão “Ver Sessões”, porque no início achei que o pôster do filme também servia como atalho para essa página. Como ele é o primeiro passo da navegação, acho importante deixá-lo mais evidente ou permitir o clique em qualquer parte do card.
+
+8. O que mais gostei foi o destaque visual que acontece quando passo o mouse sobre o pôster de um filme. Isso mostra que o sistema está respondendo à minha interação e deixa a experiência mais agradável. Também gostei da mudança do cursor para a “mãozinha”, que ajuda a identificar facilmente o que é clicável.
+
+9.Eu deixaria o fundo mais escuro para facilitar a visualização e deixaria os pôsteres dos filmes clicáveis, para que eu pudesse acessar as sessões de maneira mais natural. Também adicionaria um botão de “voltar” nas telas de login e cadastro, para facilitar a navegação caso eu queira retornar à página anterior.
+
+10. Gostei muito do protótipo no geral. Achei a sequência da navegação bem estruturada e fácil de acompanhar. A experiência é agradável e intuitiva. Acho que seria interessante incluir um link com informações de como chegar ao cinema, o que deixaria o site ainda mais completo e útil.
+
+
+ Gustavo,36 anos 
+
+1. Sim, o objetivo principal do site é comprar ingressos para filmes no cinema.
+
+2. Sim, escolher o filme, o horário, a cadeira e pagar foi intuitivo e lógico.
+
+3. Sim, a ordem lógica ajudou a escolher exatamente as opções que eu desejava.
+
+4.Sim, tudo estava conforme eu esperava.
+
+5.Sim, no geral eu consegui navegar e chegar perfeitamente onde eu queria. A exceção foi o login que eu não entendi qual era a credencial correta, o email ou meu nome.
+
+6. Sim, o contrate entre as cores e o posicionamento foi bastante intuitivo.
+
+7.Como citado anteriormente, o Login me deixou confuso, porque eu cadastrei usando nome e email, mas ao invés de me pedir email ele me pede o login, mas eu não criei um nome de usuário.
+
+8.Os posters são bem grandes e chamativos e até me direcionam para um trailer dos filmes.
+
+
+9. Eu mudaria o Login para pedir o email cadastrado como credencial.
+
+10.Não, no geral tive uma experiência bem satisfatória.
+
+
+
+
+
+
+
+
