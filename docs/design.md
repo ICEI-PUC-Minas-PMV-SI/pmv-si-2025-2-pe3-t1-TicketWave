@@ -127,6 +127,8 @@ Geraldo: Sim. Eu entendi rapidamente o propósito do site, pois logo na página 
 
 Gustavo: Sim, o objetivo principal do site é comprar ingressos para filmes no cinema.
 
+Ana Victória: Sim. Ficou claro, é um site de venda de ingressos para cinema.
+
 Síntese geral
 
 Todos os participantes compreenderam de imediato o propósito do site. A exposição clara dos filmes em cartaz e a estrutura visual da página inicial ajudaram a comunicar rapidamente que se trata de uma plataforma para compra de ingressos de cinema.
@@ -144,6 +146,8 @@ Jamily: A navegação está intuitiva e segue uma sequência lógica. Consegui p
 Geraldo: Sim, as nomenclaturas fizeram sentido. Achei a sequência dos botões de navegação bem organizada e fácil de entender, principalmente na parte de seleção de poltronas, com a numeração e a disposição em colunas e fileiras bem definidas.
 
 Gustavo: Sim, escolher o filme, o horário, a cadeira e pagar foi intuitivo e lógico.
+
+Ana Victória: Sim, a opção de voltar e a ordem das telas ficou clara e intuitiva.
 
 Síntese geral
 
@@ -164,6 +168,8 @@ Geraldo: De forma geral, sim. A única dificuldade foi descobrir como acessar os
 
 Gustavo: Sim, a ordem lógica ajudou a escolher exatamente as opções que eu desejava.
 
+Ana Victória: Sim, o site tem as informações claras, sobre sessões, cadeirias, filmes e outros dados.
+
 Síntese geral
 
 Todos os participantes relataram que conseguiram localizar as informações necessárias. No entanto, houve um ponto específico de confusão: o botão “Ver Sessões” novamente gerou uma barreira inicial para um dos usuários, que esperava uma interação diferente com o card do filme.
@@ -181,6 +187,8 @@ Jamilly: Sim, os botões, menus e cards estão posicionados de forma intuitiva e
 Geraldo: Sim. A partir da página de sessões, achei o fluxo das etapas bem lógico e fácil de acompanhar. O único ponto de confusão foi no início, quando tentei acessar as sessões clicando no pôster em vez de no botão.
 
 Gustavo: Sim, tudo estava conforme eu esperava.
+
+Ana Victória: Sim, eles estão posicionados onde era esperado, e a interação foi simples e direta.
 
 Síntese geral
 
@@ -201,6 +209,8 @@ Jamily: Os textos estão claros e os termos utilizados facilitam o entendimento 
 Geraldo: Sim, as nomenclaturas fizeram sentido. Sim, as nomenclaturas fizeram sentido. Achei a sequência dos botões de navegação bem organizada e fácil de entender, principalmente na parte de seleção de poltronas, com a numeração e a disposição em colunas e fileiras bem definidas. Porém, o termo em inglês “snacks” me deixou confuso, porque eu não sabia exatamente o que significava. Seria melhor colocar a tradução entre parênteses, como “snacks (lanches)”, para facilitar o entendimento.
 
 Gustavo: Sim, no geral eu consegui navegar e chegar perfeitamente onde eu queria. A exceção foi o login que eu não entendi qual era a credencial correta, o email ou meu nome.
+
+Ana Victória: Na maior parte, sim. Entretanto, o termo "Snacks" pode ser complicado para algumas audiencias entender, "Lanches" seria uma melhor opção. Além disso, na parte de escolha de dias, o dia atual poderia ser "Hoje" no lugar do número, "Amanhã" poderia também ser uma opção.
 
 Síntese geral
 
@@ -227,9 +237,11 @@ Geraldo: Sim. Os elementos clicáveis ficaram bem evidentes, principalmente porq
 
 Gustavo: Sim, o contrate entre as cores e o posicionamento foi bastante intuitivo.
 
+Ana Victória: O fundo branco apresenta ótimo contraste com o restante dos elementos. E permite que pessoas mesmo com deficiência visual possam visualizar bem o conteúdo do site e seus elementos.
+
 Síntese geral
 
-Os participantes consideraram o layout visual bem equilibrado e agradável. Dois usuários elogiaram o contraste e a legibilidade, enquanto um relatou desconforto com o fundo branco, sugerindo um visual mais escuro para maior conforto. Não houve reclamações sobre elementos visuais que distraíssem a navegação.
+Os participantes consideraram o layout visual bem equilibrado e agradável. Três usuários elogiaram o contraste e a legibilidade, enquanto um relatou desconforto com o fundo branco, sugerindo um visual mais escuro para maior conforto. Não houve reclamações sobre elementos visuais que distraíssem a navegação. Incluir a opção de um fundo escuro opcional poderia resolver o problema.
 
 Observações relevantes
 
@@ -245,6 +257,8 @@ Jamilly: Não encontrei nenhuma dificuldade durante a navegação. O site é sim
 Geraldo: Sim. Tive dificuldade com o botão “Ver Sessões”, porque no início achei que o pôster do filme também servia como atalho para essa página. Como ele é o primeiro passo da navegação, acho importante deixá-lo mais evidente ou permitir o clique em qualquer parte do card.
 
 Gustavo:  Como citado anteriormente, o Login me deixou confuso, porque eu cadastrei usando nome e email, mas ao invés de me pedir email ele me pede o login, mas eu não criei um nome de usuário.
+
+Ana Victória: Não, o fluxo prossegue naturalmente entre as páginas e apresenta muitas semelhanças com padrões de sites já existentes.
 
 Síntese geral
 
@@ -271,6 +285,8 @@ Geraldo: O que mais gostei foi o destaque visual que acontece quando passo o mou
 
 Gustavo: Os pôsteres são bem grandes e chamativos e até me direcionam para um trailer.
 
+Ana Victória: Os comentários junto à seleção de sessões dos filmes são muito úteis e agregam valor ao sistema, ao permitir verificar as opiniões em relação ao filme antes da compra.
+
 Síntese geral
 
 Os pontos positivos mencionados convergem para três eixos principais:
@@ -282,6 +298,8 @@ Feedback visual ao passar o mouse sobre os cards de filmes.
 Destaque e impacto visual dos pôsteres.
 
 A combinação desses elementos transmite ao usuário uma experiência fluida e visualmente agradável.
+
+Os comentários são um interessante aditivo para a experíência do usuário.
 
 Observações relevantes
 
@@ -298,6 +316,8 @@ Geraldo: Eu deixaria o fundo mais escuro para facilitar a visualização e deixa
 
 Gustavo: Eu mudaria o Login para pedir o email cadastrado como credencial.
 
+Ana Victória: Utilizar todos os termos em português no site. Incluir a classificação indicativa na tela inicial, antes da seleção de sessões. 
+
 Síntese geral
 
 As sugestões apresentadas pelos participantes abordam melhorias funcionais e visuais:<br>
@@ -305,6 +325,7 @@ As sugestões apresentadas pelos participantes abordam melhorias funcionais e vi
 – tornar os pôsteres clicáveis para facilitar o fluxo<br>
 – ajustes no login, especialmente no tipo de credencial solicitada<br>
 – inclusão de opções de navegação mais consistentes (como botão “voltar”)<br>
+- utilização de termos em portugues com consistência no site
 
 Observações relevantes
 
@@ -319,6 +340,8 @@ Jamilly: Gostei bastante do site. Ele é bonito, simples e cumpre bem o propósi
 Otávio: Gostei muito do protótipo no geral. Achei a sequência da navegação bem estruturada e fácil de acompanhar. A experiência é agradável e intuitiva. Acho que seria interessante incluir um link com informações de como chegar ao cinema, o que deixaria o site ainda mais completo e útil.
 
 Gustavo: Não, no geral tive uma experiência bem satisfatória.
+
+Ana Victória: Não, obrigado.
 
 Síntese geral
 
