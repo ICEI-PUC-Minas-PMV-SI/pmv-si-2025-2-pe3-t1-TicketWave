@@ -105,6 +105,8 @@ Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A p
 ## 4.4 Testes com Protótipos
 Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
 
+
+
 Questionário Aplicado:
 
 1. Propósito do site
@@ -139,8 +141,17 @@ O que você mudaria ou adicionaria para deixar o site mais funcional ou agradáv
 Há algo mais que gostaria de comentar sobre sua experiência com o protótipo?
 
 
-Jamilly,23 anos:
 
+
+
+
+
+
+
+
+
+
+Jamilly,23 anos:
 
 1.Sim, ao acessar a página inicial, consegui entender rapidamente o objetivo principal do site. Ele deixa claro que é voltado para a compra de ingressos de cinema.
 
@@ -167,7 +178,11 @@ Gostei da simplicidade, da clareza das informações e do visual limpo. A interf
 
 
 
+
+
+
 Otávio, 40 anos 
+
 1. Sim. Eu entendi rapidamente o propósito do site, pois logo na página inicial aparecem os cards dos filmes que estão em cartaz. Isso deixou claro que o objetivo é permitir que eu veja as opções disponíveis e escolha um filme para assistir.
 
 2. Sim, as nomenclaturas fizeram sentido. Achei a sequência dos botões de navegação bem organizada e fácil de entender, principalmente na parte de seleção de poltronas, com a numeração e a disposição em colunas e fileiras bem definidas
@@ -187,7 +202,10 @@ Otávio, 40 anos
 10. Gostei muito do protótipo no geral. Achei a sequência da navegação bem estruturada e fácil de acompanhar. A experiência é agradável e intuitiva. Acho que seria interessante incluir um link com informações de como chegar ao cinema, o que deixaria o site ainda mais completo e útil.
 
 
- Gustavo,36 anos 
+ 
+ 
+ 
+Gustavo,36 anos 
 
 1. Sim, o objetivo principal do site é comprar ingressos para filmes no cinema.
 
