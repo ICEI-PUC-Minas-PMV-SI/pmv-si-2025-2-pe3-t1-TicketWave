@@ -18,6 +18,78 @@
             background-color: #d7d7d7;
         }
         
+        .navbar-simple {
+            background-color: #2F2F2F;
+            padding: 20px 0;
+        }
+        
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            height: 60px;
+            width: auto;
+        }
+        
+        .nav-center {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        
+        .nav-item {
+            margin: 0 20px;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s;
+            padding: 12px 16px;
+            border-radius: 4px;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-icon {
+            color: white;
+            font-size: 20px;
+            margin-left: 20px;
+            padding: 12px;
+            border-radius: 4px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .nav-icon:hover {
+            color: var(--accent);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
         .cinema-header {
             background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1489599809505-fb40ebc14d59?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
@@ -124,25 +196,40 @@
     </style>
 </head>
 <body>
-    <header class="cinema-header">
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <i class=""></i>
-                    <span class="fw-bold">TicketWave</span>
-                </a>
-                
-                <div class="d-flex">
-                    <ul class="navbar-nav flex-row">
-                        <li class="nav-item mx-2"><a class="nav-link" href="#">Em Cartaz</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="#">Em Alta</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="#">Snacks</a></li>
-                        <li class="nav-item mx-2"><a class="nav-link" href="#">Cinemas</a></li>
-                    </ul>
+    <nav class="navbar-simple">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">
+                <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-TicketWave/refs/heads/main/src/resources/images/logo.png" alt="TicketWave" class="logo">
+            </a>
+            
+            <div class="nav-center">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Em Cartaz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Em Alta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Snacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cinemas</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Ícones à direita -->
+            <div class="nav-icons">
+                <div class="nav-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="nav-icon">
+                    <i class="fas fa-user"></i>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <main class="container">
         <section class="snack-category">
