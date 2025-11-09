@@ -46,8 +46,6 @@ O grande objetivo de Adimir é manter o tradicional programa de cinema familiar,
 5- Bia Lopes, 26 anos.
 <img width="1395" height="785" alt="Captura de tela 2025-10-23 002406" src="https://github.com/user-attachments/assets/5e88da96-2121-4bf3-b48c-2e1f9278e86a" />
 
-
-
 ## 4.2 Mapa de Empatia
 Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A partir do mapa da empatia é possível detalhar a personalidade do cliente e compreendê-la melhor. O objetivo é obter um nível mais profundo de compreensão de uma persona. A seguir um exemplo de template que pode ser usado para o mapa de empatia. Para cada persona deverá ser apresentado o seu respectivo mapa de empatia. Sugere-se a utilização do template apresentado em https://www.rdstation.com/blog/marketing/mapa-da-empatia/.
 
@@ -104,9 +102,25 @@ Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A p
 
 ## 4.4 Testes com Protótipos
 
+Introdução
+
+Este documento apresenta a análise dos testes de usabilidade realizados com o protótipo de um site para compra de ingressos de cinema. O objetivo do teste foi avaliar a clareza das informações, a facilidade de navegação, a eficácia dos elementos de interface e a percepção geral dos usuários durante o fluxo completo de compra — desde a escolha do filme até os passos finais de pagamento.
+
+Os testes foram conduzidos individualmente, utilizando uma abordagem de navegação livre e observação guiada, seguida por um questionário estruturado contendo dez perguntas abertas. Cada pergunta buscou compreender, de forma qualitativa, a experiência do usuário, identificando pontos positivos, eventuais dificuldades e oportunidades de melhoria.
+
+Participantes
+
+Três usuários com perfis distintos participaram da avaliação, contribuindo com percepções complementares:
+
+– Jamilly, 23 anos: Usuária com familiaridade moderada com plataformas digitais.
+– Geraldo, 56 anos: Usuário com experiência em navegação web e observações detalhadas sobre interação.
+– Gustavo, 36 anos: Usuário com boa experiência tecnológica e sensibilidade para identificar inconsistências funcionais.
+
+A diversidade de perfis permitiu observar diferentes comportamentos de navegação e coletar uma variedade de percepções, enriquecendo a análise final.
+
 QUESTIONÁRIO DE TESTE DE USABILIDADE – ANÁLISE POR PERGUNTA:
 
-1. Propósito do site
+1)Propósito do site
 Ao acessar a página inicial, você conseguiu entender rapidamente qual é o objetivo principal do site?
 
 Jamily: Sim, ao acessar a página inicial, consegui entender rapidamente o objetivo principal do site. Ele deixa claro que é voltado para a compra de ingressos de cinema.
@@ -121,10 +135,10 @@ Todos os participantes compreenderam de imediato o propósito do site. A exposi�
 
 Observações relevantes
 
-– A clareza do propósito está ligada principalmente aos cards de filmes, que funcionam como ponto central de orientação.
-– Não houve registros de confusão sobre o propósito geral, apenas comentários sobre detalhes de navegação (citados em outras perguntas).
+– A clareza do propósito está ligada principalmente aos cards de filmes, que funcionam como ponto central de orientação. <br>
+– Não houve registros de confusão sobre o propósito geral, apenas comentários sobre detalhes de navegação (citados em outras perguntas). <br>
 
-2. Navegação e fluxo das etapas
+2)Navegação e fluxo das etapas
 A navegação entre as telas (como escolha do filme, sessões, assentos e pagamento) foi intuitiva e seguiu uma sequência lógica?
 
 Jamily: A navegação está intuitiva e segue uma sequência lógica. Consegui passar pelas etapas de escolha do filme, sessão, assento e pagamento sem dificuldades. Está tudo bem posicionado e organizado. Além disso, os comentários ajudam a ter uma noção melhor sobre os filmes, funcionando como uma espécie de review. Gostei das cores e do fundo claro, pois criam um bom contraste e deixam a leitura agradável. A usabilidade é simples e autoexplicativa.
@@ -139,11 +153,11 @@ Os três usuários consideraram o fluxo de navegação intuitivo e bem estrutura
 
 Observações relevantes
 
-– O fluxo principal (filme → sessão → assento → pagamento) foi considerado lógico e consistente.
-– A maior barreira ocorreu no momento inicial, quando os usuários tentaram clicar diretamente no pôster para acessar as sessões.
-– Após avançar dessa etapa inicial, nenhum usuário relatou problemas nas outras telas.
+– O fluxo principal (filme → sessão → assento → pagamento) foi considerado lógico e consistente. <br>
+– A maior barreira ocorreu no momento inicial, quando os usuários tentaram clicar diretamente no pôster para acessar as sessões.<br>
+– Após avançar dessa etapa inicial, nenhum usuário relatou problemas nas outras telas.<br>
 
-3. Localização das informações
+3)Localização das informações
 Pergunta: Você conseguiu encontrar facilmente as informações que procurava (como horários, sessões e opções de compra)?
 
 Jamilly: Sim, consegui encontrar facilmente as informações que procurava, como horários, sessões e opções de compra.
@@ -158,10 +172,10 @@ Todos os participantes relataram que conseguiram localizar as informações nece
 
 Observações relevantes
 
-– As informações principais (horários, sessões, opções de compra) foram percebidas como claras e acessíveis.
-– O único ponto recorrente de dúvida foi o acesso às sessões através de um botão pouco destacado.
+– As informações principais (horários, sessões, opções de compra) foram percebidas como claras e acessíveis.<br>
+– O único ponto recorrente de dúvida foi o acesso às sessões através de um botão pouco destacado.<br>
 
-4. Interação com os elementos da interface
+4)Interação com os elementos da interface
 Pergunta: Os botões, menus e cards estavam posicionados de forma intuitiva e responderam como você esperava ao interagir?
 
 Jamilly: Sim, os botões, menus e cards estão posicionados de forma intuitiva e responderam conforme o esperado durante a navegação.
@@ -176,11 +190,11 @@ A percepção geral foi positiva: os elementos clicáveis estavam claros e respo
 
 Observações relevantes
 
-– Destaque positivo para a resposta visual (hover, mudança de cursor).
-– O layout dos elementos foi considerado adequado e organizado.
-– O comportamento dos cards poderia ser ampliado para permitir cliques.
+– Destaque positivo para a resposta visual (hover, mudança de cursor).<br>
+– O layout dos elementos foi considerado adequado e organizado.<br>
+– O comportamento dos cards poderia ser ampliado para permitir cliques.<br>
 
-5. Clareza dos textos e termos utilizados
+5)Clareza dos textos e termos utilizados
 Os textos e rótulos das páginas estavam claros e ajudaram a entender as ações disponíveis?
 (Se houve algum termo confuso, qual?)
 
@@ -194,7 +208,7 @@ Síntese geral
 
 Os participantes consideraram os textos claros e adequados ao contexto. A maioria não encontrou termos confusos, mas dois pontos específicos surgiram:
 
-Um usuário não entendeu o termo em inglês “snacks”.
+Um usuário não entendeu o termo em inglês “snacks”. 
 
 Outro usuário teve dúvida sobre qual credencial usar no login (nome ou e-mail).
 
@@ -202,11 +216,11 @@ Fora esses casos pontuais, a clareza textual foi percebida como satisfatória.
 
 Observações relevantes
 
-– Os textos estão bem alinhados com a estrutura da interface e facilitam o entendimento das ações.
-– O termo “snacks” representou uma barreira terminológica e pode beneficiar-se de tradução ou explicação.
-– A confusão relacionada ao login não é terminológica, mas está diretamente ligada à forma como o campo é rotulado.
+– Os textos estão bem alinhados com a estrutura da interface e facilitam o entendimento das ações. <br>
+– O termo “snacks” representou uma barreira terminológica e pode beneficiar-se de tradução ou explicação.<br>
+– A confusão relacionada ao login não é terminológica, mas está diretamente ligada à forma como o campo é rotulado.<br>
 
-6. Aspectos visuais
+6)Aspectos visuais
 As cores, ícones e contrastes facilitaram a navegação? Houve algo que atrapalhou a visualização ou desviou a atenção do conteúdo principal?
 
 Jamilly: As cores, ícones e contrastes estão bem equilibrados e facilitam a navegação. O fundo claro traz um bom contraste e deixa o site visualmente agradável. Nada atrapalhou a visualização ou desviou a atenção do conteúdo principal.
@@ -221,11 +235,11 @@ Os participantes consideraram o layout visual bem equilibrado e agradável. Dois
 
 Observações relevantes
 
-– A identidade visual foi percebida como limpa e funcional.
-– Há preferência majoritária pelo fundo claro, mas sensibilidade variada entre os usuários.
-– A recomendação de um modo escuro é consistente com práticas modernas de acessibilidade e conforto visual.
+– A identidade visual foi percebida como limpa e funcional.<br>
+– Há preferência majoritária pelo fundo claro, mas sensibilidade variada entre os usuários.<br>
+– A recomendação de um modo escuro é consistente com práticas modernas de acessibilidade e conforto visual.<br>
 
-7. Dificuldades ou barreiras de uso
+7)Dificuldades ou barreiras de uso
 Houve algum momento em que você se sentiu confuso, inseguro ou precisou de ajuda para continuar a navegação?
 
 Jamilly: Não encontrei nenhuma dificuldade durante a navegação. O site é simples, autoexplicativo e fácil de usar.
@@ -246,11 +260,11 @@ Fora isso, a navegação foi percebida como simples e autoexplicativa.
 
 Observações relevantes
 
-– A dificuldade com o botão “Ver Sessões” se tornou recorrente, reforçando a necessidade de reconsiderar sua visibilidade.
-– O problema no login tem caráter funcional e pode comprometer o fluxo de acesso ao sistema.
-– Não houve relatos de travamento ou erros que impedissem o avanço.
+– A dificuldade com o botão “Ver Sessões” se tornou recorrente, reforçando a necessidade de reconsiderar sua visibilidade.<br>
+– O problema no login tem caráter funcional e pode comprometer o fluxo de acesso ao sistema.<br>
+– Não houve relatos de travamento ou erros que impedissem o avanço.<br>
 
-8. Pontos positivos
+8)Pontos positivos
 Pergunta: O que você mais gostou?
 
 Jamilly: Gostei da simplicidade, da clareza das informações e do visual limpo. A interface é bonita, organizada e transmite uma boa experiência de uso.
@@ -273,11 +287,11 @@ A combinação desses elementos transmite ao usuário uma experiência fluida e 
 
 Observações relevantes
 
-– O sistema de feedback visual foi percebido como um diferencial positivo.
-– Há valorização da estética limpa, o que reforça a coerência visual do protótipo.
-– O impacto dos pôsteres reforça a identidade temática do site.
+– O sistema de feedback visual foi percebido como um diferencial positivo.<br>
+– Há valorização da estética limpa, o que reforça a coerência visual do protótipo.<br>
+– O impacto dos pôsteres reforça a identidade temática do site.<br>
 
-9. Melhorias sugeridas
+9)Melhorias sugeridas
 Pergunta: O que poderia ser melhorado?
 
 Jamilly: No momento, não tenho nada a acrescentar. O site já está funcional, intuitivo e agradável de usar.
@@ -288,18 +302,18 @@ Gustavo: Eu mudaria o Login para pedir o email cadastrado como credencial.
 
 Síntese geral
 
-As sugestões apresentadas pelos participantes abordam melhorias funcionais e visuais:
-– possibilidade de modo escuro ou fundo menos claro
-– tornar os pôsteres clicáveis para facilitar o fluxo
-– ajustes no login, especialmente no tipo de credencial solicitada
-– inclusão de opções de navegação mais consistentes (como botão “voltar”)
+As sugestões apresentadas pelos participantes abordam melhorias funcionais e visuais:<br>
+– possibilidade de modo escuro ou fundo menos claro<br>
+– tornar os pôsteres clicáveis para facilitar o fluxo<br>
+– ajustes no login, especialmente no tipo de credencial solicitada<br>
+– inclusão de opções de navegação mais consistentes (como botão “voltar”)<br>
 
 Observações relevantes
 
-– As melhorias sugeridas estão alinhadas às dificuldades previamente mencionadas, mostrando consistência nas percepções dos usuários.
-– Não foram identificados problemas graves; as sugestões são incrementais e de fácil implementação.
+– As melhorias sugeridas estão alinhadas às dificuldades previamente mencionadas, mostrando consistência nas percepções dos usuários.<br>
+– Não foram identificados problemas graves; as sugestões são incrementais e de fácil implementação.<br>
 
-10. Comentários gerais
+10)Comentários gerais
 Pergunta: Há algo mais que gostaria de comentar?
 
 Jamilly: Gostei bastante do site. Ele é bonito, simples e cumpre bem o propósito. A experiência geral foi positiva.
@@ -314,5 +328,5 @@ Os usuários reforçaram uma percepção positiva do protótipo como um todo. A 
 
 Observações relevantes
 
-– A experiência geral foi avaliada como satisfatória e intuitiva.
-– Houve apenas sugestões periféricas, não relacionadas ao fluxo principal.
+– A experiência geral foi avaliada como satisfatória e intuitiva.<br>
+– Houve apenas sugestões periféricas, não relacionadas ao fluxo principal.<br>
