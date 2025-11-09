@@ -1,7 +1,6 @@
 # 4. PROJETO DO DESIGN DE INTERAÇÃO
 
 ## 4.1 Personas
-Nesta seção você deve detalhar as personas do seu projeto. Deve-se documentar uma persona por integrante do projeto. Para mais informações sobre personas consulte: https://www.rdstation.com/blog/marketing/persona-o-que-e/. Sugere-se a utilização do gerador de personas disponibilizado em https://persona-pillar.lovable.app/?utm_campaign=br-inb-rdsm-blog-novos_leads-persona-pillar-cta_pls_portal_cta_persona
 
 **Persona do negócio**
 
@@ -47,7 +46,6 @@ O grande objetivo de Adimir é manter o tradicional programa de cinema familiar,
 <img width="1395" height="785" alt="Captura de tela 2025-10-23 002406" src="https://github.com/user-attachments/assets/5e88da96-2121-4bf3-b48c-2e1f9278e86a" />
 
 ## 4.2 Mapa de Empatia
-Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A partir do mapa da empatia é possível detalhar a personalidade do cliente e compreendê-la melhor. O objetivo é obter um nível mais profundo de compreensão de uma persona. A seguir um exemplo de template que pode ser usado para o mapa de empatia. Para cada persona deverá ser apresentado o seu respectivo mapa de empatia. Sugere-se a utilização do template apresentado em https://www.rdstation.com/blog/marketing/mapa-da-empatia/.
 
 1- Jorge 48 anos, empresário.
 
