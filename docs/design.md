@@ -103,132 +103,216 @@ Mapa da Empatia é um material utilizado para conhecer melhor o seu cliente. A p
 <img width="1904" height="893" alt="image" src="https://github.com/user-attachments/assets/cad90ecb-2c26-4abe-b0c9-49fd1e6075ae" />
 
 ## 4.4 Testes com Protótipos
-Nesta seção você deve apresentar os testes realizados com usuários utilizando os protótipos de alta fidelidade desenvolvidos na seção anterior. O objetivo é avaliar a usabilidade, a clareza das informações e a adequação do design às necessidades das personas definidas no projeto.
 
-
-
-Questionário Aplicado:
+QUESTIONÁRIO DE TESTE DE USABILIDADE – ANÁLISE POR PERGUNTA:
 
 1. Propósito do site
 Ao acessar a página inicial, você conseguiu entender rapidamente qual é o objetivo principal do site?
 
+Jamily: Sim, ao acessar a página inicial, consegui entender rapidamente o objetivo principal do site. Ele deixa claro que é voltado para a compra de ingressos de cinema.
+
+Geraldo: Sim. Eu entendi rapidamente o propósito do site, pois logo na página inicial aparecem os cards dos filmes que estão em cartaz. Isso deixou claro que o objetivo é permitir que eu veja as opções disponíveis e escolha um filme para assistir.
+
+Gustavo: Sim, o objetivo principal do site é comprar ingressos para filmes no cinema.
+
+Síntese geral
+
+Todos os participantes compreenderam de imediato o propósito do site. A exposição clara dos filmes em cartaz e a estrutura visual da página inicial ajudaram a comunicar rapidamente que se trata de uma plataforma para compra de ingressos de cinema.
+
+Observações relevantes
+
+– A clareza do propósito está ligada principalmente aos cards de filmes, que funcionam como ponto central de orientação.
+– Não houve registros de confusão sobre o propósito geral, apenas comentários sobre detalhes de navegação (citados em outras perguntas).
+
 2. Navegação e fluxo das etapas
 A navegação entre as telas (como escolha do filme, sessões, assentos e pagamento) foi intuitiva e seguiu uma sequência lógica?
 
-3. Localização de informações
-Você conseguiu encontrar facilmente as informações que procurava (como horários, sessões e opções de compra)?
+Jamily: A navegação está intuitiva e segue uma sequência lógica. Consegui passar pelas etapas de escolha do filme, sessão, assento e pagamento sem dificuldades. Está tudo bem posicionado e organizado. Além disso, os comentários ajudam a ter uma noção melhor sobre os filmes, funcionando como uma espécie de review. Gostei das cores e do fundo claro, pois criam um bom contraste e deixam a leitura agradável. A usabilidade é simples e autoexplicativa.
+
+Geraldo: Sim, as nomenclaturas fizeram sentido. Achei a sequência dos botões de navegação bem organizada e fácil de entender, principalmente na parte de seleção de poltronas, com a numeração e a disposição em colunas e fileiras bem definidas.
+
+Gustavo: Sim, escolher o filme, o horário, a cadeira e pagar foi intuitivo e lógico.
+
+Síntese geral
+
+Os três usuários consideraram o fluxo de navegação intuitivo e bem estruturado. No entanto, dois participantes relataram dificuldades específicas no início da jornada, principalmente relacionadas ao botão “Ver Sessões”, que não estava tão evidente quanto esperavam. Após compreender esse ponto, todos seguiram o fluxo sem problemas.
+
+Observações relevantes
+
+– O fluxo principal (filme → sessão → assento → pagamento) foi considerado lógico e consistente.
+– A maior barreira ocorreu no momento inicial, quando os usuários tentaram clicar diretamente no pôster para acessar as sessões.
+– Após avançar dessa etapa inicial, nenhum usuário relatou problemas nas outras telas.
+
+3. Localização das informações
+Pergunta: Você conseguiu encontrar facilmente as informações que procurava (como horários, sessões e opções de compra)?
+
+Jamilly: Sim, consegui encontrar facilmente as informações que procurava, como horários, sessões e opções de compra.
+
+Geraldo: De forma geral, sim. A única dificuldade foi descobrir como acessar os horários das sessões. Eu esperava que o card inteiro do filme fosse clicável, mas, depois que entendi onde estava o botão “Ver Sessões”, o restante da navegação ficou bem tranquilo.
+
+Gustavo: Sim, a ordem lógica ajudou a escolher exatamente as opções que eu desejava.
+
+Síntese geral
+
+Todos os participantes relataram que conseguiram localizar as informações necessárias. No entanto, houve um ponto específico de confusão: o botão “Ver Sessões” novamente gerou uma barreira inicial para um dos usuários, que esperava uma interação diferente com o card do filme.
+
+Observações relevantes
+
+– As informações principais (horários, sessões, opções de compra) foram percebidas como claras e acessíveis.
+– O único ponto recorrente de dúvida foi o acesso às sessões através de um botão pouco destacado.
 
 4. Interação com os elementos da interface
-Os botões, menus e cards estavam posicionados de forma intuitiva e responderam como você esperava ao interagir?
+Pergunta: Os botões, menus e cards estavam posicionados de forma intuitiva e responderam como você esperava ao interagir?
+
+Jamilly: Sim, os botões, menus e cards estão posicionados de forma intuitiva e responderam conforme o esperado durante a navegação.
+
+Geraldo: Sim. A partir da página de sessões, achei o fluxo das etapas bem lógico e fácil de acompanhar. O único ponto de confusão foi no início, quando tentei acessar as sessões clicando no pôster em vez de no botão.
+
+Gustavo: Sim, tudo estava conforme eu esperava.
+
+Síntese geral
+
+A percepção geral foi positiva: os elementos clicáveis estavam claros e responsivos. A interação foi natural e correspondeu às expectativas dos usuários. No entanto, a questão do pôster não ser clicável foi novamente mencionada por um dos participantes como um elemento que poderia ser mais intuitivo.
+
+Observações relevantes
+
+– Destaque positivo para a resposta visual (hover, mudança de cursor).
+– O layout dos elementos foi considerado adequado e organizado.
+– O comportamento dos cards poderia ser ampliado para permitir cliques.
 
 5. Clareza dos textos e termos utilizados
 Os textos e rótulos das páginas estavam claros e ajudaram a entender as ações disponíveis?
 (Se houve algum termo confuso, qual?)
 
+Jamily: Os textos estão claros e os termos utilizados facilitam o entendimento das ações. Não identifiquei nenhum termo confuso.
+
+Geraldo: Sim, as nomenclaturas fizeram sentido. Sim, as nomenclaturas fizeram sentido. Achei a sequência dos botões de navegação bem organizada e fácil de entender, principalmente na parte de seleção de poltronas, com a numeração e a disposição em colunas e fileiras bem definidas. Porém, o termo em inglês “snacks” me deixou confuso, porque eu não sabia exatamente o que significava. Seria melhor colocar a tradução entre parênteses, como “snacks (lanches)”, para facilitar o entendimento.
+
+Gustavo: Sim, no geral eu consegui navegar e chegar perfeitamente onde eu queria. A exceção foi o login que eu não entendi qual era a credencial correta, o email ou meu nome.
+
+Síntese geral
+
+Os participantes consideraram os textos claros e adequados ao contexto. A maioria não encontrou termos confusos, mas dois pontos específicos surgiram:
+
+Um usuário não entendeu o termo em inglês “snacks”.
+
+Outro usuário teve dúvida sobre qual credencial usar no login (nome ou e-mail).
+
+Fora esses casos pontuais, a clareza textual foi percebida como satisfatória.
+
+Observações relevantes
+
+– Os textos estão bem alinhados com a estrutura da interface e facilitam o entendimento das ações.
+– O termo “snacks” representou uma barreira terminológica e pode beneficiar-se de tradução ou explicação.
+– A confusão relacionada ao login não é terminológica, mas está diretamente ligada à forma como o campo é rotulado.
+
 6. Aspectos visuais
 As cores, ícones e contrastes facilitaram a navegação? Houve algo que atrapalhou a visualização ou desviou a atenção do conteúdo principal?
+
+Jamilly: As cores, ícones e contrastes estão bem equilibrados e facilitam a navegação. O fundo claro traz um bom contraste e deixa o site visualmente agradável. Nada atrapalhou a visualização ou desviou a atenção do conteúdo principal.
+
+Geraldo: Sim. Os elementos clicáveis ficaram bem evidentes, principalmente porque o cursor muda para a “mãozinha” quando passo o mouse por cima. O único ponto que me incomodou foi o fundo branco — ele pode cansar a visão e fazer o usuário aumentar o brilho da tela, o que prejudica a navegação. Acredito que um fundo mais escuro deixaria o visual mais confortável.
+
+Gustavo: Sim, o contrate entre as cores e o posicionamento foi bastante intuitivo.
+
+Síntese geral
+
+Os participantes consideraram o layout visual bem equilibrado e agradável. Dois usuários elogiaram o contraste e a legibilidade, enquanto um relatou desconforto com o fundo branco, sugerindo um visual mais escuro para maior conforto. Não houve reclamações sobre elementos visuais que distraíssem a navegação.
+
+Observações relevantes
+
+– A identidade visual foi percebida como limpa e funcional.
+– Há preferência majoritária pelo fundo claro, mas sensibilidade variada entre os usuários.
+– A recomendação de um modo escuro é consistente com práticas modernas de acessibilidade e conforto visual.
 
 7. Dificuldades ou barreiras de uso
 Houve algum momento em que você se sentiu confuso, inseguro ou precisou de ajuda para continuar a navegação?
 
+Jamilly: Não encontrei nenhuma dificuldade durante a navegação. O site é simples, autoexplicativo e fácil de usar.
+
+Geraldo: Sim. Tive dificuldade com o botão “Ver Sessões”, porque no início achei que o pôster do filme também servia como atalho para essa página. Como ele é o primeiro passo da navegação, acho importante deixá-lo mais evidente ou permitir o clique em qualquer parte do card.
+
+Gustavo:  Como citado anteriormente, o Login me deixou confuso, porque eu cadastrei usando nome e email, mas ao invés de me pedir email ele me pede o login, mas eu não criei um nome de usuário.
+
+Síntese geral
+
+As principais barreiras relatadas foram:
+
+O botão “Ver Sessões”, que não estava evidente o suficiente.
+
+A confusão com o login, que não deixava claro qual credencial deveria ser usada.
+
+Fora isso, a navegação foi percebida como simples e autoexplicativa.
+
+Observações relevantes
+
+– A dificuldade com o botão “Ver Sessões” se tornou recorrente, reforçando a necessidade de reconsiderar sua visibilidade.
+– O problema no login tem caráter funcional e pode comprometer o fluxo de acesso ao sistema.
+– Não houve relatos de travamento ou erros que impedissem o avanço.
+
 8. Pontos positivos
-O que você mais gostou na interface ou na experiência de uso?
+Pergunta: O que você mais gostou?
+
+Jamilly: Gostei da simplicidade, da clareza das informações e do visual limpo. A interface é bonita, organizada e transmite uma boa experiência de uso.
+
+Geraldo: O que mais gostei foi o destaque visual que acontece quando passo o mouse sobre o pôster de um filme. Isso mostra que o sistema está respondendo à minha interação e deixa a experiência mais agradável. Também gostei da mudança do cursor para a “mãozinha”, que ajuda a identificar facilmente o que é clicável.
+
+Gustavo: Os pôsteres são bem grandes e chamativos e até me direcionam para um trailer.
+
+Síntese geral
+
+Os pontos positivos mencionados convergem para três eixos principais:
+
+Simplicidade, clareza e organização geral da interface.
+
+Feedback visual ao passar o mouse sobre os cards de filmes.
+
+Destaque e impacto visual dos pôsteres.
+
+A combinação desses elementos transmite ao usuário uma experiência fluida e visualmente agradável.
+
+Observações relevantes
+
+– O sistema de feedback visual foi percebido como um diferencial positivo.
+– Há valorização da estética limpa, o que reforça a coerência visual do protótipo.
+– O impacto dos pôsteres reforça a identidade temática do site.
 
 9. Melhorias sugeridas
-O que você mudaria ou adicionaria para deixar o site mais funcional ou agradável de usar?
+Pergunta: O que poderia ser melhorado?
 
-10. Comentários gerais (opcional)
-Há algo mais que gostaria de comentar sobre sua experiência com o protótipo?
+Jamilly: No momento, não tenho nada a acrescentar. O site já está funcional, intuitivo e agradável de usar.
 
+Geraldo: Eu deixaria o fundo mais escuro para facilitar a visualização e deixaria os pôsteres dos filmes clicáveis, para que eu pudesse acessar as sessões de maneira mais natural. Também adicionaria um botão de “voltar” nas telas de login e cadastro, para facilitar a navegação caso eu queira retornar à página anterior.
 
+Gustavo: Eu mudaria o Login para pedir o email cadastrado como credencial.
 
+Síntese geral
 
+As sugestões apresentadas pelos participantes abordam melhorias funcionais e visuais:
+– possibilidade de modo escuro ou fundo menos claro
+– tornar os pôsteres clicáveis para facilitar o fluxo
+– ajustes no login, especialmente no tipo de credencial solicitada
+– inclusão de opções de navegação mais consistentes (como botão “voltar”)
 
+Observações relevantes
 
+– As melhorias sugeridas estão alinhadas às dificuldades previamente mencionadas, mostrando consistência nas percepções dos usuários.
+– Não foram identificados problemas graves; as sugestões são incrementais e de fácil implementação.
 
+10. Comentários gerais
+Pergunta: Há algo mais que gostaria de comentar?
 
+Jamilly: Gostei bastante do site. Ele é bonito, simples e cumpre bem o propósito. A experiência geral foi positiva.
 
-Jamilly,23 anos:
+Otávio: Gostei muito do protótipo no geral. Achei a sequência da navegação bem estruturada e fácil de acompanhar. A experiência é agradável e intuitiva. Acho que seria interessante incluir um link com informações de como chegar ao cinema, o que deixaria o site ainda mais completo e útil.
 
-1.Sim, ao acessar a página inicial, consegui entender rapidamente o objetivo principal do site. Ele deixa claro que é voltado para a compra de ingressos de cinema.
+Gustavo: Não, no geral tive uma experiência bem satisfatória.
 
-2. A navegação está intuitiva e segue uma sequência lógica. Consegui passar pelas etapas de escolha do filme, sessão, assento e pagamento sem dificuldades.
-Está tudo bem posicionado e organizado. Além disso, os comentários ajudam a ter uma noção melhor sobre os filmes, funcionando como uma espécie de review.
-Gostei das cores e do fundo claro, pois criam um bom contraste e deixam a leitura agradável. A usabilidade é simples e autoexplicativa.
+Síntese geral
 
-3. Sim, consegui encontrar facilmente as informações que procurava, como horários, sessões e opções de compra.
+Os usuários reforçaram uma percepção positiva do protótipo como um todo. A única sugestão adicional foi a inclusão de informações sobre como chegar ao cinema, agregando valor ao serviço como complemento à compra do ingresso.
 
-4. Sim, os botões, menus e cards estão posicionados de forma intuitiva e responderam conforme o esperado durante a navegação.
+Observações relevantes
 
-5. Os textos estão claros e os termos utilizados facilitam o entendimento das ações. Não identifiquei nenhum termo confuso.
-
-6. As cores, ícones e contrastes estão bem equilibrados e facilitam a navegação. O fundo claro traz um bom contraste e deixa o site visualmente agradável. Nada atrapalhou a visualização ou desviou a atenção do conteúdo principal.
-
-7. Não encontrei nenhuma dificuldade durante a navegação. O site é simples, autoexplicativo e fácil de usar.
-
-8. Gostei da simplicidade, da clareza das informações e do visual limpo. A interface é bonita, organizada e transmite uma boa experiência de uso.
-
-9. No momento, não tenho nada a acrescentar. O site já está funcional, intuitivo e agradável de usar.
-
-10. Gostei bastante do site. Ele é bonito, simples e cumpre bem o propósito. A experiência geral foi positiva.
-
-
-
-
-
-
-Otávio, 40 anos 
-
-1. Sim. Eu entendi rapidamente o propósito do site, pois logo na página inicial aparecem os cards dos filmes que estão em cartaz. Isso deixou claro que o objetivo é permitir que eu veja as opções disponíveis e escolha um filme para assistir.
-
-2. Sim, as nomenclaturas fizeram sentido. Achei a sequência dos botões de navegação bem organizada e fácil de entender, principalmente na parte de seleção de poltronas, com a numeração e a disposição em colunas e fileiras bem definidas
-
-4. De forma geral, sim. A única dificuldade foi descobrir como acessar os horários das sessões. Eu esperava que o card inteiro do filme fosse clicável, mas, depois que entendi onde estava o botão “Ver Sessões”, o restante da navegação ficou bem tranquilo.
-
-5. Sim. A partir da página de sessões, achei o fluxo das etapas bem lógico e fácil de acompanhar. O único ponto de confusão foi no início, quando tentei acessar as sessões clicando no pôster em vez de no botão.
-
-6. Sim. Os elementos clicáveis ficaram bem evidentes, principalmente porque o cursor muda para a “mãozinha” quando passo o mouse por cima. O único ponto que me incomodou foi o fundo branco — ele pode cansar a visão e fazer o usuário aumentar o brilho da tela, o que prejudica a navegação. Acredito que um fundo mais escuro deixaria o visual mais confortável.
-
-7.Sim. Tive dificuldade com o botão “Ver Sessões”, porque no início achei que o pôster do filme também servia como atalho para essa página. Como ele é o primeiro passo da navegação, acho importante deixá-lo mais evidente ou permitir o clique em qualquer parte do card.
-
-8. O que mais gostei foi o destaque visual que acontece quando passo o mouse sobre o pôster de um filme. Isso mostra que o sistema está respondendo à minha interação e deixa a experiência mais agradável. Também gostei da mudança do cursor para a “mãozinha”, que ajuda a identificar facilmente o que é clicável.
-
-9.Eu deixaria o fundo mais escuro para facilitar a visualização e deixaria os pôsteres dos filmes clicáveis, para que eu pudesse acessar as sessões de maneira mais natural. Também adicionaria um botão de “voltar” nas telas de login e cadastro, para facilitar a navegação caso eu queira retornar à página anterior.
-
-10. Gostei muito do protótipo no geral. Achei a sequência da navegação bem estruturada e fácil de acompanhar. A experiência é agradável e intuitiva. Acho que seria interessante incluir um link com informações de como chegar ao cinema, o que deixaria o site ainda mais completo e útil.
-
-
- 
-
- 
- 
-Gustavo,36 anos 
-
-1. Sim, o objetivo principal do site é comprar ingressos para filmes no cinema.
-
-2. Sim, escolher o filme, o horário, a cadeira e pagar foi intuitivo e lógico.
-
-3. Sim, a ordem lógica ajudou a escolher exatamente as opções que eu desejava.
-
-4.Sim, tudo estava conforme eu esperava.
-
-5.Sim, no geral eu consegui navegar e chegar perfeitamente onde eu queria. A exceção foi o login que eu não entendi qual era a credencial correta, o email ou meu nome.
-
-6. Sim, o contrate entre as cores e o posicionamento foi bastante intuitivo.
-
-7.Como citado anteriormente, o Login me deixou confuso, porque eu cadastrei usando nome e email, mas ao invés de me pedir email ele me pede o login, mas eu não criei um nome de usuário.
-
-8.Os posters são bem grandes e chamativos e até me direcionam para um trailer dos filmes.
-
-
-9. Eu mudaria o Login para pedir o email cadastrado como credencial.
-
-10.Não, no geral tive uma experiência bem satisfatória.
-
-
-
-
-
-
-
-
+– A experiência geral foi avaliada como satisfatória e intuitiva.
+– Houve apenas sugestões periféricas, não relacionadas ao fluxo principal.
