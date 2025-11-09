@@ -120,7 +120,7 @@ A diversidade de perfis permitiu observar diferentes comportamentos de navegaç�
 
 QUESTIONÁRIO DE TESTE DE USABILIDADE – ANÁLISE POR PERGUNTA:
 
-1)Propósito do site
+1)Propósito do site<br>
 Ao acessar a página inicial, você conseguiu entender rapidamente qual é o objetivo principal do site?
 
 Jamily: Sim, ao acessar a página inicial, consegui entender rapidamente o objetivo principal do site. Ele deixa claro que é voltado para a compra de ingressos de cinema.
@@ -138,7 +138,7 @@ Observações relevantes
 – A clareza do propósito está ligada principalmente aos cards de filmes, que funcionam como ponto central de orientação. <br>
 – Não houve registros de confusão sobre o propósito geral, apenas comentários sobre detalhes de navegação (citados em outras perguntas). <br>
 
-2)Navegação e fluxo das etapas
+2)Navegação e fluxo das etapas<br>
 A navegação entre as telas (como escolha do filme, sessões, assentos e pagamento) foi intuitiva e seguiu uma sequência lógica?
 
 Jamily: A navegação está intuitiva e segue uma sequência lógica. Consegui passar pelas etapas de escolha do filme, sessão, assento e pagamento sem dificuldades. Está tudo bem posicionado e organizado. Além disso, os comentários ajudam a ter uma noção melhor sobre os filmes, funcionando como uma espécie de review. Gostei das cores e do fundo claro, pois criam um bom contraste e deixam a leitura agradável. A usabilidade é simples e autoexplicativa.
@@ -157,7 +157,7 @@ Observações relevantes
 – A maior barreira ocorreu no momento inicial, quando os usuários tentaram clicar diretamente no pôster para acessar as sessões.<br>
 – Após avançar dessa etapa inicial, nenhum usuário relatou problemas nas outras telas.<br>
 
-3)Localização das informações
+3)Localização das informações<br>
 Pergunta: Você conseguiu encontrar facilmente as informações que procurava (como horários, sessões e opções de compra)?
 
 Jamilly: Sim, consegui encontrar facilmente as informações que procurava, como horários, sessões e opções de compra.
@@ -175,7 +175,7 @@ Observações relevantes
 – As informações principais (horários, sessões, opções de compra) foram percebidas como claras e acessíveis.<br>
 – O único ponto recorrente de dúvida foi o acesso às sessões através de um botão pouco destacado.<br>
 
-4)Interação com os elementos da interface
+4)Interação com os elementos da interface<br>
 Pergunta: Os botões, menus e cards estavam posicionados de forma intuitiva e responderam como você esperava ao interagir?
 
 Jamilly: Sim, os botões, menus e cards estão posicionados de forma intuitiva e responderam conforme o esperado durante a navegação.
@@ -194,7 +194,7 @@ Observações relevantes
 – O layout dos elementos foi considerado adequado e organizado.<br>
 – O comportamento dos cards poderia ser ampliado para permitir cliques.<br>
 
-5)Clareza dos textos e termos utilizados
+5)Clareza dos textos e termos utilizados<br>
 Os textos e rótulos das páginas estavam claros e ajudaram a entender as ações disponíveis?
 (Se houve algum termo confuso, qual?)
 
@@ -220,7 +220,7 @@ Observações relevantes
 – O termo “snacks” representou uma barreira terminológica e pode beneficiar-se de tradução ou explicação.<br>
 – A confusão relacionada ao login não é terminológica, mas está diretamente ligada à forma como o campo é rotulado.<br>
 
-6)Aspectos visuais
+6)Aspectos visuais<br>
 As cores, ícones e contrastes facilitaram a navegação? Houve algo que atrapalhou a visualização ou desviou a atenção do conteúdo principal?
 
 Jamilly: As cores, ícones e contrastes estão bem equilibrados e facilitam a navegação. O fundo claro traz um bom contraste e deixa o site visualmente agradável. Nada atrapalhou a visualização ou desviou a atenção do conteúdo principal.
@@ -239,7 +239,7 @@ Observações relevantes
 – Há preferência majoritária pelo fundo claro, mas sensibilidade variada entre os usuários.<br>
 – A recomendação de um modo escuro é consistente com práticas modernas de acessibilidade e conforto visual.<br>
 
-7)Dificuldades ou barreiras de uso
+7)Dificuldades ou barreiras de uso<br>
 Houve algum momento em que você se sentiu confuso, inseguro ou precisou de ajuda para continuar a navegação?
 
 Jamilly: Não encontrei nenhuma dificuldade durante a navegação. O site é simples, autoexplicativo e fácil de usar.
@@ -264,7 +264,7 @@ Observações relevantes
 – O problema no login tem caráter funcional e pode comprometer o fluxo de acesso ao sistema.<br>
 – Não houve relatos de travamento ou erros que impedissem o avanço.<br>
 
-8)Pontos positivos
+8)Pontos positivos<br>
 Pergunta: O que você mais gostou?
 
 Jamilly: Gostei da simplicidade, da clareza das informações e do visual limpo. A interface é bonita, organizada e transmite uma boa experiência de uso.
@@ -291,7 +291,7 @@ Observações relevantes
 – Há valorização da estética limpa, o que reforça a coerência visual do protótipo.<br>
 – O impacto dos pôsteres reforça a identidade temática do site.<br>
 
-9)Melhorias sugeridas
+9)Melhorias sugeridas<br>
 Pergunta: O que poderia ser melhorado?
 
 Jamilly: No momento, não tenho nada a acrescentar. O site já está funcional, intuitivo e agradável de usar.
@@ -313,7 +313,7 @@ Observações relevantes
 – As melhorias sugeridas estão alinhadas às dificuldades previamente mencionadas, mostrando consistência nas percepções dos usuários.<br>
 – Não foram identificados problemas graves; as sugestões são incrementais e de fácil implementação.<br>
 
-10)Comentários gerais
+10)Comentários gerais<br>
 Pergunta: Há algo mais que gostaria de comentar?
 
 Jamilly: Gostei bastante do site. Ele é bonito, simples e cumpre bem o propósito. A experiência geral foi positiva.
