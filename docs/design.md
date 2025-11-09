@@ -148,9 +148,6 @@ Há algo mais que gostaria de comentar sobre sua experiência com o protótipo?
 
 
 
-
-
-
 Jamilly,23 anos:
 
 1.Sim, ao acessar a página inicial, consegui entender rapidamente o objetivo principal do site. Ele deixa claro que é voltado para a compra de ingressos de cinema.
@@ -169,8 +166,7 @@ Gostei das cores e do fundo claro, pois criam um bom contraste e deixam a leitur
 
 7. Não encontrei nenhuma dificuldade durante a navegação. O site é simples, autoexplicativo e fácil de usar.
 
-8. 
-Gostei da simplicidade, da clareza das informações e do visual limpo. A interface é bonita, organizada e transmite uma boa experiência de uso.
+8. Gostei da simplicidade, da clareza das informações e do visual limpo. A interface é bonita, organizada e transmite uma boa experiência de uso.
 
 9. No momento, não tenho nada a acrescentar. O site já está funcional, intuitivo e agradável de usar.
 
@@ -203,6 +199,7 @@ Otávio, 40 anos
 
 
  
+
  
  
 Gustavo,36 anos 
