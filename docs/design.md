@@ -98,6 +98,11 @@ O grande objetivo de Adimir é manter o tradicional programa de cinema familiar,
 
 <img width="1904" height="893" alt="image" src="https://github.com/user-attachments/assets/cad90ecb-2c26-4abe-b0c9-49fd1e6075ae" />
 
+4.3.7 - Tela de compra de lanches: Exibe lanches disponíveis para compra.
+
+<img width="1904" height="945" alt="Lanches" src="https://github.com/user-attachments/assets/3b6b7712-70b3-479e-af33-4318b042b2c5" />
+
+
 ## 4.4 Testes com Protótipos
 
 Introdução
