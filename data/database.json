@@ -1,0 +1,252 @@
+{
+    "movies": [
+        {
+            "id": "filme1",
+            "titulo": "Sr. Ninguém",
+            "genero": "Suspense",
+            "duracao": 138,
+            "rating": "12",
+            "poster": "resources/images/sr_ninguem.jpg",
+            "sinopse": "Marido de Elise (Sarah Polley) e pai de três filhos, Nemo Nobody (Jared Leto) leva uma vida comum ao lado de sua família. Ele acorda no ano de 2092 e agora, com 118 anos, é o último mortal em um planeta de seres humanos imortais. As suas preocupações, contudo, envolvem outras questões, como o que aconteceu durante a passagem de tempo e se viveu sua vida como gostaria.",
+            "trailer": "https://www.youtube.com/watch?v=7AfTQcf17xw"
+        },
+        {
+            "id": "filme2",
+            "titulo": "Jogos Mortais",
+            "genero": "Terror",
+            "duracao": 121,
+            "rating": "18",
+            "poster": "resources/images/jogos_mortais.jpg",
+            "sinopse": "Jigsaw é um assassino que possui uma marca registrada: ele deixa em suas vítimas uma cicatriz em forma de quebra-cabeças, que faz com que elas cometam atos igonizantes para se salvar. O detetive David Tapp (Danny Glover) é designado para investigar os assassinatos, bem como a capturar seu autor. Porém o caminho evasivo seguido por Jigsaw leva o detetive a desenvolver uma obsessão por capturá-lo.",
+            "trailer": "https://www.youtube.com/watch?v=rX2hCa3ae9o"
+        },
+        {
+            "id": "filme3",
+            "titulo": "La La Land",
+            "genero": "Drama",
+            "duracao": 128,
+            "rating": "L",
+            "poster": "resources/images/la_la_land.jpg",
+            "sinopse": "Ao chegar em Los Angeles o pianista de jazz Sebastian (Ryan Gosling) conhece a atriz iniciante Mia (Emma Stone) e os dois se apaixonam perdidamente. Em busca de oportunidades para suas carreiras na competitiva cidade, os jovens tentam fazer o relacionamento amoroso dar certo enquanto perseguem fama e sucesso.",
+            "trailer": "https://www.youtube.com/watch?v=zXvgkkNMi-4"
+        },
+        {
+            "id": "filme4",
+            "titulo": "Pobres Criaturas",
+            "genero": "Drama",
+            "duracao": 141,
+            "rating": "18",
+            "poster": "resources/images/pobres_criaturas.jpg",
+            "sinopse": "Pobres Criaturas é um filme de romance e ficção científica dirigido por Yorgos Lanthimos e produzido por Emma Stone, que também atua no longa. Baseada no livro homônimo de Alasdair Grey e referenciando o clássico Frankenstein, a história se passa na Era Vitoriana e acompanha Bella Baxter (interpretada por Stone), trazida de volta à vida após seu cérebro ser substituído pelo do filho que ainda não nasceu. Querendo conhecer mais do mundo, a jovem foge com um advogado e viaja pelos continentes, exigindo igualdade e libertação.",
+            "trailer": "https://www.youtube.com/watch?v=9DEOJkmZLd8"
+        },
+        {
+            "id": "filme5",
+            "titulo": "Clifford - Gigante Cão Vermelho",
+            "genero": "Animação",
+            "duracao": 90,
+            "rating": "L",
+            "poster": "resources/images/clifford.jpg",
+            "sinopse": "O Gigante Cão Vermelho Clifford, ao lado de seus amigos, parte numa divertida viagem pelo país e acabam entrando em um concurso eletrizante: o cãozinho precisará mostrar talentos para ganhar um estoque vitalício de Tummy Yummies! Juntamente com novos amigos, eles vão dar duro para realizar uma boa apresentação.",
+            "trailer": "https://www.youtube.com/watch?v=mT5niq0-D6M"
+        },
+        {
+            "id": "filme6",
+            "titulo": "Tron - Ares",
+            "genero": "Ficção Científica",
+            "duracao": 119,
+            "rating": "12",
+            "poster": "resources/images/tron_ares.jpg",
+            "sinopse": "Ares, um sofisticado programa, é enviado do mundo digital para o mundo real em uma perigosa missão, marcando o primeiro encontro da humanidade com seres de Inteligência Artificial.",
+            "trailer": "https://www.youtube.com/watch?v=YShVEXb7-ic"
+        },
+        {
+            "id": "filme7",
+            "titulo": "Doutor Estranho no Multiverso da Loucura",
+            "genero": "Fantasia",
+            "duracao": 126,
+            "rating": "14",
+            "poster": "resources/images/dr_estranho.jpg",
+            "sinopse": "Em Doutor Estranho no Multiverso da Loucura, após os eventos de Vingadores: Ultimato, Stephen Strange e Wong continuam estudando a Joia do Tempo, mas a traição de um antigo amigo faz com que Strange libere um mal poderoso. Para enfrentar a nova ameaça e evitar o colapso da realidade, ele busca a ajuda de Wanda Maximoff, que vive isolada desde WandaVision. O filme se conecta às séries WandaVision e Loki e integra a Fase 4 do MCU.",
+            "trailer": "https://www.youtube.com/watch?v=mOuTbZhHCnY"
+        },
+        {
+            "id": "filme8",
+            "titulo": "Os Estranhos - Capítulo 2",
+            "genero": "Terror",
+            "duracao": 96,
+            "rating": "16",
+            "poster": "resources/images/os_estranhos.jpeg",
+            "sinopse": "Em Os Estranhos 2, logo após o primeiro filme, Maya escapa da morte e se recupera no hospital, mas os Mascarados retornam para eliminá-la de vez. Sem poder confiar em ninguém, ela precisa lutar para sobreviver enquanto é perseguida implacavelmente, em uma intensa e brutal disputa de vida ou morte.",
+            "trailer": "https://www.youtube.com/watch?v=ST6S1661v3M"
+        }
+    ],
+    "sessions": [
+        {
+            "id": "session1",
+            "movieId": "filme1",
+            "date": "2025-10-14",
+            "time": "18:20",
+            "price": 25.00
+        },
+        {
+            "id": "session2",
+            "movieId": "filme1",
+            "date": "2025-10-14",
+            "time": "20:30",
+            "price": 30.00
+        },
+        {
+            "id": "session3",
+            "movieId": "filme1",
+            "date": "2025-10-15",
+            "time": "22:30",
+            "price": 25.00
+        },
+        {
+            "id": "session4",
+            "movieId": "filme2",
+            "date": "2025-10-14",
+            "time": "15:00",
+            "price": 25.00
+        },
+        {
+            "id": "session5",
+            "movieId": "filme2",
+            "date": "2025-10-14",
+            "time": "15:30",
+            "price": 25.00
+        },
+        {
+            "id": "session6",
+            "movieId": "filme3",
+            "date": "2025-10-15",
+            "time": "09:30",
+            "price": 10.00
+        },
+        {
+            "id": "session7",
+            "movieId": "filme3",
+            "date": "2025-10-16",
+            "time": "17:00",
+            "price": 20.00
+        },
+        {
+            "id": "session8",
+            "movieId": "filme3",
+            "date": "2025-10-16",
+            "time": "17:00",
+            "price": 20.00
+        },
+        {
+            "id": "session9",
+            "movieId": "filme4",
+            "date": "2025-10-15",
+            "time": "17:00",
+            "price": 20.00
+        },
+        {
+            "id": "session10",
+            "movieId": "filme4",
+            "date": "2025-10-16",
+            "time": "17:00",
+            "price": 23.00
+        },
+        {
+            "id": "session11",
+            "movieId": "filme5",
+            "date": "2025-10-14",
+            "time": "17:00",
+            "price": 21.00
+        },
+        {
+            "id": "session12",
+            "movieId": "filme5",
+            "date": "2025-10-16",
+            "time": "20:00",
+            "price": 25.00
+        },
+        {
+            "id": "session13",
+            "movieId": "filme6",
+            "date": "2025-10-15",
+            "time": "14:00",
+            "price": 19.00
+        },
+        {
+            "id": "session14",
+            "movieId": "filme6",
+            "date": "2025-10-15",
+            "time": "16:30",
+            "price": 22.00
+        },
+        {
+            "id": "session15",
+            "movieId": "filme6",
+            "date": "2025-10-16",
+            "time": "19:00",
+            "price": 25.00
+        },
+        {
+            "id": "session16",
+            "movieId": "filme7",
+            "date": "2025-10-14",
+            "time": "10:00",
+            "price": 12.00
+        },
+        {
+            "id": "session17",
+            "movieId": "filme7",
+            "date": "2025-10-14",
+            "time": "13:30",
+            "price": 15.00
+        },
+        {
+            "id": "session18",
+            "movieId": "filme7",
+            "date": "2025-10-15",
+            "time": "18:45",
+            "price": 18.00
+        },
+        {
+            "id": "session19",
+            "movieId": "filme7",
+            "date": "2025-10-16",
+            "time": "21:15",
+            "price": 20.00
+        },
+        {
+            "id": "session20",
+            "movieId": "filme8",
+            "date": "2025-10-15",
+            "time": "11:00",
+            "price": 14.00
+        },
+        {
+            "id": "session21",
+            "movieId": "filme8",
+            "date": "2025-10-15",
+            "time": "13:40",
+            "price": 17.00
+        },
+        {
+            "id": "session22",
+            "movieId": "filme8",
+            "date": "2025-10-17",
+            "time": "19:30",
+            "price": 23.00
+        },
+        {
+            "id": "session23",
+            "movieId": "filme8",
+            "date": "2025-10-17",
+            "time": "22:00",
+            "price": 26.00
+        }
+    ],
+    "comments": [
+        { "movieId": "filme1", "author": "Usuário01", "text": "Filme com boa direção e ritmo consistente.", "date": "1 dia atrás" },
+        { "movieId": "filme1", "author": "Usuário02", "text": "Atuações sólidas, nada exagerado.", "date": "2 dias atrás" },
+        { "movieId": "filme2", "author": "Cinéfilo22", "text": "Trilha sonora muito bem encaixada.", "date": "1 dia atrás" }
+    ]
+}
