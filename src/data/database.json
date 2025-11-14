@@ -79,6 +79,46 @@
             "poster": "resources/images/os_estranhos.jpeg",
             "sinopse": "Em Os Estranhos 2, logo após o primeiro filme, Maya escapa da morte e se recupera no hospital, mas os Mascarados retornam para eliminá-la de vez. Sem poder confiar em ninguém, ela precisa lutar para sobreviver enquanto é perseguida implacavelmente, em uma intensa e brutal disputa de vida ou morte.",
             "trailer": "https://www.youtube.com/watch?v=ST6S1661v3M"
+        },
+        {
+            "id": "filme9",
+            "titulo": "O Agente Secreto",
+            "genero": "Suspense",
+            "duracao": 135,
+            "rating": "14",
+            "poster": "resources/images/o_agente_secreto.jpeg",
+            "sinopse": "Um agente envolvido em uma complexa rede de espionagem precisa desvendar conspirações políticas enquanto luta contra inimigos que sabem demais. O filme combina investigação, tensão e momentos de ação intensa.",
+            "trailer": "https://www.youtube.com/watch?v=AOBPXs_euPA"
+        },
+        {
+            "id": "filme10",
+            "titulo": "Predador: Terras Selvagens",
+            "genero": "Ação",
+            "duracao": 108,
+            "rating": "16",
+            "poster": "resources/images/terras_selvagens.webp",
+            "sinopse": "Em uma região isolada, um grupo de sobreviventes descobre que está sendo caçado por uma criatura extraterrestre altamente letal. Eles precisam unir forças para enfrentar o predador e tentar escapar com vida.",
+            "trailer": "https://www.youtube.com/watch?v=w4HNJqkooZo"
+        },
+        {
+            "id": "filme11",
+            "titulo": "O Telefone Preto 2",
+            "genero": "Terror",
+            "duracao": 110,
+            "rating": "16",
+            "poster": "resources/images/telefone_preto2.jpg",
+            "sinopse": "Após eventos misteriosos ligados a um telefone antigo, novas vítimas passam a vivenciar fenômenos perturbadores e contatos sobrenaturais que revelam segredos sombrios do passado. O terror psicológico retorna com ainda mais intensidade.",
+            "trailer": "https://www.youtube.com/watch?v=M5Xz19w_lNk"
+        },
+        {
+            "id": "filme12",
+            "titulo": "Se Não Fosse Você",
+            "genero": "Drama",
+            "duracao": 102,
+            "rating": "12",
+            "poster": "resources/images/se_nao_fosse_voce.jpeg",
+            "sinopse": "Uma jovem precisa lidar com mudanças profundas em sua vida e com os impactos emocionais de uma relação complexa. A narrativa explora amadurecimento, escolhas difíceis e descobertas pessoais.",
+            "trailer": "https://www.youtube.com/watch?v=_ApjZP8tPuU"
         }
     ],
     "sessions": [
@@ -242,11 +282,450 @@
             "date": "2025-10-17",
             "time": "22:00",
             "price": 26.00
-        }
-    ],
-    "comments": [
-        { "movieId": "filme1", "author": "Usuário01", "text": "Filme com boa direção e ritmo consistente.", "date": "1 dia atrás" },
-        { "movieId": "filme1", "author": "Usuário02", "text": "Atuações sólidas, nada exagerado.", "date": "2 dias atrás" },
-        { "movieId": "filme2", "author": "Cinéfilo22", "text": "Trilha sonora muito bem encaixada.", "date": "1 dia atrás" }
+        },
+        {
+            "id": "session24",
+            "movieId": "filme9",
+            "date": "2025-10-14",
+            "time": "14:20",
+            "price": 22.00
+        },
+        {
+            "id": "session25",
+            "movieId": "filme9",
+            "date": "2025-10-14",
+            "time": "18:45",
+            "price": 26.00
+        },
+        {
+            "id": "session26",
+            "movieId": "filme9",
+            "date": "2025-10-15",
+            "time": "20:10",
+            "price": 28.00
+        },
+        {
+            "id": "session27",
+            "movieId": "filme9",
+            "date": "2025-10-16",
+            "time": "16:00",
+            "price": 24.00
+        },
+        {
+            "id": "session28",
+            "movieId": "filme9",
+            "date": "2025-10-17",
+            "time": "21:30",
+            "price": 29.00
+        },
+        {
+            "id": "session29",
+            "movieId": "filme10",
+            "date": "2025-10-14",
+            "time": "15:10",
+            "price": 23.00
+        },
+        {
+            "id": "session30",
+            "movieId": "filme10",
+            "date": "2025-10-14",
+            "time": "19:40",
+            "price": 27.00
+        },
+        {
+            "id": "session31",
+            "movieId": "filme10",
+            "date": "2025-10-15",
+            "time": "12:30",
+            "price": 20.00
+        },
+        {
+            "id": "session32",
+            "movieId": "filme10",
+            "date": "2025-10-16",
+            "time": "17:45",
+            "price": 24.00
+        },
+        {
+            "id": "session33",
+            "movieId": "filme10",
+            "date": "2025-10-17",
+            "time": "22:15",
+            "price": 28.00
+        },
+
+        {
+            "id": "session34",
+            "movieId": "filme11",
+            "date": "2025-10-14",
+            "time": "13:00",
+            "price": 19.00
+        },
+        {
+            "id": "session35",
+            "movieId": "filme11",
+            "date": "2025-10-14",
+            "time": "21:00",
+            "price": 25.00
+        },
+        {
+            "id": "session36",
+            "movieId": "filme11",
+            "date": "2025-10-15",
+            "time": "18:20",
+            "price": 23.00
+        },
+        {
+            "id": "session37",
+            "movieId": "filme11",
+            "date": "2025-10-16",
+            "time": "20:50",
+            "price": 26.00
+        },
+        {
+            "id": "session38",
+            "movieId": "filme11",
+            "date": "2025-10-17",
+            "time": "23:10",
+            "price": 27.00
+        },
+
+        {
+            "id": "session39",
+            "movieId": "filme12",
+            "date": "2025-10-14",
+            "time": "11:40",
+            "price": 15.00
+        },
+        {
+            "id": "session40",
+            "movieId": "filme12",
+            "date": "2025-10-14",
+            "time": "17:20",
+            "price": 20.00
+        },
+        {
+            "id": "session41",
+            "movieId": "filme12",
+            "date": "2025-10-15",
+            "time": "19:50",
+            "price": 22.00
+        },
+        {
+            "id": "session42",
+            "movieId": "filme12",
+            "date": "2025-10-16",
+            "time": "14:10",
+            "price": 18.00
+        },
+        {
+            "id": "session43",
+            "movieId": "filme12",
+            "date": "2025-10-17",
+            "time": "20:30",
+            "price": 24.00
+        },
+        {
+            "id": "session44",
+            "movieId": "filme1",
+            "date": "2025-10-14",
+            "time": "22:40",
+            "price": 28.00
+        },
+        {
+            "id": "session45",
+            "movieId": "filme1",
+            "date": "2025-10-15",
+            "time": "18:10",
+            "price": 27.00
+        },
+        {
+            "id": "session46",
+            "movieId": "filme1",
+            "date": "2025-10-15",
+            "time": "20:20",
+            "price": 30.00
+        },
+        {
+            "id": "session47",
+            "movieId": "filme2",
+            "date": "2025-10-14",
+            "time": "17:40",
+            "price": 27.00
+        },
+        {
+            "id": "session48",
+            "movieId": "filme2",
+            "date": "2025-10-14",
+            "time": "20:10",
+            "price": 30.00
+        },
+        {
+            "id": "session49",
+            "movieId": "filme2",
+            "date": "2025-10-15",
+            "time": "18:20",
+            "price": 27.00
+        },
+        {
+            "id": "session50",
+            "movieId": "filme2",
+            "date": "2025-10-15",
+            "time": "21:10",
+            "price": 30.00
+        },
+        {
+            "id": "session51",
+            "movieId": "filme3",
+            "date": "2025-10-15",
+            "time": "12:00",
+            "price": 18.00
+        },
+        {
+            "id": "session52",
+            "movieId": "filme3",
+            "date": "2025-10-15",
+            "time": "14:30",
+            "price": 18.00
+        },
+        {
+            "id": "session53",
+            "movieId": "filme3",
+            "date": "2025-10-16",
+            "time": "19:10",
+            "price": 22.00
+        },
+        {
+            "id": "session54",
+            "movieId": "filme3",
+            "date": "2025-10-16",
+            "time": "21:30",
+            "price": 22.00
+        },
+        {
+            "id": "session55",
+            "movieId": "filme4",
+            "date": "2025-10-15",
+            "time": "14:00",
+            "price": 20.00
+        },
+        {
+            "id": "session56",
+            "movieId": "filme4",
+            "date": "2025-10-15",
+            "time": "19:20",
+            "price": 24.00
+        },
+        {
+            "id": "session57",
+            "movieId": "filme4",
+            "date": "2025-10-16",
+            "time": "14:20",
+            "price": 21.00
+        },
+        {
+            "id": "session58",
+            "movieId": "filme4",
+            "date": "2025-10-16",
+            "time": "20:10",
+            "price": 25.00
+        },
+
+        {
+            "id": "session59",
+            "movieId": "filme5",
+            "date": "2025-10-14",
+            "time": "13:00",
+            "price": 18.00
+        },
+        {
+            "id": "session60",
+            "movieId": "filme5",
+            "date": "2025-10-14",
+            "time": "15:00",
+            "price": 20.00
+        },
+        {
+            "id": "session61",
+            "movieId": "filme5",
+            "date": "2025-10-16",
+            "time": "10:30",
+            "price": 16.00
+        },
+        {
+            "id": "session62",
+            "movieId": "filme5",
+            "date": "2025-10-16",
+            "time": "14:30",
+            "price": 20.00
+        },
+        {
+            "id": "session63",
+            "movieId": "filme6",
+            "date": "2025-10-15",
+            "time": "11:20",
+            "price": 17.00
+        },
+        {
+            "id": "session64",
+            "movieId": "filme6",
+            "date": "2025-10-15",
+            "time": "18:20",
+            "price": 23.00
+        },
+        {
+            "id": "session65",
+            "movieId": "filme6",
+            "date": "2025-10-16",
+            "time": "14:20",
+            "price": 21.00
+        },
+        {
+            "id": "session66",
+            "movieId": "filme6",
+            "date": "2025-10-16",
+            "time": "21:00",
+            "price": 26.00
+        },
+        {
+            "id": "session67",
+            "movieId": "filme7",
+            "date": "2025-10-14",
+            "time": "16:00",
+            "price": 17.00
+        },
+        {
+            "id": "session68",
+            "movieId": "filme7",
+            "date": "2025-10-14",
+            "time": "18:00",
+            "price": 19.00
+        },
+        {
+            "id": "session69",
+            "movieId": "filme7",
+            "date": "2025-10-15",
+            "time": "14:20",
+            "price": 16.00
+        },
+        {
+            "id": "session70",
+            "movieId": "filme7",
+            "date": "2025-10-16",
+            "time": "18:40",
+            "price": 19.00
+        },
+        {
+            "id": "session71",
+            "movieId": "filme8",
+            "date": "2025-10-15",
+            "time": "16:10",
+            "price": 19.00
+        },
+        {
+            "id": "session72",
+            "movieId": "filme8",
+            "date": "2025-10-15",
+            "time": "18:20",
+            "price": 20.00
+        },
+        {
+            "id": "session73",
+            "movieId": "filme8",
+            "date": "2025-10-17",
+            "time": "14:00",
+            "price": 19.00
+        },
+        {
+            "id": "session74",
+            "movieId": "filme8",
+            "date": "2025-10-17",
+            "time": "16:00",
+            "price": 21.00
+        },
+        {
+            "id": "session75",
+            "movieId": "filme10",
+            "date": "2025-10-14",
+            "time": "22:30",
+            "price": 30.00
+        },
+        {
+            "id": "session76",
+            "movieId": "filme10",
+            "date": "2025-10-15",
+            "time": "15:10",
+            "price": 21.00
+        },
+        {
+            "id": "session77",
+            "movieId": "filme10",
+            "date": "2025-10-16",
+            "time": "13:10",
+            "price": 21.00
+        },
+        {
+            "id": "session78",
+            "movieId": "filme10",
+            "date": "2025-10-17",
+            "time": "18:00",
+            "price": 26.00
+        },
+        {
+            "id": "session79",
+            "movieId": "filme11",
+            "date": "2025-10-14",
+            "time": "16:30",
+            "price": 21.00
+        },
+        {
+            "id": "session80",
+            "movieId": "filme11",
+            "date": "2025-10-15",
+            "time": "14:10",
+            "price": 21.00
+        },
+        {
+            "id": "session81",
+            "movieId": "filme11",
+            "date": "2025-10-16",
+            "time": "17:40",
+            "price": 24.00
+        },
+        {
+            "id": "session82",
+            "movieId": "filme11",
+            "date": "2025-10-17",
+            "time": "19:10",
+            "price": 26.00
+        },
+        {
+            "id": "session83",
+            "movieId": "filme12",
+            "date": "2025-10-14",
+            "time": "14:00",
+            "price": 17.00
+        },
+        {
+            "id": "session84",
+            "movieId": "filme12",
+            "date": "2025-10-15",
+            "time": "12:20",
+            "price": 17.00
+        },
+        {
+            "id": "session85",
+            "movieId": "filme12",
+            "date": "2025-10-16",
+            "time": "16:40",
+            "price": 19.00
+        },
+        {
+            "id": "session86",
+            "movieId": "filme12",
+            "date": "2025-10-17",
+            "time": "17:00",
+            "price": 21.00
+        }    
     ]
 }

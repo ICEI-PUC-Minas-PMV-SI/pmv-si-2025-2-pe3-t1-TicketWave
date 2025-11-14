@@ -1,22 +1,41 @@
-// Função que renderiza os filmes na tela
+const trendingIds = ["filme9", "filme10", "filme11", "filme12"];
+
 function renderMoviesView(container) {
     const movies = DataLoader.getMovies();
 
-    const movieGrid = document.createElement('div');
-    movieGrid.className = 'row g-4';
-    movieGrid.id = 'movie-grid';
+    const trendingMovies = movies.filter(movie => trendingIds.includes(movie.id));
+    const regularMovies = movies.filter(movie => !trendingIds.includes(movie.id));
 
-    movies.forEach(movie => {
+    container.innerHTML = '';
+
+    const cartazTitle = document.createElement('div');
+    cartazTitle.className = "mb-4";
+    cartazTitle.innerHTML = `<h2 class="text-center mb-4">Em Cartaz</h2>`;
+    container.appendChild(cartazTitle);
+
+    const cartazGrid = document.createElement('div');
+    cartazGrid.className = 'row g-4 mb-5';
+
+    regularMovies.forEach(movie => {
         const movieCard = createMovieCard(movie);
-        movieGrid.appendChild(movieCard);
+        cartazGrid.appendChild(movieCard);
     });
 
-    container.innerHTML = `
-        <div class="mb-4">
-            <h2 class="text-center mb-4">Em Cartaz</h2>
-        </div>
-    `;
-    container.appendChild(movieGrid);
+    container.appendChild(cartazGrid);
+    const altaTitle = document.createElement('div');
+    altaTitle.className = "mb-4 mt-5";
+    altaTitle.innerHTML = `<h2 class="text-center mb-4">Em Alta</h2>`;
+    container.appendChild(altaTitle);
+
+    const altaGrid = document.createElement('div');
+    altaGrid.className = 'row g-4';
+
+    trendingMovies.forEach(movie => {
+        const movieCard = createMovieCard(movie);
+        altaGrid.appendChild(movieCard);
+    });
+
+    container.appendChild(altaGrid);
 
     addButtonEventListeners();
 }
@@ -32,11 +51,17 @@ function createMovieCard(movie) {
     const hours = Math.floor(movie.duracao / 60);
     const minutes = movie.duracao % 60;
     const durationText = hours > 0 ? `${hours}h ${minutes}m` : `${minutes}m`;
+    const isTrending = trendingIds.includes(movie.id);
 
     card.innerHTML = `
         <div class="position-relative">
             <img src="${movie.poster}" class="card-img-top movie-poster" alt="${movie.titulo}">
-            <div class="position-absolute top-0 end-0 m-2"></div>
+            ${isTrending ? `
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2"
+                      style="font-size: 0.85rem; padding: 6px 10px;">
+                    Em Alta
+                </span>
+            ` : ''}
         </div>
         <div class="card-body d-flex flex-column">
             <h5 class="card-title">${movie.titulo}</h5>
@@ -48,6 +73,7 @@ function createMovieCard(movie) {
             </button>
         </div>
     `;
+
     col.appendChild(card);
     return col;
 }
