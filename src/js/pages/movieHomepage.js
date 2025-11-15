@@ -10,7 +10,7 @@ function renderMoviesView(container) {
 
     const cartazTitle = document.createElement('div');
     cartazTitle.className = "mb-4";
-    cartazTitle.innerHTML = `<h2 class="text-center mb-4">Em Cartaz</h2>`;
+    cartazTitle.innerHTML = `<h2 id="on-display-header" class="text-center mb-4">Em Cartaz</h2>`;
     container.appendChild(cartazTitle);
 
     const cartazGrid = document.createElement('div');
@@ -24,7 +24,7 @@ function renderMoviesView(container) {
     container.appendChild(cartazGrid);
     const altaTitle = document.createElement('div');
     altaTitle.className = "mb-4 mt-5";
-    altaTitle.innerHTML = `<h2 class="text-center mb-4">Em Alta</h2>`;
+    altaTitle.innerHTML = `<h2 id="trending-header" class="text-center mb-4">Em Alta</h2>`;
     container.appendChild(altaTitle);
 
     const altaGrid = document.createElement('div');

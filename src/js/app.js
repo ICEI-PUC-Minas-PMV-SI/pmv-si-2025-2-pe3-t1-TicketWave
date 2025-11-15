@@ -7,6 +7,7 @@ async function init() {
     try {
         await DataLoader.loadDataIntoLocalStorage();
         window.addEventListener('hashchange', handleHashChange);
+        Utils.addNavbarListeners();
         handleHashChange();
     } catch (error) {
         console.log('Falha ao carregar a aplicação', error);
@@ -14,8 +15,7 @@ async function init() {
 }
 
 function renderView(view, params) {
-    console.log('called renderView with', view);
-    console.log('and params', params);
+    console.log(`rendering view "${view}" with params:`);
     const container = document.getElementById('app-container');
 
     container.innerHTML = '';
@@ -32,6 +32,9 @@ function renderView(view, params) {
             break;
         case 'checkout':
             renderCheckout(container, params?.movieId, params?.sessionId);
+            break;
+        case 'payment':
+            renderPayment(container, params);
             break;
         default:
             renderMoviesView(container);

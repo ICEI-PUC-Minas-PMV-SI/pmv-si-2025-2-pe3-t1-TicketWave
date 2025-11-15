@@ -602,3 +602,23 @@ html, body {
 .checkout-go-back-button {
   flex: 1 1 100%; 
 }
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#payment-form-wrapper {
+  display: flex;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: white;
+  padding: 2rem 1rem;
+}
+
+#payment-form {
+
+}

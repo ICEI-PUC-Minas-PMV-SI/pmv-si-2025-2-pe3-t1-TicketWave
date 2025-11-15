@@ -8,8 +8,25 @@ const Utils = ( function () {
         return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
     }
 
-    return {
+    function addNavbarListeners() {
+        const navbarTrendingLink = document.querySelector('#navbar-trending');
+        navbarTrendingLink.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            document.querySelector('#trending-header').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        const navbarOnDisplayLink = document.querySelector('#navbar-on-display');
+        navbarOnDisplayLink.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            document.querySelector('#on-display-header').scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+
+        return {
         hashPassword,
+        addNavbarListeners,
     };
 })();    
     

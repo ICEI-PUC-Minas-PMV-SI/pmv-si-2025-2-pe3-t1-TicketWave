@@ -79,6 +79,7 @@ function renderCheckout(container, movieId, sessionId) {
     goToPaymentButton.innerHTML = `
         <button class="btn btn-primary">Fechar Pedido</button>
     `;
+    goToPaymentButton.addEventListener('click', () => window.navigate('payment'));
     checkoutContainer.appendChild(goToPaymentButton);
 
     container.appendChild(checkoutContainer);
