@@ -119,7 +119,58 @@
             "poster": "resources/images/se_nao_fosse_voce.jpeg",
             "sinopse": "Uma jovem precisa lidar com mudanças profundas em sua vida e com os impactos emocionais de uma relação complexa. A narrativa explora amadurecimento, escolhas difíceis e descobertas pessoais.",
             "trailer": "https://www.youtube.com/watch?v=_ApjZP8tPuU"
+        },
+        {
+            "id": "filme13",
+            "titulo": "Wicked - Parte II",
+            "genero": "Fantasia",
+            "duracao": 137,
+            "rating": "10",
+            "poster": "resources/images/wicked.webp",
+            "sinopse": "Demonizada como a Bruxa Má do Oeste, Elphaba vive no exílio, enquanto Glinda reside na Cidade Esmeralda. Quando uma multidão furiosa se levanta contra a Bruxa Má, ela precisa se unir com Glinda para transformar a si mesma e todo o Oz, para o bem.",
+            "trailer": "https://www.youtube.com/watch?v=_WmdlcyjAhk"  
+        },
+        {
+            "id": "filme14",
+            "titulo": "Quase Deserto",
+            "genero": "Thriller",
+            "duracao": 106,
+            "rating": "14",
+            "poster": "resources/images/quase_deserto.jpg",
+            "sinopse": "Em um cenário preocupante de pós-pandemia e uma turbulenta eleição entre Trump e Biden, dois imigrantes latinos acabam se envolvendo em um assassinato, e sem pensar muito, resgatam a única testemunha do crime: uma mulher americana com uma síndrome rara. Agora, eles têm que se unir para embarcarem em uma trajetória de fuga, redenção e, principalmente, recomeço. Dentro de uma cidade em reconstrução, eles precisam guardar segredos até se livrarem de todo esse peso.",
+            "trailer": "https://www.youtube.com/watch?v=_hsU8_5M2yk"
+        },
+        {
+            "id": "filme15",
+            "titulo": "Quando o Céu se Engana",
+            "genero": "Fantasia / Comédia",
+            "duracao": 98,
+            "rating": 12,
+            "poster": "resources/images/quando_ceu_engana.webp",
+            "sinopse": "Um anjo bem-intencionado mas desajeitado interfere na vida de dois homens muito diferentes — um trabalhador autônomo e um empresário — provocando situações inesperadas. ",  
+            "trailer": "https://www.youtube.com/watch?v=ja5Yq99xfWs"
+        },
+        {
+            "id": "filme16",
+            "titulo": "Dollhouse: A Boneca da Casa",
+            "genero": "Terror / Mistério",
+            "duracao": 110,
+            "rating": "16",
+            "poster": "resources/images/dollhouse.webp",
+            "sinopse": "Após a morte da filha, uma mulher compra uma boneca idêntica à menina e passa a ter experiências misteriosas e perturbadoras quando a traz para casa. ",  
+            "trailer": "https://www.youtube.com/watch?v=bxWI_BbETmQ"
+        },
+        {
+            "id": "filme17",
+            "titulo": "O Sobrevivente",
+            "genero": "Ação / Thriller",
+            "duracao": 133,
+            "rating": "18",
+            "poster": "resources/images/sobrevivente.jpg",
+            "sinopse": "Em um futuro distópico, um homem entra em um reality show mortal para salvar sua filha, lutando para sobreviver por 30 dias enquanto é caçado por assassinos profissionais. ",  
+            "trailer": "https://www.youtube.com/watch?v=pc5i2Xqa5n0"
         }
+
     ],
     "sessions": [
         {

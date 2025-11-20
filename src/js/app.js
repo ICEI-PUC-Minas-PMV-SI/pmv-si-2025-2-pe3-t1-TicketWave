@@ -76,3 +76,37 @@ function navigate(view, params = {}) {
 window.navigate = navigate;
 
 init();
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Em Cartaz
+    document.getElementById("navbar-on-display").addEventListener("click", (e) => {
+        e.preventDefault();
+        ensureHomeAndScroll("on-display-header");
+    });
+
+    // Em Alta
+    document.getElementById("navbar-trending").addEventListener("click", (e) => {
+        e.preventDefault();
+        ensureHomeAndScroll("trending-header");
+    });
+
+    // Sugestões
+    document.getElementById("navbar-suggestion").addEventListener("click", (e) => {
+        e.preventDefault();
+        ensureHomeAndScroll("suggestion-header");
+    });
+});
+
+function ensureHomeAndScroll(targetId) {
+    if (window.currentPage !== "home") {
+        window.navigate("home");
+        
+        setTimeout(() => {
+            document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+        }, 200);
+    } else {
+        document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" });
+    }
+}
+

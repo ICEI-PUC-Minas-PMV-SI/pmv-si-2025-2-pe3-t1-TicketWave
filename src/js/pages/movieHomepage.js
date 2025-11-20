@@ -1,10 +1,12 @@
 const trendingIds = ["filme9", "filme10", "filme11", "filme12"];
+const sugestionsIds = ["filme10", "filme11","filme9", "filme13", "filme14", "filme15", "filme16", "filme17"];
 
 function renderMoviesView(container) {
     const movies = DataLoader.getMovies();
 
     const trendingMovies = movies.filter(movie => trendingIds.includes(movie.id));
-    const regularMovies = movies.filter(movie => !trendingIds.includes(movie.id));
+    const regularMovies = movies.filter(movie => !trendingIds.includes(movie.id) && !sugestionsIds.includes(movie.id));
+    const sugestionMovies = movies.filter(movie => sugestionsIds.includes(movie.id));
 
     container.innerHTML = '';
 
@@ -22,13 +24,14 @@ function renderMoviesView(container) {
     });
 
     container.appendChild(cartazGrid);
+
     const altaTitle = document.createElement('div');
     altaTitle.className = "mb-4 mt-5";
     altaTitle.innerHTML = `<h2 id="trending-header" class="text-center mb-4">Em Alta</h2>`;
     container.appendChild(altaTitle);
 
     const altaGrid = document.createElement('div');
-    altaGrid.className = 'row g-4';
+    altaGrid.className = 'row g-4 mb-5';
 
     trendingMovies.forEach(movie => {
         const movieCard = createMovieCard(movie);
@@ -36,6 +39,21 @@ function renderMoviesView(container) {
     });
 
     container.appendChild(altaGrid);
+
+    const sugestTitle = document.createElement('div');
+    sugestTitle.className = "mb-4 mt-5";
+    sugestTitle.innerHTML = `<h2 id="suggestion-header" class="text-center mb-4">Sugestões para você</h2>`;
+    container.appendChild(sugestTitle);
+
+    const sugestGrid = document.createElement('div');
+    sugestGrid.className = 'row g-4';
+
+    sugestionMovies.forEach(movie => {
+        const movieCard = createMovieCard(movie);
+        sugestGrid.appendChild(movieCard);
+    });
+
+    container.appendChild(sugestGrid);
 
     addButtonEventListeners();
 }
@@ -60,8 +78,7 @@ function createMovieCard(movie) {
                 <span class="badge bg-danger position-absolute top-0 start-0 m-2"
                       style="font-size: 0.85rem; padding: 6px 10px;">
                     Em Alta
-                </span>
-            ` : ''}
+                </span>` : ''}
         </div>
         <div class="card-body d-flex flex-column">
             <h5 class="card-title">${movie.titulo}</h5>
@@ -73,6 +90,10 @@ function createMovieCard(movie) {
             </button>
         </div>
     `;
+    
+    card.addEventListener('click', () => {
+    window.navigate('sessions', { movieId: movie.id });
+    });
 
     col.appendChild(card);
     return col;
