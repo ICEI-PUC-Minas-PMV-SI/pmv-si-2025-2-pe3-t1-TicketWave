@@ -110,5 +110,11 @@ function addButtonEventListeners() {
     });
 }
 
+document.getElementById("search-input")
+    .addEventListener("input", (e) => {
+        searchMovies(e.target.value);
+    });
+
+
 window.renderMoviesView = renderMoviesView;
 window.addButtonEventListeners = addButtonEventListeners;

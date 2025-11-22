@@ -38,7 +38,6 @@
       <div class="select-items hidden">
         <div data-value="contagem">Contagem</div>
         <div data-value="bh">Belo Horizonte</div>
-        <div data-value="igarape">Igarapé</div>
         <div data-value="betim">Betim</div>
       </div>
     </div>
@@ -54,7 +53,17 @@
     </div>
 
     <div class="navbar-right navbar-icons">
-      <i class="bi bi-search"></i>
+      <div id="search-container">
+        <input
+          type="text"
+          id="search-input"
+          class="hide"
+          placeholder="Busque por um filme..."
+        />
+      </div>
+      <button id="search-toggle" class="btn btn-link p-0" aria-label="Abrir busca" type="button">
+        <i class="bi bi-search" aria-hidden="true"></i>
+      </button>
       <a href="login.html">
           <i class="bi bi-person" ></i>
       </a>

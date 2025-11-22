@@ -622,3 +622,47 @@ html, body {
 /* #payment-form {
 
 } */
+
+/* Localidades dos Cinemas */
+.cinemas-grid{
+  text-align: center;
+}
+
+.cinema {
+  border: 1px solid #343a40;
+  border-radius: 5px;
+  margin: 50px;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.cinema h3{
+  color: #0d6efd;
+  font-size: 24px;
+  margin-top: 30px;
+  font-weight: bolder;
+}
+
+.cinema p {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.nome-cinema {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#search-toggle {
+  color: inherit;
+  background: transparent;
+  border: none;
+  padding: 6px; 
+  margin-left: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hide { display: none; }
