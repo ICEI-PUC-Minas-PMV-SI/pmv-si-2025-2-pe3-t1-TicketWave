@@ -36,6 +36,12 @@ function renderView(view, params) {
         case 'payment':
             renderPayment(container, params);
             break;
+        case 'cinemas':
+            renderCinemasView(container);
+            break; 
+        case 'snacks':
+            renderCinemasView(container);
+            break;           
         default:
             renderMoviesView(container);
     }
