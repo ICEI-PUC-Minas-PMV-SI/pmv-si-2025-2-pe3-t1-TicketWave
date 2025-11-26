@@ -17,6 +17,20 @@ async function init() {
 function renderView(view, params) {
     console.log(`rendering view "${view}" with params:`);
     const container = document.getElementById('app-container');
+    const navbar = document.getElementById('main-navbar');
+    const footer = document.getElementById('main-footer');
+
+    const hideLayout = (view === 'login' || view === 'register');
+
+    if (hideLayout) {
+        navbar.style.display = "none";
+        footer.style.display = "none";
+        document.body.style.backgroundColor = "#f8f9fa";
+    } else {
+        navbar.style.display = "";
+        footer.style.display = "";
+        document.body.style.backgroundColor = "";
+    }
 
     container.innerHTML = '';
 
@@ -41,7 +55,13 @@ function renderView(view, params) {
             break; 
         case 'snacks':
             renderCinemasView(container);
-            break;           
+            break; 
+        case 'login':
+             renderLoginView(container);
+            break;
+        case 'register':
+            renderRegisterView(container);
+            break;      
         default:
             renderMoviesView(container);
     }

@@ -31,8 +31,8 @@
 function renderRegisterUser(container) {
     container.innerHTML = `
         <div class="card mx-auto" style="max-width:480px;">
-            <div class="card-body">
-                <h3 class="card-title text-center mb-3">Criar conta</h3>
+            <div class="card-body1">
+                <h3 class="card-title1 text-center mb-3">Criar conta</h3>
                 <form id="register-form">
                     <div class="mb-2">
                         <label class="form-label">Nome</label>
@@ -51,17 +51,29 @@ function renderRegisterUser(container) {
                         <input name="senha2" type="password" class="form-control" required />
                     </div>
                     <div class="d-grid">
-                        <button class="btn btn-primary" type="submit">Registrar</button>
+                        <button id="backToHome" class="btn btn-primary" type="submit">Registrar</button>
                     </div>
                 </form>
                 <div id="register-feedback" class="mt-2 text-center text-danger"></div>
-            </div>
+                <div class="text-center mt-3">
+                    <p class="mb-1">Já possui cadastro?</p>
+                        <button id="backToLogin" class="btn btn-outline-secondary w-100 mt-3">
+                            Voltar ao login
+                        </button>
+                </div>
+            </div>            
         </div>
     `;
 
     const form = container.querySelector('#register-form');
     const feedback = container.querySelector('#register-feedback');
 
+     const backBtn = container.querySelector("#backToLogin");
+     backBtn.addEventListener("click", () => navigate("login"));
+
+    const backToHome = container.querySelector("#backToHome") 
+    backToHome.addEventListener("click", () => navigate("movies"));
+    
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         feedback.textContent = '';
@@ -101,3 +113,8 @@ function renderRegisterUser(container) {
 
 window.renderRegisterUser = renderRegisterUser;
 window.UserStoreDemo = UserStore;
+
+window.renderRegisterView = function(container) {
+    renderRegisterUser(container);
+}
+

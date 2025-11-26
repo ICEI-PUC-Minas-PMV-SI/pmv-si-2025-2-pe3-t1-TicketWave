@@ -14,6 +14,8 @@
   <script src="js/repository/dataloader.js" defer></script>
   <script src="js/app.js" defer></script>
   <script src="js/pages/movieHomepage.js" defer></script>
+  <script src="js/pages/login.js" defer></script>
+  <script src="js/pages/registerUser.js" defer></script>
   <script src="js/pages/movieSession.js" defer></script>
   <script src="js/pages/seatMap.js" defer></script>
   <script src="js/pages/snacks.js" defer></script>
@@ -27,7 +29,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-dark bg-dark">
+<nav id="main-navbar" class="navbar navbar-dark bg-dark">
   <div class="navbar-left">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
       <img src="resources/images/logo.png" alt="TicketWave" class="logo-navbar">
@@ -65,7 +67,7 @@
       <button id="search-toggle" class="btn btn-link p-0" aria-label="Abrir busca" type="button">
         <i class="bi bi-search" aria-hidden="true"></i>
       </button>
-      <a href="login.html">
+      <a href="#login">
           <i class="bi bi-person" ></i>
       </a>
     </div>
@@ -86,7 +88,7 @@
     </div>
   </div>
 
-  <footer class="footer py-4">
+  <footer id="main-footer" class="footer py-4">
     <div class="container">
       <div class="row text-center text-md-start">
         <div class="col-md-3 mb-3">

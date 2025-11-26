@@ -666,3 +666,20 @@ html, body {
 }
 
 .hide { display: none; }
+
+#login {
+  color: #0d6efd;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card-body1 {
+padding: 2rem;
+}
+
+.card-title1 {
+  color: #0d6efd;
+}
