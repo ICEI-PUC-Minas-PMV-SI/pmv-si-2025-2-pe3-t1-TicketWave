@@ -98,17 +98,24 @@ const DataLoader = (function () {
         return users.find(u => u.email.toLowerCase() === email.toLowerCase());
     }
 
+    function getCombosClassicos() {
+    const data = retrieveData();
+    return data.combosClassicos || [];
+    }
+
     return {
-        loadDataIntoLocalStorage,
-        getMovies,
-        getMovie,
-        getSessions,
-        getSession,
-        getComments,
-        addComment,
-        registerUser,
-        getUsers,
-        findByEmail,
-    };
+    loadDataIntoLocalStorage,
+    getMovies,
+    getMovie,
+    getSessions,
+    getSession,
+    getComments,
+    addComment,
+    registerUser,
+    getUsers,
+    findByEmail,
+    getCombosClassicos
+};
+
 
 })();

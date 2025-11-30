@@ -34,7 +34,20 @@ function renderSeatMap(container, sessionId) {
     submitButton.innerHTML = `
         <button class="btn btn-outline-primary">Confirmar Seleção</button>
     `;
-    submitButton.addEventListener('click', () => window.navigate('checkout', { 'movieId': state.currentMovieId, 'sessionId': state.currentSession }));
+
+    submitButton.addEventListener('click', () => {
+        const selectedSeats = [...document.querySelectorAll('.seat-selected')]
+            .map(btn => btn.dataset.seatNumber);
+
+        const payload = encodeURIComponent(JSON.stringify({
+            sessionId: state.currentSession,
+            movieId: state.currentMovieId,
+            selectedSeats
+        }));
+
+        window.location.hash = `#snacks?data=${payload}`;
+    });
+
 
     seatMapContainer.appendChild(submitButton);
     container.appendChild(seatMapContainer);

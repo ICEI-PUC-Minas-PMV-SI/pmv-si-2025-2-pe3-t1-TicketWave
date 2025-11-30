@@ -117,4 +117,3 @@ window.UserStoreDemo = UserStore;
 window.renderRegisterView = function(container) {
     renderRegisterUser(container);
 }
-

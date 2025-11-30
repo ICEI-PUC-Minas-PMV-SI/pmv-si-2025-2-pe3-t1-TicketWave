@@ -54,14 +54,14 @@ function renderView(view, params) {
             renderCinemasView(container);
             break; 
         case 'snacks':
-            renderCinemasView(container);
-            break; 
+            Snacks.render(container, params?.data);
+            break;
         case 'login':
              renderLoginView(container);
             break;
         case 'register':
             renderRegisterView(container);
-            break;      
+            break;     
         default:
             renderMoviesView(container);
     }

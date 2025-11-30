@@ -170,7 +170,6 @@
             "sinopse": "Em um futuro distópico, um homem entra em um reality show mortal para salvar sua filha, lutando para sobreviver por 30 dias enquanto é caçado por assassinos profissionais. ",  
             "trailer": "https://www.youtube.com/watch?v=pc5i2Xqa5n0"
         }
-
     ],
     "sessions": [
         {
@@ -778,5 +777,50 @@
             "time": "17:00",
             "price": 21.00
         }    
+    ],
+    "combosClassicos": [
+        {
+            "id": "combo_tela_quente",
+            "nome": "Combo Tela Quente",
+            "descricao": "Pipoca média (manteiga ou salgada) + 1 Refrigerante 400ml + Bala de gelatina",
+            "preco": 28.00,
+            "snackimage": "resources/images/tela_quente.png"
+        },
+        {
+            "id": "combo_pipoca_acao",
+            "nome": "Combo Pipoca & Ação",
+            "descricao": "Pipoca grande + 2 Refrigerantes 400ml",
+            "preco": 45.00,
+            "snackimage": "resources/images/pipoca_e_acao.png"
+        },
+        {
+            "id": "combo_cine_classico",
+            "nome": "Combo Cine Clássico",
+            "descricao": "Pipoca grande tradicional + 1 Refrigerante 500ml",
+            "preco": 32.00,
+            "snackimage": "resources/images/cine_classico.png"
+        },
+        {
+            "id": "combo_pipoca_suprema",
+            "nome": "Combo Pipoca Suprema",
+            "descricao": "Pipoca grande com sabor (manteiga, cheddar ou caramelo) + Refrigerante 500ml",
+            "preco": 48.00,
+            "snackimage": "resources/images/pipoca_suprema.png"
+        },
+        {
+            "id": "combo_hora_do_filme",
+            "nome": "Combo Hora do Filme",
+            "descricao": "Pipoca média + 1 Refrigerante 400ml + Água 500ml + 1 bala de gelatina",
+            "preco": 30.00,
+            "snackimage": "resources/images/hora_do_filme.png"
+        },
+        {
+            "id": "combo_simpes",
+            "nome": "Combo Simples",
+            "descricao": "Pipoca pequena + 1 Refrigerante 300ml",
+            "preco": 25.00,
+            "snackimage": "resources/images/combo_simples.png"
+        }
     ]
 }
+
