@@ -9,12 +9,11 @@ Ao final, os relatórios gerados por cada membro deverão ser disponibilizados a
 Material de apoio para esta etapa:
 
 
-[Avaliação_Heurística.xlsx](https://github.com/user-attachments/files/16501461/Avaliacao_Heuristica.xlsx) 
-
 [Relatório_de_Testes_com_Usuário.docx](https://github.com/user-attachments/files/16501456/Relatorio_de_Testes_com_Usuario.docx)
 
 [Relatório_de_Testes_com_Usuário_exemplo.docx](https://github.com/user-attachments/files/16501459/Relatorio_de_Testes_com_Usuario_exemplo.docx)
 
+[Relatório de testes com o usuário - Maria Luiza.pdf](https://github.com/user-attachments/files/23866836/Relatorio.de.testes.com.o.usuario.-.Maria.Luiza.pdf)
 
 [Relatórios_de_teste_com_usuário_Rafael.docx](https://github.com/user-attachments/files/23842423/Relatorios_de_teste_com_usuario_Rafael.docx)
 
