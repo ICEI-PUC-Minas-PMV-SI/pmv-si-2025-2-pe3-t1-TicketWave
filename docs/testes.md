@@ -13,7 +13,9 @@ Material de apoio para esta etapa:
 
 [Relatórios_de_teste_com_usuário_Rafael.docx](https://github.com/user-attachments/files/23842423/Relatorios_de_teste_com_usuario_Rafael.docx)
 
-[Avaliação_Heurística.xlsx](https://github.com/user-attachments/files/23842429/Avaliacao_Heuristica.xlsx)
+
+[Avaliação_Heurística.xlsx](https://github.com/user-attachments/files/23882158/Avaliacao_Heuristica.xlsx)
+
 
 [Relatorios_de_teste_com_usuario - Grazielle.docx](https://github.com/user-attachments/files/23881511/Relatorios_de_teste_com_usuario_Grazielle.docx)
 
