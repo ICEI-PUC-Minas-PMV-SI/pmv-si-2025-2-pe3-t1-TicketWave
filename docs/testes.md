@@ -15,3 +15,6 @@ Material de apoio para esta etapa:
 
 [Avaliação_Heurística.xlsx](https://github.com/user-attachments/files/23842429/Avaliacao_Heuristica.xlsx)
 
+[Relatorios_de_teste_com_usuario - Grazielle.docx](https://github.com/user-attachments/files/23881511/Relatorios_de_teste_com_usuario_Grazielle.docx)
+
+
