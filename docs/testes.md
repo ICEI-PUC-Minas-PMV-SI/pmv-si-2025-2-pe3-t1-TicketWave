@@ -1,22 +1,18 @@
 # 5. PLANO DE TESTES DE SOFTWARE
    
-Nesta etapa devem ser realizados dois tipos de avaliação: por observação de sessão de uso (teste com usuários) e por inspeção (avaliação heurística, realizada pelos especialistas em usabilidade). Foram disponibilizados em "Material de Apoio" modelos para o registro dos testes que deverão ser realizados da seguinte maneira:
-•	Na avaliação heurística, cada integrante do grupo deverá preencher a planilha correspondente ao teste (arquivo Avaliação_Heurística.xlsx). Ao final, os resultados deverão ser compilados em arquivo único de mesmo formato.
-•	Na avaliação por observação de sessão de uso, deverão ser definidas tarefas em quantidade igual ao número de integrantes do grupo (ex.: grupo com 5 integrantes, 5 tarefas) e documentadas no relatório de testes com usuário (arquivo Relatório_de_Testes_com_Usuário.docx). Cada integrante do grupo deverá realizar o teste com um usuário distinto (ex.: grupo com 5 integrantes, 5 usuários deverão ser escolhidos, um por cada membro, para a realização dos testes).
 
-Ao final, os relatórios gerados por cada membro deverão ser disponibilizados aqui, juntamente com a planilha consolidada da avaliação heurística.
+•	Ao final, os resultados deverão ser compilados em arquivo único de mesmo formato.
 
 Material de apoio para esta etapa:
 
+Relatórios de testes:
 
 [Relatório de testes com o usuário - Maria Luiza.pdf](https://github.com/user-attachments/files/23866836/Relatorio.de.testes.com.o.usuario.-.Maria.Luiza.pdf)
-
 [Relatórios_de_teste_com_usuário_Rafael.docx](https://github.com/user-attachments/files/23842423/Relatorios_de_teste_com_usuario_Rafael.docx)
+[Relatorios_de_teste_com_usuario - Grazielle.docx](https://github.com/user-attachments/files/23881511/Relatorios_de_teste_com_usuario_Grazielle.docx)
+[Relatório de Teste com Usuário - Avaliador Rodrigo (1).docx](https://github.com/user-attachments/files/23938376/Relatorio.de.Teste.com.Usuario.-.Avaliador.Rodrigo.1.docx)
+[Relatório de Teste de Usuário - Felipe Bonilha.docx](https://github.com/user-attachments/files/23938380/Relatorio.de.Teste.de.Usuario.-.Felipe.Bonilha.docx)
 
+Avaliação Heurística:
 
 [Avaliação_Heurística.xlsx](https://github.com/user-attachments/files/23882158/Avaliacao_Heuristica.xlsx)
-
-
-[Relatorios_de_teste_com_usuario - Grazielle.docx](https://github.com/user-attachments/files/23881511/Relatorios_de_teste_com_usuario_Grazielle.docx)
-
-
