@@ -32,18 +32,15 @@ function ensureContainer(container) {
   return fallback;
 }
 
-function renderPayment(container /*, movieId se seu router passar esse param */) {
-  // garante container válido (não deixar null)
+function renderPayment(container) {
   container = ensureContainer(container);
   if (!container) {
     console.error('[payment] Nenhum container disponível para renderPayment — abortando.');
     return;
   }
 
-  // limpa container antes de renderizar
   container.innerHTML = '';
 
-  // tenta recuperar os dados do checkout do sessionStorage primeiro
   let checkoutData = null;
   try {
     const raw = sessionStorage.getItem('checkoutData');
@@ -55,7 +52,6 @@ function renderPayment(container /*, movieId se seu router passar esse param */)
     console.warn('[payment] erro lendo sessionStorage:', e);
   }
 
-  // se não achou, tenta decodificar da hash (fallback)
   if (!checkoutData) {
     const fromHash = parseDataFromHash();
     if (fromHash) {
@@ -71,7 +67,6 @@ function renderPayment(container /*, movieId se seu router passar esse param */)
   }
 
   if (!checkoutData || !checkoutData.selectedSeats || checkoutData.selectedSeats.length === 0) {
-    // mostra erro amigável e botão para voltar à seleção
     const errorWrap = document.createElement('div');
     errorWrap.className = 'payment-error p-3';
     errorWrap.innerHTML = `
@@ -100,20 +95,17 @@ function renderPayment(container /*, movieId se seu router passar esse param */)
     return;
   }
 
-  // extrai infos
   const { movieId, sessionId, selectedSeats, selectedCombos, totals } = checkoutData;
   const ticketsTotal = totals?.ticketsTotal ?? 0;
   const combosTotal = totals?.combosTotal ?? 0;
   const totalGeral = totals?.totalGeral ?? (ticketsTotal + combosTotal);
 
-  // constrói o HTML da página de pagamento
   const paymentWrapper = document.createElement('div');
   paymentWrapper.className = 'payment-wrapper';
 
   paymentWrapper.innerHTML = `
     <div class="page-header mb-3">
       <h1>Finalize o Pagamento</h1>
-      <p class="text-muted">Pedido para a sessão: <strong>${sessionId || '—'}</strong></p>
     </div>
 
     <div class="row">
