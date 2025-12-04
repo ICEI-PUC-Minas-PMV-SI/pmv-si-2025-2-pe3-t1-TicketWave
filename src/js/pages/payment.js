@@ -1,5 +1,3 @@
-// payment.js (versão robusta — evita erros quando container ou elementos faltam)
-
 function parseDataFromHash() {
   try {
     const hash = window.location.hash || '';
