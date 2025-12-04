@@ -24,9 +24,29 @@
         html += `</div>`;
         container.innerHTML = html;
 
+        // container.querySelectorAll(".snack-card").forEach(card => {
+        //     card.addEventListener("click", () => {
+        //         card.classList.toggle("active");
+        //     });
+        // });
+
         container.querySelectorAll(".snack-card").forEach(card => {
+            const overlay = card.querySelector(".snack-overlay");
+
             card.addEventListener("click", () => {
                 card.classList.toggle("active");
+
+                if (card.classList.contains("active")) {
+                    overlay.textContent = "Adicionado!";
+                    overlay.style.background = "#0d6efd";
+                    overlay.style.color = "#fff";
+                    overlay.style.borderColor = "#0d6efd";
+                } else {
+                    overlay.textContent = "Adicionar ao carrinho";
+                    overlay.style.background = "#fff";
+                    overlay.style.color = "#495057";
+                    overlay.style.borderColor = "#0d6efd";
+                }
             });
         });
     }

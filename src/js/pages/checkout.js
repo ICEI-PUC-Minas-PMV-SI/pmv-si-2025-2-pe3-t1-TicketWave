@@ -29,6 +29,19 @@
 
         const totalGeral = combosTotal + ticketsTotal;
 
+        const listaAssentos = selectedSeats.length
+            ? selectedSeats.map(s => `<span class="badge bg-primary me-1">${s}</span>`).join("")
+            : "<em>Nenhum assento selecionado</em>";
+
+        const listaSnacksDetalhada = selectedCombos.length
+            ? selectedCombos.map(c => `
+                <div class="checkout-snack-item d-flex justify-content-between">
+                    <span>${c.nome} (x${c.quantity})</span>
+                    <strong>R$ ${(c.preco * c.quantity).toFixed(2)}</strong>
+                </div>
+            `).join("")
+            : "<em>Nenhum snack selecionado</em>";
+
         container.innerHTML = `
             <div class="checkout-wrapper">
                 
@@ -44,16 +57,10 @@
 
                             <table class="table table-borderless">
                                 <tbody>
+
                                     <tr>
                                         <td><strong>Assentos:</strong></td>
-                                        <td id="checkout-assentos-list">
-                                            ${selectedSeats.length
-                                                ? selectedSeats
-                                                    .map(seat => `<span class="badge bg-primary me-1">${seat}</span>`)
-                                                    .join("")
-                                                : "<em>Nenhum assento selecionado</em>"
-                                            }
-                                        </td>
+                                        <td id="checkout-assentos-list">${listaAssentos}</td>
                                     </tr>
 
                                     <tr>
@@ -62,15 +69,9 @@
                                     </tr>
 
                                     <tr>
-                                        <td><strong>Snacks:</strong></td>
+                                        <td><strong>Snacks Selecionados:</strong></td>
                                         <td id="checkout-snacks-list">
-                                            ${
-                                                selectedCombos.length
-                                                    ? selectedCombos
-                                                        .map(c => `<span class="badge bg-warning text-dark me-1">${c.nome}</span>`)
-                                                        .join("")
-                                                    : "<em>Nenhum snack selecionado</em>"
-                                            }
+                                            ${listaSnacksDetalhada}
                                         </td>
                                     </tr>
 
@@ -85,7 +86,8 @@
 
                     <div class="card mb-4 checkout-card">
                         <div class="card-body">
-                            <h5 class="card-title mb-3">Resumo</h5>
+
+                            <h5 class="card-title mb-3">Resumo da Compra</h5>
 
                             <div class="d-flex justify-content-between">
                                 <span>Ingressos:</span>
@@ -95,7 +97,7 @@
                             </div>
 
                             <div class="d-flex justify-content-between mt-2">
-                               <span>Snacks:</span>
+                                <span>Snacks:</span>
                                 <strong id="checkout-combos-total">
                                     R$ ${combosTotal.toFixed(2)}
                                 </strong>

@@ -104,13 +104,15 @@ function renderPayment(container) {
   paymentWrapper.className = 'payment-wrapper';
 
   paymentWrapper.innerHTML = `
+    <div class="payment-go-back-button mb-3"></div>   <!-- ⬅ ADIÇÃO -->
+
     <div class="page-header mb-3">
       <h1>Finalize o Pagamento</h1>
     </div>
 
     <div class="row">
       <div class="col-md-5 mb-3">
-        <div class="card">
+        <div class="card payment-card">
           <div class="card-body">
             <h5 class="card-title">Resumo do Pedido</h5>
             <p><strong>Assentos:</strong></p>
@@ -141,7 +143,7 @@ function renderPayment(container) {
       </div>
 
       <div class="col-md-7">
-        <div class="card">
+        <div class="card payment-card">
           <div class="card-body">
             <form id="payment-form" novalidate>
               <div class="mb-3">
@@ -179,7 +181,22 @@ function renderPayment(container) {
 
   container.appendChild(paymentWrapper);
 
-  const cardNumberInput = safeQuery(paymentWrapper, '#card-number');
+  try {
+    if (typeof getGoBackButton === 'function') {
+      const goBackBtn = getGoBackButton("checkout", {
+        data: encodeURIComponent(JSON.stringify(checkoutData))
+      });
+
+      if (goBackBtn) {
+        const slot = paymentWrapper.querySelector('.payment-go-back-button');
+        if (slot) slot.appendChild(goBackBtn);
+      }
+    }
+  } catch (err) {
+    console.warn('[payment] erro ao renderizar botão de voltar:', err);
+  }
+
+ const cardNumberInput = safeQuery(paymentWrapper, '#card-number');
   const expiryInput = safeQuery(paymentWrapper, '#expiry');
   const cvvInput = safeQuery(paymentWrapper, '#cvv');
   const paymentForm = safeQuery(paymentWrapper, '#payment-form');
