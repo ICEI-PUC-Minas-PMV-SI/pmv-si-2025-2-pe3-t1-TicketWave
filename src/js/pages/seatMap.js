@@ -4,24 +4,63 @@ state = {
     selectedSeats: [],
 }
 
-function renderSeatMap(container, sessionId) {
+function renderSeatMap(container, encodedParams) {
+
+    let sessionId = null;
+
+    if (!encodedParams) {
+        console.warn("SeatMap chamado sem params!");
+    } else {
+        try {
+            const possible = JSON.parse(decodeURIComponent(encodedParams));
+
+            if (possible && typeof possible === 'object' && possible.sessionId) {
+                sessionId = possible.sessionId;
+            } else if (typeof possible === 'string') {
+                sessionId = possible;
+            } else {
+                sessionId = possible.sessionId || null;
+            }
+        } catch (err) {
+            if (typeof encodedParams === 'string' && encodedParams.trim() !== '') {
+                sessionId = encodedParams;
+            }
+        }
+    }
+
+    if (!sessionId) {
+        console.warn("SeatMap chamado sem sessionId!");
+        window.navigate('movies');
+        alert("Erro: Sessão não informada.");
+        return;
+    }
+
     state.currentSession = sessionId;
     const session = DataLoader.getSession(sessionId);
+
+    if (!session) {
+        console.error("Sessão não encontrada:", sessionId);
+        window.navigate('movies');
+        alert("Erro: Sessão não encontrada.");
+        return;
+    }
+
     state.currentMovieId = session.movieId;
 
-    
-    if (!state.currentSession) {
+    const currentMovie = DataLoader.getMovie(state.currentMovieId);
+    if (!currentMovie) {
+        console.error("Filme da sessão não encontrado:", state.currentMovieId);
         window.navigate('movies');
-        alert("Erro: Sessão Não Encontrada");
+        alert("Erro: Filme não encontrado.");
+        return;
     }
 
     const seatMapContainer = document.createElement('div');
     seatMapContainer.className = 'seat-map-container';
 
-    const goBackButton = getGoBackButton('sessions', {'movieId': state.currentMovieId});
+    const goBackButton = getGoBackButton('sessions', { movieId: state.currentMovieId });
     seatMapContainer.appendChild(goBackButton);
 
-    const currentMovie = DataLoader.getMovie(state.currentMovieId);
     const movieHeader = document.createElement('div');
     movieHeader.innerHTML = getMovieHeader(currentMovie);
     seatMapContainer.appendChild(movieHeader);
@@ -48,9 +87,9 @@ function renderSeatMap(container, sessionId) {
         window.location.hash = `#snacks?data=${payload}`;
     });
 
-
     seatMapContainer.appendChild(submitButton);
     container.appendChild(seatMapContainer);
+
     addEventListeners();
 }
 
@@ -110,9 +149,9 @@ function createSeatGrid() {
 function addEventListeners() {
     const seatButtons = document.querySelectorAll('.seat-btn:not([disabled])');
     seatButtons.forEach(seatButton => {
-      seatButton.addEventListener('click', (e) => {
-        toggleSeatAvailable(seatButton);
-      });
+        seatButton.addEventListener('click', () => {
+            toggleSeatAvailable(seatButton);
+        });
     });
 }
 

@@ -1,86 +1,184 @@
-function renderCheckout(container, movieId, sessionId) {
-    const currentMovie = DataLoader.getMovie(movieId);
-    const checkoutContainer = document.createElement('div');
-    checkoutContainer.className = 'checkout-wrapper';
-    checkoutContainer.innerHTML = `
-        <div class="checkout-go-back-button">
-            <!-- Button added here dynamically -->
-        </div>
+(function () {
 
-        ${getMovieHeader(currentMovie)}
+    function render(container, encodedParams) {
 
-        <div class="checkout-details">
-            <div class="card mb-4 checkout-card">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Detalhes da Reserva</h5>
-                    <table class="table table-borderless">
-                        <tbody>
-                            <tr>
-                                <td><strong>Código da Reserva:</strong></td>
-                                <td>
-                                    <span class="text-primary">AXH3G4K5L</span>
-                                    <br><small class="text-muted">Por favor, anote este código</small>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>Assentos:</strong></td>
-                                <td>
-                                    ${['A5', 'A6', 'A7', 'A8'].map(seat =>
-                                        `<span class="badge bg-primary me-1">${seat}</span>`
-                                    ).join('')}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>Número de Ingressos:</strong></td>
-                                <td>4</td>
-                            </tr>
-                        </tbody>
-                    </table>
+        let data = null;
+
+        try {
+            data = JSON.parse(decodeURIComponent(encodedParams));
+        } catch (err) {
+            console.error("Erro ao decodificar dados do checkout:", err);
+            container.innerHTML = "<h3>Erro ao carregar o checkout.</h3>";
+            return;
+        }
+
+        const {
+            movieId,
+            sessionId,
+            selectedSeats = [],
+            selectedCombos = []
+        } = data;
+
+        const ticketPrice = 20;
+        const ticketCount = selectedSeats.length;
+        const ticketsTotal = ticketCount * ticketPrice;
+
+        const combosTotal = selectedCombos.reduce((acc, c) => {
+            return acc + Number(c.preco || 0) * (c.quantity || 1);
+        }, 0);
+
+        const totalGeral = combosTotal + ticketsTotal;
+
+        container.innerHTML = `
+            <div class="checkout-wrapper">
+                
+                <div class="checkout-go-back-button"></div>
+
+                <h2 class="checkout-title">Resumo do Pedido</h2>
+
+                <div class="checkout-details">
+
+                    <div class="card mb-4 checkout-card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Detalhes da Reserva</h5>
+
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Assentos:</strong></td>
+                                        <td id="checkout-assentos-list">
+                                            ${selectedSeats.length
+                                                ? selectedSeats
+                                                    .map(seat => `<span class="badge bg-primary me-1">${seat}</span>`)
+                                                    .join("")
+                                                : "<em>Nenhum assento selecionado</em>"
+                                            }
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Nº de Ingressos:</strong></td>
+                                        <td id="checkout-quantidade-ingressos">${ticketCount}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Snacks:</strong></td>
+                                        <td id="checkout-snacks-list">
+                                            ${
+                                                selectedCombos.length
+                                                    ? selectedCombos
+                                                        .map(c => `<span class="badge bg-warning text-dark me-1">${c.nome}</span>`)
+                                                        .join("")
+                                                    : "<em>Nenhum snack selecionado</em>"
+                                            }
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-        </div>
 
-        <div class="price-breakdown">
-            <div class="card mb-4 checkout-card">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">Resumo</h5>
-                    <table class="table table-borderless">
-                        <tbody>
-                            <tr>
-                                <td>Ingressos (4 x R$ 24,99)</td>
-                                <td class="text-end">R$ 99,96</td>
-                            <tr>
-                            <tr>
-                                <td>Pipoca G (1 x R$ 39,99)</td>
-                                <td class="text-end">R$ 39,99</td>
-                            <tr>
-                            <tr>
-                                <td>Refrigerante G (1 x R$ 12,99)</td>
-                                <td class="text-end">R$ 12,99</td>
-                            <tr>
-                            <tr class="border-top">
-                                <td><strong>Total a Pagar:</strong></td>
-                                <td class="text-end"><strong class="text-success">R$ 99,96</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="price-breakdown">
+
+                    <div class="card mb-4 checkout-card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Resumo</h5>
+
+                            <div class="d-flex justify-content-between">
+                                <span>Ingressos:</span>
+                                <strong id="checkout-ingressos-total">
+                                    R$ ${ticketsTotal.toFixed(2)}
+                                </strong>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-2">
+                               <span>Snacks:</span>
+                                <strong id="checkout-combos-total">
+                                    R$ ${combosTotal.toFixed(2)}
+                                </strong>
+                            </div>
+
+                            <hr>
+
+                            <div class="d-flex justify-content-between total-line">
+                                <strong>Total Geral:</strong>
+                                <strong id="checkout-total-geral">
+                                    R$ ${totalGeral.toFixed(2)}
+                                </strong>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
+
+                <div class="checkout-finish-btn">
+                    <button class="btn btn-primary w-100" id="checkout-finish-btn">Fechar Pedido</button>
+                </div>
+
             </div>
-        </div>
-    `;
+        `;
+        
+        try {
+            const goBackButton = typeof getGoBackButton === 'function'
+                ? getGoBackButton("snacks", {
+                    data: encodeURIComponent(JSON.stringify(data))
+                })
+                : null;
 
-    const goBackButton = getGoBackButton('seatmap', { sessionId } );
-    checkoutContainer
-        .querySelector('.checkout-go-back-button')
-        .appendChild(goBackButton);
+            if (goBackButton) {
+                container
+                    .querySelector(".checkout-go-back-button")
+                    .appendChild(goBackButton);
+            }
+        } catch (e) {
+            console.warn('Não foi possível renderizar goBackButton:', e);
+        }
 
-    const goToPaymentButton = document.createElement('div');
-    goToPaymentButton.className = 'checkout-finish-btn';
-    goToPaymentButton.innerHTML = `
-        <button class="btn btn-primary">Fechar Pedido</button>
-    `;
-    goToPaymentButton.addEventListener('click', () => window.navigate('payment'));
-    checkoutContainer.appendChild(goToPaymentButton);
+        const finishBtn = container.querySelector('#checkout-finish-btn');
 
-    container.appendChild(checkoutContainer);
-}
+        if (finishBtn) {
+            if (!selectedSeats || selectedSeats.length === 0) {
+                finishBtn.disabled = true;
+                finishBtn.classList.add('disabled');
+            }
+
+            finishBtn.addEventListener('click', (ev) => {
+                ev.preventDefault();
+
+                if (finishBtn.disabled) return;
+
+                const checkoutData = {
+                    movieId,
+                    sessionId,
+                    selectedSeats,
+                    selectedCombos,
+                    totals: {
+                        ticketsTotal,
+                        combosTotal,
+                        totalGeral
+                    },
+                    timestamp: Date.now()
+                };
+
+                try {
+                    sessionStorage.setItem('checkoutData', JSON.stringify(checkoutData));
+                } catch (err) {
+                    console.error('Erro ao salvar checkoutData no sessionStorage', err);
+                    alert('Não foi possível salvar os dados do pedido localmente.');
+                    return;
+                }
+
+                window.location.hash = '#payment';
+            });
+        }
+
+    }
+
+    window.Checkout = { render };
+    window.renderCheckout = render;
+
+})();

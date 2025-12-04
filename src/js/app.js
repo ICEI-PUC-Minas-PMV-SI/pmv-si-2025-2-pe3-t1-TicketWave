@@ -45,8 +45,8 @@ function renderView(view, params) {
             renderSeatMap(container, params?.sessionId);
             break;
         case 'checkout':
-            renderCheckout(container, params?.movieId, params?.sessionId);
-            break;
+            renderCheckout(container, params?.data);
+             break;
         case 'payment':
             renderPayment(container, params);
             break;
@@ -136,3 +136,48 @@ function ensureHomeAndScroll(targetId) {
     }
 }
 
+function getGoBackButton(targetView, params = {}) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'btn btn-outline-secondary go-back-button';
+    btn.setAttribute('aria-label', 'Voltar');
+    btn.innerHTML = `&larr; Voltar`;
+
+    const normalizedParams = { ...params };
+    if (normalizedParams.hasOwnProperty('data')) {
+        if (typeof normalizedParams.data !== 'string') {
+            try {
+                normalizedParams.data = encodeURIComponent(JSON.stringify(normalizedParams.data));
+            } catch (e) {
+                console.warn('getGoBackButton: falha ao codificar params.data', e);
+                delete normalizedParams.data;
+            }
+        }
+    }
+
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        if (typeof window.navigate === 'function') {
+            try {
+                window.navigate(targetView, normalizedParams);
+                return;
+            } catch (err) {
+                console.warn('window.navigate falhou, caindo para construção manual da hash', err);
+            }
+        }
+
+        let hash = `#${targetView}`;
+        const pkeys = Object.keys(normalizedParams);
+        if (pkeys.length) {
+            const urlParams = new URLSearchParams();
+            pkeys.forEach(k => {
+                urlParams.set(k, normalizedParams[k]);
+            });
+            hash += `?${urlParams.toString()}`;
+        }
+        window.location.hash = hash;
+    });
+
+    return btn;
+}
